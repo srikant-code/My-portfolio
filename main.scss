@@ -1,0 +1,584 @@
+// Variable declarartion
+// Colours
+$darkBlue: #006eff;
+$lightBlue: #00a2ff;
+$backgroundTheme: #f1f1f1;
+$black: #2a2a2a;
+$grey: #707070;
+
+//Other Variables
+$navWidth: 100px;
+$transition3: "0.3s !important";
+
+//@mixins declarations
+@mixin transition($n) {
+  transition-duration: $n !important;
+}
+@mixin neo-pressed-light($depth: 1){
+    box-shadow:inset 4px*$depth 4px*$depth 6px*$depth rgb(221, 221, 221),  3px*$depth 3px*$depth 2px*$depth white;
+}
+@mixin neo-unpressed-light($elevation: 1){
+    box-shadow: 5px*$elevation 5px*$elevation 8px*$elevation rgb(202, 202, 202), -5px*$elevation -5px*$elevation 8px*$elevation white;
+}
+@mixin neo-pressed-dark($depth: 1){
+    box-shadow:inset 4px*$depth 4px*$depth 6px*$depth rgb(0, 0, 0),  3px*$depth 3px*$depth 2px*$depth rgb(70, 70, 70);
+}
+@mixin neo-unpressed-dark($elevation: 1){
+    box-shadow: 5px*$elevation 5px*$elevation 8px*$elevation rgb(0, 0, 0), -5px*$elevation -5px*$elevation 8px*$elevation rgb(70, 70, 70);
+}
+@mixin flex($horientation: center, $vorientation: center, $third: center){
+    display: flex;
+    justify-content: $horientation;
+    align-items: $vorientation;
+    align-content: $third;
+    flex-flow: row wrap;
+}
+@mixin dim($width: 100px, $height: 0px, $minwidth: 0px, $minheight: 0px) {
+    width:$width;
+    height:$height;
+    min-width: $minwidth;
+    min-height: $minheight;
+}
+@mixin pinkGradient {
+    background: rgb(211,28,92);
+    background: -moz-linear-gradient(90deg, rgba(211,28,92,1) 0%, rgba(255,129,129,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(211,28,92,1) 0%, rgba(255,129,129,1) 100%);
+    background: linear-gradient(90deg, rgba(211,28,92,1) 0%, rgba(255,129,129,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d31c5c",endColorstr="#ff8181",GradientType=1);
+}
+@mixin headingText($minw: fit-content, $color: white){
+    @include font($color, 4rem, 700);
+    @include dim(fit-content, fit-content, $minw, auto);
+    text-align: center;
+    letter-spacing: -1px;
+}
+@mixin paragraphText($color: black, $fontsize: 1.5rem, $lineHeight: 2.5rem) {
+    @include font($color, $fontsize, 400);
+    line-height: $lineHeight;
+}
+@mixin roundedButtonLight {
+    @include neo-unpressed-light();
+    background-color: $backgroundTheme;
+    border: none;
+    padding: 15px 40px;
+    margin-left: 0px !important;
+    margin:30px;
+    width:fit-content;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    @include transition(0.3s);
+    @include font($grey, 2rem, 900);
+    &:hover{
+        @include neo-pressed-light(2);
+        //background-color: $darkPink;
+        color: $darkBlue;
+        //transform: scale(1.1);
+        @include transition(0.3s);
+    }
+}
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@mixin font ($color: #000, $size:1.2rem, $weight: 600){
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body,html {
+  background-color: $backgroundTheme;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw !important;
+  //zoom: 1;
+}
+body{
+    overflow-y: hidden;
+}
+*::-webkit-scrollbar {
+  background-color: $lightBlue;
+  width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $darkBlue;
+  border-radius: 50px;
+  width: 10px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: $black;
+}
+::selection{
+    background: $lightBlue;
+    color: white;
+}
+
+li {
+  list-style-type: none !important ;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+section{
+    @include dim(100%, 100%, 100vw, 100vh);
+    width:100vw !important;
+
+}
+.navbar {
+  @include dim($navWidth, 100vh);
+  position: fixed;
+  display: none;
+  overflow: visible;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  background-color: $black;
+  border-radius: 0px 58px 0px 0px;
+
+  .logo {
+    @include dim(90%, 90px);
+    @include neo-unpressed-dark();
+    @include flex(center, center, center);
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    svg {
+      width: 72px;
+      height: 72px;
+    }
+  }
+  .navElementsUL {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    .navItem {
+      @include transition(0.3s);
+      justify-content: space-between;
+      cursor: pointer;
+      border-radius: 50%;
+      text-align: center;
+      width: 80%;
+      height: $navWidth * 0.8;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      //transition-duration: $transition3;
+      &:hover {
+        @include neo-pressed-dark();
+        @include transition(0.3s);
+      }
+      &:first-child {
+        margin-top: 40px;
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .activeNav{
+      @include neo-unpressed-dark();
+  }
+
+  //media Queries
+  @media screen {
+      
+  }
+} //navbar Ends
+
+#home{
+    position: relative;
+    .introtextDiv{
+
+        .introText{
+
+            .hello{
+                @include font($black, 3em, 700);
+            }
+            .srikantSahoo{
+                @include font(rgb(0, 162, 255), 7rem, 700);
+            }
+        }
+        .CTAHome{
+    
+            .hireMe, .resume{
+                display: inline-block;
+    
+            }
+        }
+    }
+
+    .discoverWrapper{
+        @include flex();
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+    }
+}
+
+
+#Experience{
+
+    .expheading{
+        // transform: rotate(-90deg);
+    }
+    .orgList{
+        @include paragraphText($black, 1.4rem, );
+        @include flex();
+        position: relative;
+
+        .orgCard{
+            @include paragraphText($black, 1.4rem, );
+            @include dim(85vw, 110% , 85vw, 110%);
+            @include neo-unpressed-light();
+            @include flex(center, center, center);
+            @include transition(0.3s);
+            flex-flow: column wrap;
+            margin: 20px 0px;
+            align-content: left;
+            border-radius: 15px;
+            padding:30px;
+            cursor: pointer;
+            .orgLogo{
+                align-self: flex-end;
+                //position: absolute;
+                display: none;
+            }
+            .orgRole{
+                @include font($black, 3rem, 700);
+                align-self: flex-start;
+                padding: 10px;
+            }
+            .orgName{
+                align-self: flex-start;
+                padding-left:10px; 
+                font-size: larger;              
+            }
+            .orgDate{
+                align-self: flex-start;
+                padding-left:10px;
+                color: $darkBlue;
+            }
+            .orgDescription{
+                @include paragraphText($black, 1.4rem, );
+                padding: 10px;
+            }
+        }
+    }
+}
+
+#projectsSection{
+
+    @include dim(100%, 100%, 100vw, 100vh);
+    @include flex(center,center ,center);
+
+    .section2Heading{
+        @include font($grey, 3rem, 700);
+    }
+    .projectsCardsDiv{
+        @include dim(80%, 50%);
+
+        .projectsBox{
+            @include dim(fit-content, fit-content);
+            @include neo-unpressed-light();
+            @include flex(center, center, center);
+            @include transition(0.3s);
+            flex-flow: column wrap;
+            margin: 100px 5px;
+            border-radius: 15px;
+            cursor: pointer;
+
+            &:hover{
+            transform: scale(1.05);
+            @include transition(0.3s);
+            @include neo-unpressed-light(2);
+            }
+            .projectsBoxImage{
+
+                img{
+                    width:100%;
+                    border-radius: 15px;
+                }
+                
+                .projectsBoxText{
+                    padding: 30px;
+                    .projectName{
+                        @include font($black, 2.9rem, 700);
+                    }
+                    .projectTech{
+                        margin-top: 10px;
+                        border-radius: 50px;
+                        height: 50px;
+                        @include neo-pressed-light();
+                        .projectIcons{
+                            // border: solid 1px;
+                            display: inline-block;
+                            padding: 10px;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            margin-top: 0px;
+                            
+                            @include neo-unpressed-light();
+                            svg{
+                                fill: $darkBlue;
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                        .projectTechText{
+                            display: inline-block;
+                            padding-left: 20px;
+                            transform: translateY(-5px);
+                            @include font($lightBlue, 2rem, 700);
+                        }
+                    }
+                    .projectDate{
+                        @include font($grey, 2rem, 400);
+                    }
+                }
+                .projectExpandedContent{
+                    // display: none;
+                    .projectDescription{
+                        @include paragraphText($black, 1.4rem, );
+                        padding: 0px 30px;
+                    }
+                    .projectImages{
+                        padding-left: 30px;
+                        .projectImagesSmall{
+                            display: inline-block;
+                            padding:15px 5px 15px 0px;
+                            width:130px;
+                            height: 130px;
+                            //border: solid;
+                            img{
+                                width: 120px;
+                                border-radius: 10px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .projectLinkWrapper{
+                        @include flex();
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#section-5{
+    @include dim(100%, 100%, 100vw, 130vh);
+    @include flex(center,center ,center);
+
+    .whatOthersSayDiv{
+        @include flex();
+        flex-flow: column wrap;
+        .wOSHeading{
+            @include headingText(fit-content, $grey);
+            padding: 200px;
+        }
+        .wOSContainer{
+            @include flex();
+            align-items: flex-start;
+            .wOSCol-1{
+                @include dim(10%, 100%, 0, auto);
+                margin-top: 30px;
+                align-content: center;
+
+                svg{
+                    @include neo-unpressed-light();
+                    border: solid 5px $grey;    
+                    border-radius: 50%;
+                    transform: scale(1.3);
+                }
+            }
+            .wOSCol-2{
+                @include dim(40%, 100%, 0, auto);
+
+                .wOSPName{
+                    @include paragraphText($darkBlue, 2rem, 2rem);
+                    font-weight: 800;
+                    padding: 10px;
+                }
+                .wOSPQualication{
+                    @include paragraphText($grey, 1.7rem, 2rem);
+                    font-weight: 600;
+                    padding:10px;
+                }
+                .wOSPComment{
+                    @include paragraphText($black, 1.7rem, 2rem);
+                    padding: 10px;
+                    letter-spacing: -0.3px;
+                }
+            }
+            .wOSCol-3{
+                @include dim(10%, 100%, 0, auto);
+                margin-top: 30px;
+                svg{
+                    @include neo-unpressed-light();
+                    margin: 60px;
+                    padding: 18px;
+                    transform: scale(1.5);
+                    border-radius: 4px;
+                    &:hover{
+                        cursor: pointer;
+                        @include neo-pressed-light();
+                    }
+                }
+            }
+        }
+        .seeMoreButton{
+            padding: 30px;
+            margin-top: 40px;
+            @include roundedButtonLight();
+        }
+    }
+}   
+
+
+
+.heading{
+    @include headingText(100%, $black);
+    font-size: 2.5rem;
+}
+
+.roundedButton{
+    @include roundedButtonLight();
+}
+
+#myWorksSection{
+}
+
+#contactSection{
+
+    .contactDescription{
+        @include paragraphText($black);
+    }
+    .socialIconsList{
+        div{
+            display: inline-block;
+            padding: 10px;
+            border-radius: 50%;
+            margin: 7px;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            @include neo-unpressed-light();
+            &:hover{
+                @include neo-pressed-light();
+            }
+            svg{
+                width: 30px;
+                height: 30px;
+                fill:$black;
+                &:hover{
+                    fill:$darkBlue
+                }
+            }
+        }
+    }
+}
+
+.love{
+    @include flex();
+    text-align: center;
+    padding: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;   
+}
+
+//Tooltip css
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    min-width: 0px;
+    width: fit-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 25px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 120%;
+    margin-top: 30px;
+  
+    height: 40px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600!important;
+    line-height: 1em;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  ///////////Fading Animations
+  .tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+  }
+  
+  ////////////////////////////////
+  // @mixin tooltipAfter {
+  //     content: "";
+  //     position: absolute;
+  //     margin-top: -5px;
+  //     border-width: 10px;
+  //     border-style: solid;
+  // }
+  
+  // .tooltiptextRight::after{
+  //     @include tooltipAfter();
+  //     top: 50% !important;
+  //     right: 100%; /* To the left of the tooltip */
+  //     border-color: transparent black transparent transparent;
+  // }
+  
+  // .tooltiptextRight
+  // .tooltiptextTop{
+  //     @extend .tooltiptext;
+  // }
+  // .tooltiptextTop::after{
+  //     @include tooltipAfter();
+  //     top: 107% !important; /* At the bottom of the tooltip */
+  //     left: 47%;
+  //     border-color:black transparent transparent transparent;
+  // }
+  
