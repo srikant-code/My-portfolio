@@ -130,7 +130,7 @@ a{
 section{
     @include dim(100%, 100%, 100vw, 100vh);
     width:100vw !important;
-
+    margin: 0% 0px 20% 0px;
 }
 .navbar {
   @include dim($navWidth, 100vh);
@@ -199,23 +199,54 @@ section{
 } //navbar Ends
 
 #home{
+    //background-color: #1e90ff;
     position: relative;
+    @include flex();
     .introtextDiv{
-
+        @include flex();
+        flex-flow: column wrap;
         .introText{
-
             .hello{
                 @include font($black, 3em, 700);
+                transform: translateY(10px);
             }
             .srikantSahoo{
                 @include font(rgb(0, 162, 255), 7rem, 700);
+                svg{
+                    #Srikant, #_Sahoo{
+                        fill:$lightBlue;
+                        stroke: $darkBlue;
+                    }
+                    //     stroke: $black;
+                    //     stroke-dasharray: 110% 99%;
+                    //     stroke-width: 3px;
+                    //     stroke-dashoffset: 100%;
+                    //     animation: stroke-offset 2.5s linear forwards;
+                    //     @include transition(0.3s);
+                    // }
+                    // @keyframes stroke-offset {
+                    //     0%{
+                    //         fill:$lightBlue;
+                    //     }
+                    //     50%{
+                    //         stroke-width: 0;
+                    //         stroke-dashoffset: 0%;
+                    //         fill: $black;
+                    //     }
+                    //     100%{
+                    //         stroke-width: 3px;
+                    //         stroke-dashoffset: 110% 99%;
+                    //         fill: $lightBlue;
+                    //     }
+                    // }
+                }
             }
-        }
-        .CTAHome{
-    
-            .hireMe, .resume{
-                display: inline-block;
-    
+            .CTAHome{
+                width: 100vw;
+                @include flex();
+                .hireMe, .resume{
+                    display: inline-block;       
+                }
             }
         }
     }
@@ -242,7 +273,7 @@ section{
 
         .orgCard{
             @include paragraphText($black, 1.4rem, );
-            @include dim(85vw, 110% , 85vw, 110%);
+            @include dim(65vw, 110% , 65vw, 110%);
             @include neo-unpressed-light();
             @include flex(center, center, center);
             @include transition(0.3s);
@@ -290,14 +321,16 @@ section{
     }
     .projectsCardsDiv{
         @include dim(80%, 50%);
-
+        @include flex();
+        align-items: flex-start;
         .projectsBox{
             @include dim(fit-content, fit-content);
             @include neo-unpressed-light();
             @include flex(center, center, center);
             @include transition(0.3s);
             flex-flow: column wrap;
-            margin: 100px 5px;
+            max-width: 500px;
+            margin: 100px 20px;
             border-radius: 15px;
             cursor: pointer;
 
@@ -390,104 +423,240 @@ section{
         flex-flow: column wrap;
         .wOSHeading{
             @include headingText(fit-content, $grey);
-            padding: 200px;
+            padding: 200px 0px;
         }
         .wOSContainer{
             @include flex();
             align-items: flex-start;
-            .wOSCol-1{
-                @include dim(10%, 100%, 0, auto);
-                margin-top: 30px;
-                align-content: center;
 
-                svg{
-                    @include neo-unpressed-light();
-                    border: solid 5px $grey;    
-                    border-radius: 50%;
-                    transform: scale(1.3);
-                }
-            }
-            .wOSCol-2{
-                @include dim(40%, 100%, 0, auto);
+            .wOSCol-1{
+                @include dim(90%, 100%, 0, auto);
+                @include neo-unpressed-light();
+                @include flex();
+                padding: 35px;
+                flex-flow: column wrap;
+                border-radius: 15px;
 
                 .wOSPName{
-                    @include paragraphText($darkBlue, 2rem, 2rem);
+                    @include paragraphText($darkBlue, 2.8rem, 2rem);
                     font-weight: 800;
                     padding: 10px;
+                    align-self: flex-start;
                 }
                 .wOSPQualication{
                     @include paragraphText($grey, 1.7rem, 2rem);
                     font-weight: 600;
                     padding:10px;
+                    align-self: flex-start;
+                }
+                .wOSImage{
+                    align-self: flex-end;
+                    margin-top:-80px;
+                    margin-bottom: 40px;
+                    margin-right: 20px;
+                    svg{
+                        @include neo-unpressed-light();
+                        border: solid 5px $lightBlue;    
+                        border-radius: 50%;
+                        transform: scale(1.3);
+                    }
                 }
                 .wOSPComment{
-                    @include paragraphText($black, 1.7rem, 2rem);
+                    @include paragraphText($black, 1.4rem);
                     padding: 10px;
-                    letter-spacing: -0.3px;
-                }
-            }
-            .wOSCol-3{
-                @include dim(10%, 100%, 0, auto);
-                margin-top: 30px;
-                svg{
-                    @include neo-unpressed-light();
-                    margin: 60px;
-                    padding: 18px;
-                    transform: scale(1.5);
-                    border-radius: 4px;
-                    &:hover{
-                        cursor: pointer;
-                        @include neo-pressed-light();
-                    }
                 }
             }
         }
-        .seeMoreButton{
-            padding: 30px;
-            margin-top: 40px;
-            @include roundedButtonLight();
+        .wOSImageList{
+            @include flex();
+            @mixin ImageULTesti {
+                padding: 10px;
+                // border: solid;
+                @include transition(0.3s);
+                display: inline-block;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.2);
+                    @include transition(0.3s);
+                }
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .wOSImageListUL{
+                padding:35px;  
+                .wOSListItem{
+                    width:80px;
+                    height:80px;
+                    @include ImageULTesti();
+                    img{
+                        width:60px;
+                        height:60px;
+                    }
+                }
+                .activeTesti{
+                    width:100px;
+                    height:100px ;
+                    transform: translateY(10px);
+                    @include ImageULTesti();
+                    img{
+                        border: solid $darkBlue 5px;
+                        width:80px ;
+                        height:80px;
+                    }
+                    &:hover{
+                        transform: scale(1);
+                    }
+                }
+            }
         }
     }
 }   
 
 
-
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+  }
 .heading{
     @include headingText(100%, $black);
-    font-size: 2.5rem;
+    font-size: 4.5rem;
 }
 
 .roundedButton{
     @include roundedButtonLight();
 }
 
+#skillsSection{
+    .myskillsContainer{
+        @include flex();
+        flex-flow: column wrap;
+        .skillsCategoryContainer{
+            padding: 40px;
+            .skillsCategoryHeading{
+                @include paragraphText($black, 3rem, );
+                font-weight: 700;
+                padding: 30px 0px;
+                vertical-align: middle;
+                small{
+                    vertical-align: middle;
+                    background-color: $darkBlue;
+                    border-radius: 5px;
+                    padding: 5px;
+                    color: white;
+                    transform: translateY(-20px);
+                    font-size: 1rem;
+                }
+            }
+            .DesigningSection, .codingSection{
+                @include transition(0.3s);
+                @include flex();
+                max-width: 600px;
+                border: solid transparent;
+                height:auto;
+
+                .designSkill{
+                    @include transition(0.3s);
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;
+                    border-radius: 10px;
+                    @include neo-unpressed-light();
+                    text-align: center;
+                    cursor: pointer;
+                    &:hover{
+                        transition: linear;
+                        height: 100px;
+                        width: fit-content;
+                        min-width:200px;
+                        @include neo-pressed-light();
+                        @include transition(0.4s);
+                        .skillDescription{
+                            opacity: 1;
+                            visibility: visible;
+                            transition-delay: 0.4s;
+                            transform: translateX(0px) translateY(-30px);
+                            @include transition(0.8s);
+                        }
+                        svg{
+                            @include transition(0.3s);
+                            fill: $lightBlue;
+                        }
+                    }
+                    
+                    svg{
+                        @include transition(0.3s);
+                        display: inline-block;
+                        height:100px;
+                        padding: 10px;
+                        &:hover{
+                            fill: $lightBlue;
+                            @include transition(0.3s);
+                        }
+                    }
+                    
+                    .skillDescription{
+                        //@include transition(0.8s);
+                        display: absolute;
+                        margin-top: -190px;
+                        opacity: 0;
+                        visibility: hidden;
+                        //transition-delay: 0.6s;
+                        transform: translateX(30px) translateY(-30px);
+                        display: inline-block;
+                        font-size: 1.4rem;
+                        text-align: left;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 #myWorksSection{
 }
 
 #contactSection{
-
-    .contactDescription{
-        @include paragraphText($black);
-    }
-    .socialIconsList{
-        div{
-            display: inline-block;
-            padding: 10px;
-            border-radius: 50%;
-            margin: 7px;
-            height: 50px;
-            width: 50px;
-            cursor: pointer;
-            @include neo-unpressed-light();
-            &:hover{
-                @include neo-pressed-light();
-            }
-            svg{
-                width: 30px;
-                height: 30px;
-                fill:$black;
+    border-radius: 15px;
+    @include flex();
+    flex-flow: column wrap;
+    .contactDetailsWrapper{
+        @include neo-unpressed-light();
+        @include flex();
+        width:90%;
+        flex-flow: column wrap;
+        .contactDescription{
+            @include paragraphText($black);
+            padding: 30px;
+        }
+        .socialIconsList{
+            padding:30px;
+            div{
+                display: inline-block;
+                padding: 10px;
+                border-radius: 50%;
+                margin: 7px;
+                height: 50px;
+                width: 50px;
+                cursor: pointer;
+                @include neo-unpressed-light();
                 &:hover{
-                    fill:$darkBlue
+                    @include neo-pressed-light();
+                }
+                svg{
+                    width: 30px;
+                    height: 30px;
+                    fill:$black;
+                    &:hover{
+                        fill:$darkBlue
+                    }
                 }
             }
         }

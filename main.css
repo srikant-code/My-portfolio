@@ -59,6 +59,7 @@ section {
   min-width: 100vw;
   min-height: 100vh;
   width: 100vw !important;
+  margin: 0% 0px 20% 0px;
 }
 
 .navbar {
@@ -172,12 +173,49 @@ section {
 
 #home {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#home .introtextDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
 }
 
 #home .introtextDiv .introText .hello {
   color: #2a2a2a;
   font-size: 3em;
   font-weight: 700;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 #home .introtextDiv .introText .srikantSahoo {
@@ -186,7 +224,31 @@ section {
   font-weight: 700;
 }
 
-#home .introtextDiv .CTAHome .hireMe, #home .introtextDiv .CTAHome .resume {
+#home .introtextDiv .introText .srikantSahoo svg #Srikant, #home .introtextDiv .introText .srikantSahoo svg #_Sahoo {
+  fill: #00a2ff;
+  stroke: #006eff;
+}
+
+#home .introtextDiv .introText .CTAHome {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#home .introtextDiv .introText .CTAHome .hireMe, #home .introtextDiv .introText .CTAHome .resume {
   display: inline-block;
 }
 
@@ -240,9 +302,9 @@ section {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.5rem;
-  width: 85vw;
+  width: 65vw;
   height: 110%;
-  min-width: 85vw;
+  min-width: 65vw;
   min-height: 110%;
   -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
           box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
@@ -343,6 +405,24 @@ section {
   height: 50%;
   min-width: 0px;
   min-height: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 #projectsSection .projectsCardsDiv .projectsBox {
@@ -375,7 +455,8 @@ section {
           transition-duration: 0.3s !important;
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
-  margin: 100px 5px;
+  max-width: 500px;
+  margin: 100px 20px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -546,7 +627,7 @@ section {
   min-height: auto;
   text-align: center;
   letter-spacing: -1px;
-  padding: 200px;
+  padding: 200px 0px;
 }
 
 #section-5 .whatOthersSayDiv .wOSContainer {
@@ -571,111 +652,171 @@ section {
 }
 
 #section-5 .whatOthersSayDiv .wOSContainer .wOSCol-1 {
-  width: 10%;
+  width: 90%;
   height: 100%;
   min-width: 0;
   min-height: auto;
-  margin-top: 30px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-1 svg {
   -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
           box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
-  border: solid 5px #707070;
-  border-radius: 50%;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 35px;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  border-radius: 15px;
 }
 
-#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-2 {
-  width: 40%;
-  height: 100%;
-  min-width: 0;
-  min-height: auto;
-}
-
-#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-2 .wOSPName {
+#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSPName {
   color: #006eff;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 400;
   line-height: 2rem;
   font-weight: 800;
   padding: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
-#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-2 .wOSPQualication {
+#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSPQualication {
   color: #707070;
   font-size: 1.7rem;
   font-weight: 400;
   line-height: 2rem;
   font-weight: 600;
   padding: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
-#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-2 .wOSPComment {
+#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: -80px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage svg {
+  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+  border: solid 5px #00a2ff;
+  border-radius: 50%;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSPComment {
   color: #2a2a2a;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 2.5rem;
   padding: 10px;
-  letter-spacing: -0.3px;
 }
 
-#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-3 {
-  width: 10%;
-  height: 100%;
-  min-width: 0;
-  min-height: auto;
-  margin-top: 30px;
+#section-5 .whatOthersSayDiv .wOSImageList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
-#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-3 svg {
-  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
-          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
-  margin: 60px;
-  padding: 18px;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  border-radius: 4px;
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL {
+  padding: 35px;
 }
 
-#section-5 .whatOthersSayDiv .wOSContainer .wOSCol-3 svg:hover {
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL .wOSListItem {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+  display: inline-block;
   cursor: pointer;
-  -webkit-box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
-          box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
 }
 
-#section-5 .whatOthersSayDiv .seeMoreButton {
-  padding: 30px;
-  margin-top: 40px;
-  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
-          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
-  background-color: #f1f1f1;
-  border: none;
-  padding: 15px 40px;
-  margin-left: 0px !important;
-  margin: 30px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 50px;
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL .wOSListItem:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+}
+
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL .wOSListItem img {
+  border-radius: 50%;
+}
+
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL .wOSListItem img {
+  width: 60px;
+  height: 60px;
+}
+
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL .activeTesti {
+  width: 100px;
+  height: 100px;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  padding: 10px;
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL .activeTesti:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+}
+
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL .activeTesti img {
+  border-radius: 50%;
+}
+
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL .activeTesti img {
+  border: solid #006eff 5px;
+  width: 80px;
+  height: 80px;
+}
+
+#section-5 .whatOthersSayDiv .wOSImageList .wOSImageListUL .activeTesti:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
   text-align: center;
-  cursor: pointer;
-  -webkit-transition-duration: 0.3s !important;
-          transition-duration: 0.3s !important;
-  color: #707070;
-  font-size: 2rem;
-  font-weight: 900;
-}
-
-#section-5 .whatOthersSayDiv .seeMoreButton:hover {
-  -webkit-box-shadow: inset 8px 8px 12px #dddddd, 6px 6px 4px white;
-          box-shadow: inset 8px 8px 12px #dddddd, 6px 6px 4px white;
-  color: #006eff;
-  -webkit-transition-duration: 0.3s !important;
-          transition-duration: 0.3s !important;
+  color: #FFF;
+  font-size: 3em;
 }
 
 .heading {
@@ -692,7 +833,7 @@ section {
   min-height: auto;
   text-align: center;
   letter-spacing: -1px;
-  font-size: 2.5rem;
+  font-size: 4.5rem;
 }
 
 .roundedButton {
@@ -724,14 +865,202 @@ section {
           transition-duration: 0.3s !important;
 }
 
-#contactSection .contactDescription {
+#skillsSection .myskillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer {
+  padding: 40px;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .skillsCategoryHeading {
+  color: #2a2a2a;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  font-weight: 700;
+  padding: 30px 0px;
+  vertical-align: middle;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .skillsCategoryHeading small {
+  vertical-align: middle;
+  background-color: #006eff;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  font-size: 1rem;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .DesigningSection, #skillsSection .myskillsContainer .skillsCategoryContainer .codingSection {
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  max-width: 600px;
+  border: solid transparent;
+  height: auto;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .DesigningSection .designSkill, #skillsSection .myskillsContainer .skillsCategoryContainer .codingSection .designSkill {
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+  text-align: center;
+  cursor: pointer;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .DesigningSection .designSkill:hover, #skillsSection .myskillsContainer .skillsCategoryContainer .codingSection .designSkill:hover {
+  -webkit-transition: linear;
+  transition: linear;
+  height: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 200px;
+  -webkit-box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
+          box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
+  -webkit-transition-duration: 0.4s !important;
+          transition-duration: 0.4s !important;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .DesigningSection .designSkill:hover .skillDescription, #skillsSection .myskillsContainer .skillsCategoryContainer .codingSection .designSkill:hover .skillDescription {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  -webkit-transform: translateX(0px) translateY(-30px);
+          transform: translateX(0px) translateY(-30px);
+  -webkit-transition-duration: 0.8s !important;
+          transition-duration: 0.8s !important;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .DesigningSection .designSkill:hover svg, #skillsSection .myskillsContainer .skillsCategoryContainer .codingSection .designSkill:hover svg {
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+  fill: #00a2ff;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .DesigningSection .designSkill svg, #skillsSection .myskillsContainer .skillsCategoryContainer .codingSection .designSkill svg {
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+  display: inline-block;
+  height: 100px;
+  padding: 10px;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .DesigningSection .designSkill svg:hover, #skillsSection .myskillsContainer .skillsCategoryContainer .codingSection .designSkill svg:hover {
+  fill: #00a2ff;
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+}
+
+#skillsSection .myskillsContainer .skillsCategoryContainer .DesigningSection .designSkill .skillDescription, #skillsSection .myskillsContainer .skillsCategoryContainer .codingSection .designSkill .skillDescription {
+  display: absolute;
+  margin-top: -190px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(30px) translateY(-30px);
+          transform: translateX(30px) translateY(-30px);
+  display: inline-block;
+  font-size: 1.4rem;
+  text-align: left;
+  padding-left: 10px;
+}
+
+#contactSection {
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+
+#contactSection .contactDetailsWrapper {
+  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 90%;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+}
+
+#contactSection .contactDetailsWrapper .contactDescription {
   color: #2a2a2a;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
+  padding: 30px;
 }
 
-#contactSection .socialIconsList div {
+#contactSection .contactDetailsWrapper .socialIconsList {
+  padding: 30px;
+}
+
+#contactSection .contactDetailsWrapper .socialIconsList div {
   display: inline-block;
   padding: 10px;
   border-radius: 50%;
@@ -743,18 +1072,18 @@ section {
           box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
 }
 
-#contactSection .socialIconsList div:hover {
+#contactSection .contactDetailsWrapper .socialIconsList div:hover {
   -webkit-box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
           box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
 }
 
-#contactSection .socialIconsList div svg {
+#contactSection .contactDetailsWrapper .socialIconsList div svg {
   width: 30px;
   height: 30px;
   fill: #2a2a2a;
 }
 
-#contactSection .socialIconsList div svg:hover {
+#contactSection .contactDetailsWrapper .socialIconsList div svg:hover {
   fill: #006eff;
 }
 
