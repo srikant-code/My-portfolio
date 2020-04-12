@@ -195,6 +195,7 @@ section {
       width: 72px;
       height: 72px;
       border-radius: 50%;
+      pointer-events: none;
     }
   }
   .navElementsUL {
@@ -380,7 +381,6 @@ body{
             justify-content: center;
             width: 110vw;
         }
-
         .hireMe,
         .resume {
             
@@ -397,6 +397,7 @@ body{
         z-index: 0;
         max-width:400px;
         animation: updown infinite 10s;
+        pointer-events: none;
     }
     @include updownanimation();
   }
@@ -418,17 +419,23 @@ body{
       margin-top: 100px;
   }
   .aboutContent{
+      @media (max-width: $tabletBreakpoint) {
+        @include flex();
+      }
       
       .aboutText {
         @include paragraphText($black, 1.5rem);
         padding: 0px;
+        max-width: 80vw;
+        // text-align: justify;
       }
       .aboutImage{
-
+        @include flex();
         .desimg, .codeimg{
             width: 400px;
             height: auto;
             margin: 60px;
+            padding-left: 30px;
             animation: updown infinite 10s;
             @include updownanimation();    
         }
@@ -449,7 +456,7 @@ body{
   .whyDIDText {
     max-width: 850px;
     text-align: justify;
-    width: 90%;
+    width: 80%;
     @include paragraphText($black, 1.5rem);
     padding: 30px 0px 150px 0px;
 
@@ -477,8 +484,9 @@ body{
     position: relative;
 
     .orgCard {
+        max-width: 1000px;
       @include paragraphText($black, 1.4rem);
-      @include dim(65vw, 110%, 65vw, 110%);
+      @include dim(80vw, 110%, 0vw, 110%);
       @include neo-unpressed-light();
       @include flex(center, center, center);
       @include transition(0.3s);
@@ -524,97 +532,110 @@ body{
   .section2Heading {
     @include font($grey, 3rem, 700);
   }
-  .projectsCardsDiv {
-    @include dim(80%, 50%);
-    @include flex();
-    align-items: flex-start;
-    .projectsBox {
-      @include dim(fit-content, fit-content);
-      @include neo-unpressed-light();
-      @include flex(center, center, center);
-      @include transition(0.3s);
-      flex-flow: column wrap;
-      max-width: 500px;
-      margin: 100px 20px;
-      border-radius: 15px;
-      cursor: pointer;
-
-      &:hover {
-        transform: scale(1.05);
-        @include transition(0.3s);
-        @include neo-unpressed-light(2);
-      }
-      .projectsBoxImage {
-        img {
-          width: 100%;
+  //.projectsScrollView{
+    //   width: 75%;
+    //   height: fit-content;
+    //   border-radius: 20px;
+    //   padding: 30px;
+    //   @include neo-unpressed-light(1.3);
+    //   @include flex();
+      .projectsCardsDiv {
+        @include dim(80%, 50%);
+        @include flex();
+        // overflow-x: scroll;
+        // display: inline-flex;
+        // width: 10000px !important;
+        align-items: flex-start;
+        @media (max-width: $tabletBreakpoint) {
+            margin-top: -30px;
+        }
+        .projectsBox {
+          @include dim(fit-content, fit-content);
+          @include neo-unpressed-light();
+          @include flex(center, center, center);
+          @include transition(0.3s);
+          flex-flow: column wrap;
+          max-width: 500px;
+          margin: 100px 20px;
           border-radius: 15px;
-        }
-
-        .projectsBoxText {
-          padding: 30px;
-          .projectName {
-            @include font($black, 2.9rem, 700);
+          cursor: pointer;
+    
+          &:hover {
+            transform: scale(1.05);
+            @include transition(0.3s);
+            @include neo-unpressed-light(2);
           }
-          .projectTech {
-            margin-top: 10px;
-            border-radius: 50px;
-            height: 50px;
-            @include neo-pressed-light();
-            .projectIcons {
-              // border: solid 1px;
-              display: inline-block;
-              padding: 10px;
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              margin-top: 0px;
-
-              @include neo-unpressed-light();
-              svg {
-                fill: $darkBlue;
-                width: 30px;
-                height: 30px;
+          .projectsBoxImage {
+            img {
+              width: 100%;
+              border-radius: 15px;
+            }
+    
+            .projectsBoxText {
+              padding: 30px;
+              .projectName {
+                @include font($black, 2.9rem, 700);
+              }
+              .projectTech {
+                margin-top: 10px;
+                border-radius: 50px;
+                height: 50px;
+                @include neo-pressed-light();
+                .projectIcons {
+                  // border: solid 1px;
+                  display: inline-block;
+                  padding: 10px;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  margin-top: 0px;
+    
+                  @include neo-unpressed-light();
+                  svg {
+                    fill: $darkBlue;
+                    width: 30px;
+                    height: 30px;
+                  }
+                }
+                .projectTechText {
+                  display: inline-block;
+                  padding-left: 20px;
+                  transform: translateY(-5px);
+                  @include font($lightBlue, 2rem, 700);
+                }
+              }
+              .projectDate {
+                @include font($grey, 2rem, 400);
               }
             }
-            .projectTechText {
-              display: inline-block;
-              padding-left: 20px;
-              transform: translateY(-5px);
-              @include font($lightBlue, 2rem, 700);
-            }
-          }
-          .projectDate {
-            @include font($grey, 2rem, 400);
-          }
-        }
-        .projectExpandedContent {
-          // display: none;
-          .projectDescription {
-            @include paragraphText($black, 1.4rem);
-            padding: 0px 30px;
-          }
-          .projectImages {
-            padding-left: 30px;
-            .projectImagesSmall {
-              display: inline-block;
-              padding: 15px 5px 15px 0px;
-              width: 130px;
-              height: 130px;
-              //border: solid;
-              img {
-                width: 120px;
-                border-radius: 10px;
-                display: inline-block;
+            .projectExpandedContent {
+              // display: none;
+              .projectDescription {
+                @include paragraphText($black, 1.4rem);
+                padding: 0px 30px;
+              }
+              .projectImages {
+                padding-left: 30px;
+                .projectImagesSmall {
+                  display: inline-block;
+                  padding: 15px 5px 15px 0px;
+                  width: 130px;
+                  height: 130px;
+                  //border: solid;
+                  img {
+                    width: 120px;
+                    border-radius: 10px;
+                    display: inline-block;
+                  }
+                }
+              }
+              .projectLinkWrapper {
+                @include flex();
               }
             }
           }
-          .projectLinkWrapper {
-            @include flex();
-          }
         }
-      }
-    }
-  }
+   }
 }
 
 #testimonialsSection {
@@ -634,9 +655,10 @@ body{
       align-items: flex-start;
 
       .wOSCol-1 {
-        @include dim(50%, 100%, 0%, auto);
+        @include dim(960px, 100%, 0%, auto);
         @include neo-unpressed-light();
         @include flex();
+        max-width: 90vw;
         padding: 35px;
         flex-flow: column wrap;
         border-radius: 15px;
@@ -674,7 +696,7 @@ body{
     .wOSImageList {
       @include flex();
       @mixin ImageULTesti {
-        padding: 10px;
+          padding: 10px;
         // border: solid;
         @include transition(0.3s);
         display: inline-block;
@@ -684,13 +706,17 @@ body{
           @include transition(0.3s);
         }
         img {
-          border-radius: 50%;
+            border-radius: 50%;
+            pointer-events: none;
         }
-      }
+    }
       .wOSImageListUL {
+        @include flex();
+        vertical-align: middle;
         padding: 35px;
         .wOSListItem {
-          width: 80px;
+            vertical-align: middle;
+            width: 80px;
           height: 80px;
           @include ImageULTesti();
           img {
@@ -701,7 +727,7 @@ body{
         .activeTesti {
           width: 100px;
           height: 100px;
-          transform: translateY(10px);
+          transform: translateY(0px);
           @include ImageULTesti();
           img {
             border: solid $darkBlue 5px;
@@ -1031,3 +1057,88 @@ body{
     color: #39bcd3 !important;
   }
 }
+
+ img{
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  img:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }

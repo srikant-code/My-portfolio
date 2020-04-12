@@ -118,6 +118,7 @@ section {
   width: 72px;
   height: 72px;
   border-radius: 50%;
+  pointer-events: none;
 }
 
 .navbar .navElementsUL {
@@ -370,6 +371,7 @@ section {
   max-width: 400px;
   -webkit-animation: updown infinite 10s;
           animation: updown infinite 10s;
+  pointer-events: none;
 }
 
 @-webkit-keyframes updown {
@@ -456,18 +458,58 @@ section {
   margin-top: 100px;
 }
 
+@media (max-width: 992px) {
+  #aboutMe .aboutContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
 #aboutMe .aboutContent .aboutText {
   color: #2a2a2a;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
   padding: 0px;
+  max-width: 80vw;
+}
+
+#aboutMe .aboutContent .aboutImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 #aboutMe .aboutContent .aboutImage .desimg, #aboutMe .aboutContent .aboutImage .codeimg {
   width: 400px;
   height: auto;
   margin: 60px;
+  padding-left: 30px;
   -webkit-animation: updown infinite 10s;
           animation: updown infinite 10s;
 }
@@ -524,7 +566,7 @@ section {
 #whyDID .whyDIDText {
   max-width: 850px;
   text-align: justify;
-  width: 90%;
+  width: 80%;
   color: #2a2a2a;
   font-size: 1.5rem;
   font-weight: 400;
@@ -567,13 +609,14 @@ section {
 }
 
 #Experience .orgList .orgCard {
+  max-width: 1000px;
   color: #2a2a2a;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.5rem;
-  width: 65vw;
+  width: 80vw;
   height: 110%;
-  min-width: 65vw;
+  min-width: 0vw;
   min-height: 110%;
   -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
           box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
@@ -692,6 +735,12 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 992px) {
+  #projectsSection .projectsCardsDiv {
+    margin-top: -30px;
+  }
 }
 
 #projectsSection .projectsCardsDiv .projectsBox {
@@ -921,7 +970,7 @@ section {
 }
 
 #testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 {
-  width: 50%;
+  width: 960px;
   height: 100%;
   min-width: 0%;
   min-height: auto;
@@ -942,6 +991,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  max-width: 90vw;
   padding: 35px;
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
@@ -1014,10 +1064,27 @@ section {
 }
 
 #testimonialsSection .whatOthersSayDiv .wOSImageList .wOSImageListUL {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  vertical-align: middle;
   padding: 35px;
 }
 
 #testimonialsSection .whatOthersSayDiv .wOSImageList .wOSImageListUL .wOSListItem {
+  vertical-align: middle;
   width: 80px;
   height: 80px;
   padding: 10px;
@@ -1036,6 +1103,7 @@ section {
 
 #testimonialsSection .whatOthersSayDiv .wOSImageList .wOSImageListUL .wOSListItem img {
   border-radius: 50%;
+  pointer-events: none;
 }
 
 #testimonialsSection .whatOthersSayDiv .wOSImageList .wOSImageListUL .wOSListItem img {
@@ -1046,8 +1114,8 @@ section {
 #testimonialsSection .whatOthersSayDiv .wOSImageList .wOSImageListUL .activeTesti {
   width: 100px;
   height: 100px;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
   padding: 10px;
   -webkit-transition-duration: 0.3s !important;
           transition-duration: 0.3s !important;
@@ -1064,6 +1132,7 @@ section {
 
 #testimonialsSection .whatOthersSayDiv .wOSImageList .wOSImageListUL .activeTesti img {
   border-radius: 50%;
+  pointer-events: none;
 }
 
 #testimonialsSection .whatOthersSayDiv .wOSImageList .wOSImageListUL .activeTesti img {
@@ -1545,5 +1614,113 @@ section {
   background-color: transparent !important;
   border: none !important;
   color: #39bcd3 !important;
+}
+
+img {
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
