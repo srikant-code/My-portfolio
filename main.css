@@ -185,7 +185,7 @@ section {
           box-shadow: 5px 5px 8px black, -5px -5px 8px #464646;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   body .navbar {
     width: 100px;
     height: 100vh;
@@ -279,18 +279,52 @@ section {
   z-index: 1;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1650px) {
+  #home .introtextDiv {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70vw;
+    margin-top: -200px;
+    margin-left: 50px;
+    margin-bottom: 180px;
+  }
+}
+
+@media (max-width: 1200px) {
   #home .introtextDiv {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+    width: 130vw;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #home .introtextDiv .introText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
     margin-top: -150px;
     margin-left: 30px;
   }
@@ -305,13 +339,35 @@ section {
   margin-top: 30px;
 }
 
+@media (max-width: 834px) {
+  #home .introtextDiv .introText .hello {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100vw;
+  }
+}
+
 #home .introtextDiv .introText .srikantSahoo {
   color: #00a2ff;
   font-size: 7rem;
   font-weight: 700;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 834px) {
+  #home .introtextDiv .introText .srikantSahoo {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    width: 140vw;
+    margin: 0;
+  }
+}
+
+@media (max-width: 638px) {
+  #home .introtextDiv .introText .srikantSahoo {
+    margin-top: -25px;
+    margin-left: -10px;
+  }
   #home .introtextDiv .introText .srikantSahoo #sahoo {
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px);
@@ -324,7 +380,7 @@ section {
   stroke: #00a2ff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #home .introtextDiv .introText .srikantSahoo svg #Srikant,
   #home .introtextDiv .introText .srikantSahoo svg #_Sahoo {
     fill: #190088;
@@ -357,7 +413,15 @@ section {
   padding: 5px 40px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1650px) {
+  #home .introtextDiv .CTAHome {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
   #home .introtextDiv .CTAHome {
     padding: 0px 0px;
     margin-top: -40px;
@@ -369,9 +433,25 @@ section {
   }
 }
 
+@media (max-width: 650px) {
+  #home .introtextDiv .CTAHome {
+    padding: 5px 50px;
+    margin-top: -60px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 #home .introtextDiv .CTAHome .hireMe,
 #home .introtextDiv .CTAHome .resume {
   display: inline-block;
+}
+
+@media (max-width: 650px) {
+  #home .introtextDiv .CTAHome .hireMe {
+    color: #2a2a2a;
+  }
 }
 
 #home .introtextDiv .CTAHome .resume {
@@ -384,7 +464,7 @@ section {
           box-shadow: inset 4px 4px 6px #006eff, 3px 3px 2px white;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #home .introImageDiv {
     width: 300px;
   }
@@ -392,13 +472,13 @@ section {
 
 #home .introImageDiv img {
   z-index: 0;
-  max-width: 400px;
+  max-width: 500px;
   -webkit-animation: updown infinite 10s;
           animation: updown infinite 10s;
   pointer-events: none;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #home .introImageDiv img {
     width: 300px;
   }
@@ -491,7 +571,7 @@ section {
   font-size: 2.5rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #aboutMe .aboutContent {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -685,7 +765,7 @@ section {
   cursor: pointer;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #Experience .orgList .orgCard {
     width: 90vw;
   }
@@ -694,7 +774,22 @@ section {
 #Experience .orgList .orgCard .orgLogo {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  display: none;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin-bottom: -65px;
+  display: block;
+}
+
+#Experience .orgList .orgCard .orgLogo svg, #Experience .orgList .orgCard .orgLogo img {
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+  padding: 3px;
+}
+
+#Experience .orgList .orgCard .orgLogo img {
+  border-radius: 50%;
 }
 
 #Experience .orgList .orgCard .orgRole {
@@ -706,11 +801,31 @@ section {
   padding: 10px;
 }
 
+@media (max-width: 1200px) {
+  #Experience .orgList .orgCard .orgRole {
+    width: 100%;
+    padding-right: 55px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 #Experience .orgList .orgCard .orgName {
   -ms-flex-item-align: start;
       align-self: flex-start;
   padding-left: 10px;
   font-size: 1.2rem;
+}
+
+@media (max-width: 1200px) {
+  #Experience .orgList .orgCard .orgName {
+    width: 100%;
+    padding-right: 55px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 #Experience .orgList .orgCard .orgDate {
@@ -719,6 +834,16 @@ section {
   padding-left: 10px;
   font-size: 1.2rem;
   color: #006eff;
+}
+
+@media (max-width: 1200px) {
+  #Experience .orgList .orgCard .orgDate {
+    width: 100%;
+    padding-right: 55px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 #Experience .orgList .orgCard .orgDescription {
@@ -730,8 +855,8 @@ section {
 }
 
 #Experience .orgList .orgCard .orgLink {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.8) translateX(15px);
+          transform: scale(0.8) translateX(15px);
 }
 
 #projectsSection {
@@ -791,7 +916,7 @@ section {
           align-items: flex-start;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #projectsSection .projectsCardsDiv {
     margin-top: -30px;
     width: 100vw;
@@ -834,7 +959,7 @@ section {
   cursor: pointer;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #projectsSection .projectsCardsDiv .projectsBox {
     width: 90vw;
   }
@@ -845,8 +970,8 @@ section {
           transform: scale(1.05);
   -webkit-transition-duration: 0.3s !important;
           transition-duration: 0.3s !important;
-  -webkit-box-shadow: 10px 10px 16px #cacaca, -10px -10px 16px white;
-          box-shadow: 10px 10px 16px #cacaca, -10px -10px 16px white;
+  -webkit-box-shadow: 6.5px 6.5px 10.4px #cacaca, -6.5px -6.5px 10.4px white;
+          box-shadow: 6.5px 6.5px 10.4px #cacaca, -6.5px -6.5px 10.4px white;
 }
 
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage img {
@@ -1060,6 +1185,7 @@ section {
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
   border-radius: 15px;
+  position: relative;
 }
 
 #testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSPName {
@@ -1071,6 +1197,12 @@ section {
   padding: 10px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+@media (max-width: 650px) {
+  #testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSPName {
+    margin-right: 90px;
+  }
 }
 
 #testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSPQualication {
@@ -1092,15 +1224,17 @@ section {
   margin-right: 20px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 650px) {
   #testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage {
-    margin-top: -190px;
-    margin-right: -20px;
-    margin-bottom: 120px;
+    margin-top: -150px;
+    margin-right: 0px;
+    margin-bottom: 80px;
+    position: relative;
+    border: solid;
   }
 }
 
-#testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage svg {
+#testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage svg, #testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage img {
   -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
           box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
   border: solid 5px #00a2ff;
@@ -1460,7 +1594,7 @@ section {
   font-size: 2.5rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #contactSection {
     padding-bottom: 0px;
   }
@@ -1494,7 +1628,7 @@ section {
           align-items: flex-start;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #contactSection .contactDetailsWrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1515,10 +1649,64 @@ section {
   line-height: 2.5rem;
   font-size: 1.2rem;
   padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
-@media (max-width: 992px) {
+#contactSection .contactDetailsWrapper .contactDescription li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50px;
+  padding: 0px 25px 12px 10px;
+  cursor: pointer;
+}
+
+#contactSection .contactDetailsWrapper .contactDescription li:hover {
+  -webkit-box-shadow: inset 4.8px 4.8px 7.2px #dddddd, 3.6px 3.6px 2.4px white;
+          box-shadow: inset 4.8px 4.8px 7.2px #dddddd, 3.6px 3.6px 2.4px white;
+}
+
+@media (max-width: 1200px) {
   #contactSection .contactDetailsWrapper .contactDescription li {
+    padding: 0px 0px 0px 0px;
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  #contactSection .contactDetailsWrapper .contactDescription a {
     padding: 10px;
   }
 }
@@ -1553,7 +1741,7 @@ section {
   fill: #006eff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #contactSection .contactDetailsWrapper .contactDescription span {
     margin-left: 50%;
     -webkit-transform: translateX(-20px);
@@ -1565,7 +1753,7 @@ section {
   display: inline-block;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #contactSection .contactDetailsWrapper .contactDescription div {
     display: block;
     text-align: center;
@@ -1603,7 +1791,7 @@ section {
   fill: #006eff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #contactSection .contactDetailsWrapper .socialIconsList {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1673,7 +1861,7 @@ section {
   padding: 5px 10px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #contactSection .contactDetailsWrapper .CTAHome {
     padding: 30px 0px;
     margin-top: -40px;
@@ -1718,7 +1906,7 @@ section {
   color: white;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #contactSection .contactDetailsWrapper .CTAHome .contactMe {
     -webkit-transform: translateX(20px) scale(0.8);
             transform: translateX(20px) scale(0.8);
@@ -1737,7 +1925,7 @@ section {
           animation: updown infinite 10s;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #contactSection .contactsHeroImage img {
     width: 300px;
   }
@@ -1765,6 +1953,14 @@ section {
   font-size: 1rem;
   font-weight: 700;
   color: white;
+}
+
+.boldlink {
+  font-weight: bold;
+  background-color: #00a2ff;
+  color: white;
+  padding: 1px 4px 3px 7px;
+  border-radius: 5px;
 }
 
 .item {

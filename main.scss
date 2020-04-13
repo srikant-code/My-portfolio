@@ -5,7 +5,9 @@ $lightBlue: #00a2ff;
 $backgroundTheme: #f1f1f1;
 $black: #2a2a2a;
 $grey: #707070;
-$tabletBreakpoint: 992px;
+$tabletBreakpoint: 1200px;
+$largetabletBreakpoint: 1650px;
+$phoneBreakpoint: 650px;
 
 //Other Variables
 $navWidth: 100px;
@@ -319,12 +321,26 @@ body{
     @include flex();
     flex-flow: column wrap;
     z-index: 1;
+    @media (max-width: $largetabletBreakpoint) {
+        order: 2;
+        justify-content: center;
+        width: 70vw;
+        margin-top: -200px;
+        margin-left: 50px;
+        margin-bottom: 180px;
+    }
     @media (max-width: $tabletBreakpoint) {
         order: 2;
         transform: scale(0.8);
+        width: 130vw;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        //border: solid;
     }
     .introText {
         @media (max-width: $tabletBreakpoint) {
+            @include flex();
             margin-top: -150px;
             margin-left: 30px;
         }
@@ -332,14 +348,28 @@ body{
         @include font($black, 2em, 700);
         transform: translateY(10px) translateX(5px);
         margin-top: 30px;
+        @media (max-width: 834px) {
+            justify-content: flex-start;
+            //border: solid;
+            width: 100vw;
+        }
       }
       .srikantSahoo {
         @include font(rgb(0, 162, 255), 7rem, 700);
-        @media (max-width: $tabletBreakpoint) {
+        @media (max-width: 834px) {
+            transform: scale(0.7);
+            width: 140vw;
+            margin: 0;
+            //border: solid;
+        }  
+        @media (max-width: 638px) {
+            margin-top: -25px;
+            margin-left: -10px;
             #sahoo{
                 transform: translateY(-30px);
             }
-        }  
+        }
+
         svg {
           #Srikant,
           #_Sahoo {
@@ -382,16 +412,30 @@ body{
         flex-flow: row wrap;
         justify-content: flex-start;
         padding: 5px 40px;
+        @media (max-width:$largetabletBreakpoint) {
+            justify-content: center;
+        }
         @media (max-width: $tabletBreakpoint) {
             padding: 0px 0px;
             margin-top: -40px;
             margin-bottom: 150px;
             justify-content: center;
             width: 110vw;
+            // border: solid;
+        }
+        @media (max-width: $phoneBreakpoint) {
+            padding: 5px 50px;
+            margin-top: -60px;
+            justify-content: flex-start;
         }
         .hireMe,
         .resume {
             display: inline-block;
+        }
+        .hireMe{
+            @media (max-width: $phoneBreakpoint) {
+                color: $black;
+            }
         }
         .resume{
             background-color: $lightBlue;
@@ -410,7 +454,7 @@ body{
     }
     img{
         z-index: 0;
-        max-width:400px;
+        max-width:500px;
         animation: updown infinite 10s;
         pointer-events: none;
         @media (max-width: $tabletBreakpoint) {
@@ -525,30 +569,57 @@ body{
       .orgLogo {
         align-self: flex-end;
         //position: absolute;
-        display: none;
+        padding-right: 20px;
+        margin-top: 20px;
+        margin-bottom: -65px;
+        display: block;
+        svg, img{
+            width: 50px;
+            height: 50px;
+            @include neo-unpressed-light();
+            padding: 3px;
+        }
+        img{
+            border-radius: 50%;
+        }
       }
       .orgRole {
         @include font($black, 2rem, 700);
         align-self: flex-start;
         padding: 10px;
+        @media (max-width:$tabletBreakpoint) {
+            width: 100%;
+            padding-right: 55px;
+            align-self: center; 
+        }
       }
       .orgName {
         align-self: flex-start;
         padding-left: 10px;
         font-size: 1.2rem;
+        @media (max-width:$tabletBreakpoint) {
+            width: 100%;
+            padding-right: 55px;
+            align-self: center;
+        }
       }
       .orgDate {
         align-self: flex-start;
         padding-left: 10px;
         font-size: 1.2rem;
         color: $darkBlue;
+        @media (max-width:$tabletBreakpoint) {
+            width: 100%;
+            padding-right: 55px;
+            align-self: center;
+        }
       }
       .orgDescription {
         @include paragraphText($black, 1rem);
         padding: 10px;
       }
       .orgLink{
-          transform: scale(0.8);
+          transform: scale(0.8) translateX(15px);
       }
     }
   }
@@ -598,7 +669,7 @@ body{
           &:hover {
             transform: scale(1.05);
             @include transition(0.3s);
-            @include neo-unpressed-light(2);
+            @include neo-unpressed-light(1.3);
           }
           .projectsBoxImage {
             img {
@@ -699,12 +770,16 @@ body{
         padding: 35px;
         flex-flow: column wrap;
         border-radius: 15px;
+        position: relative;
 
         .wOSPName {
           @include paragraphText($darkBlue, 2.2rem, 2rem);
           font-weight: 800;
           padding: 10px;
           align-self: flex-start;
+          @media (max-width: $phoneBreakpoint) {            
+            margin-right: 90px;
+          }
         }
         .wOSPQualication {
           @include paragraphText($grey, 1.5rem, 2rem);
@@ -717,12 +792,14 @@ body{
           margin-top: -80px;
           margin-bottom: 40px;
           margin-right: 20px;
-          @media (max-width: $tabletBreakpoint) {
-            margin-top: -190px;
-            margin-right: -20px;
-            margin-bottom: 120px;
+          @media (max-width: $phoneBreakpoint) {
+            margin-top: -150px;
+            margin-right: 0px;
+            margin-bottom: 80px;
+            position: relative;
+            border: solid;
           }
-          svg {
+          svg, img {
             @include neo-unpressed-light();
             border: solid 5px $lightBlue;
             border-radius: 50%;
@@ -974,7 +1051,23 @@ body{
       @include paragraphText($black);
       font-size: 1.2rem;
       padding: 30px;
+      @include flex();
       li{
+          width: fit-content;
+          height: fit-content;
+          border-radius: 50px;
+          padding: 0px 25px 12px 10px;
+          cursor: pointer;
+            &:hover{
+                @include neo-pressed-light(1.2);
+            }
+            @media (max-width: $tabletBreakpoint) {
+                padding: 0px 0px 0px 0px;
+                width: 300px;
+                @include flex();
+            }
+      }
+      a{
         @media (max-width: $tabletBreakpoint) {
             padding: 10px;
         }
@@ -1094,6 +1187,13 @@ body{
   color: white;
 }
 
+.boldlink{
+    font-weight: bold;
+    background-color: $lightBlue;
+    color: white;
+    padding: 1px 4px 3px 7px;
+    border-radius: 5px;
+}
 .item {
     width: 200px;
     height: 200px;
