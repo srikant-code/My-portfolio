@@ -329,7 +329,7 @@ body{
             margin-left: 30px;
         }
       .hello {
-        @include font($black, 3em, 700);
+        @include font($black, 2em, 700);
         transform: translateY(10px) translateX(5px);
         margin-top: 30px;
       }
@@ -418,6 +418,7 @@ body{
     position: absolute;
     bottom: 20px;
     text-align: center;
+    transform: scale(0.8);
   }
 }
 
@@ -427,6 +428,7 @@ body{
   .heading{
       padding-top: 0px;
       margin-top: 100px;
+      font-size: 2.5rem;
   }
   .aboutContent{
       @media (max-width: $tabletBreakpoint) {
@@ -434,7 +436,7 @@ body{
       }
       
       .aboutText {
-        @include paragraphText($black, 1.5rem);
+        @include paragraphText($black, 1rem);
         padding: 0px;
         max-width: 80vw;
         // text-align: justify;
@@ -462,19 +464,20 @@ body{
   flex-flow: column wrap;
   .heading {
     align-self: flex-start;
+    font-size: 2.5rem;
   }
   .whyDIDText {
     max-width: 850px;
     text-align: justify;
     width: 80%;
-    @include paragraphText($black, 1.5rem);
+    @include paragraphText($black, 1rem);
     padding: 30px 0px 150px 0px;
 
     .myTagline {
       font-weight: 700;
-      font-size: 1.7rem;
+      font-size: 1.3rem;
       color: $darkBlue;
-      letter-spacing: -0.07rem;
+      letter-spacing: -0.02rem;
       span {
         color: $black;
       }
@@ -487,6 +490,7 @@ body{
     // background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23bababa' fill-opacity='0.51'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");  
   .expheading {
     // transform: rotate(-90deg);
+    font-size: 2.5rem;
   }
   .orgList {
     @include paragraphText($black, 1.4rem);
@@ -495,7 +499,7 @@ body{
 
     .orgCard {
         max-width: 1000px;
-      @include paragraphText($black, 1.4rem);
+      @include paragraphText($black, 1.3rem);
       @include dim(80vw, 110%, 0vw, 110%);
       @include neo-unpressed-light();
       @include flex(center, center, center);
@@ -513,23 +517,27 @@ body{
         display: none;
       }
       .orgRole {
-        @include font($black, 3rem, 700);
+        @include font($black, 2rem, 700);
         align-self: flex-start;
         padding: 10px;
       }
       .orgName {
         align-self: flex-start;
         padding-left: 10px;
-        font-size: larger;
+        font-size: 1.2rem;
       }
       .orgDate {
         align-self: flex-start;
         padding-left: 10px;
+        font-size: 1.2rem;
         color: $darkBlue;
       }
       .orgDescription {
-        @include paragraphText($black, 1.4rem);
+        @include paragraphText($black, 1rem);
         padding: 10px;
+      }
+      .orgLink{
+          transform: scale(0.8);
       }
     }
   }
@@ -540,7 +548,10 @@ body{
   @include flex(center, center, center);
 
   .section2Heading {
-    @include font($grey, 3rem, 700);
+    @include font($grey, 2rem, 700);
+  }
+  .heading{
+      font-size: 2rem;
   }
   //.projectsScrollView{
     //   width: 75%;
@@ -584,7 +595,7 @@ body{
             .projectsBoxText {
               padding: 30px;
               .projectName {
-                @include font($black, 2.9rem, 700);
+                @include font($black, 2rem, 700);
               }
               .projectTech {
                 margin-top: 10px;
@@ -611,17 +622,17 @@ body{
                   display: inline-block;
                   padding-left: 20px;
                   transform: translateY(-5px);
-                  @include font($lightBlue, 2rem, 700);
+                  @include font($lightBlue, 1.5rem, 700);
                 }
               }
               .projectDate {
-                @include font($grey, 2rem, 400);
+                @include font($grey, 1.5rem, 400);
               }
             }
             .projectExpandedContent {
               // display: none;
               .projectDescription {
-                @include paragraphText($black, 1.4rem);
+                @include paragraphText($black, 1rem);
                 padding: 0px 30px;
               }
               .projectImages {
@@ -641,6 +652,7 @@ body{
               }
               .projectLinkWrapper {
                 @include flex();
+                transform: scale(0.8);
               }
             }
           }
@@ -674,13 +686,13 @@ body{
         border-radius: 15px;
 
         .wOSPName {
-          @include paragraphText($darkBlue, 2.8rem, 2rem);
+          @include paragraphText($darkBlue, 2.2rem, 2rem);
           font-weight: 800;
           padding: 10px;
           align-self: flex-start;
         }
         .wOSPQualication {
-          @include paragraphText($grey, 1.7rem, 2rem);
+          @include paragraphText($grey, 1.5rem, 2rem);
           font-weight: 600;
           padding: 10px;
           align-self: flex-start;
@@ -698,7 +710,7 @@ body{
           }
         }
         .wOSPComment {
-          @include paragraphText($black, 1.4rem);
+          @include paragraphText($black, 1rem);
           padding: 10px;
         }
       }
@@ -754,6 +766,9 @@ body{
 }
 
 #skillsSection {
+  .heading{
+      font-size: 3rem;
+  }
   .myskillsContainer {
     @include flex();
     flex-flow: column wrap;
@@ -763,7 +778,7 @@ body{
       text-align: center;
       // border: solid;
       .skillsCategoryHeading {
-        @include paragraphText($black, 3rem);
+        @include paragraphText($black, 2.5rem);
         font-weight: 700;
         padding: 30px 0px;
         vertical-align: middle;
@@ -851,6 +866,7 @@ body{
     background-color: $black;
     .heading{
         color: $backgroundTheme;
+        font-size: 2.2rem;
     }
     .calenderWrapper{
         margin: 30px;
@@ -862,7 +878,7 @@ body{
         @include neo-unpressed-dark(2);
         &::before{
             content:'My Github';
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 700;
             line-height: 5rem;
             color: $backgroundTheme;
@@ -892,6 +908,12 @@ body{
   @include flex();
   flex-flow: row wrap;
   padding-bottom: 150px;
+    .heading{
+        font-size: 2.5rem;
+    }
+    @media (max-width: $tabletBreakpoint) {
+        padding-bottom: 0px;
+    }
   .contactDetailsWrapper {
     
     @include flex();
@@ -928,6 +950,7 @@ body{
     }
     .contactDescription {
       @include paragraphText($black);
+      font-size: 1.2rem;
       padding: 30px;
         span {
             @include iconsRound();
@@ -943,6 +966,8 @@ body{
     }
     .cdmeme{
         padding: 30px 30px;
+        max-width: 100%;
+        width: 90vw;
     }
     .CTAHome {
         max-width: 950px;
@@ -961,7 +986,7 @@ body{
         .hireMe,
         .contactMe {
             width: 250px;
-            transform: translateX(22px);
+            transform: translateX(22px) scale(0.8);
             display: inline-block;
             @include neo-unpressed-light();
             @include transition(0.3s);
@@ -1000,7 +1025,7 @@ body{
   background-color: $black;
   text-align: center;
   padding: 30px;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
 }
