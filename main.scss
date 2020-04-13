@@ -32,6 +32,10 @@ $transition3: "0.3s !important";
   box-shadow: 5px * $elevation 5px * $elevation 8px * $elevation rgb(0, 0, 0),
     -5px * $elevation -5px * $elevation 8px * $elevation rgb(70, 70, 70);
 }
+@mixin neo-pressed-light-custom-colour($col, $depth: 1) {
+    box-shadow: inset 4px * $depth 4px * $depth 6px * $depth $col,
+    3px * $depth 3px * $depth 2px * $depth white;
+}
 @mixin flex($horientation: center, $vorientation: center, $third: center) {
   display: flex;
   justify-content: $horientation;
@@ -383,8 +387,14 @@ body{
         }
         .hireMe,
         .resume {
-            
             display: inline-block;
+        }
+        .resume{
+            background-color: $lightBlue;
+            color: white;
+            &:hover{
+                @include neo-pressed-light-custom-colour($darkBlue, 1);
+            }
         }
      }
   }
@@ -837,26 +847,65 @@ body{
 }
 
 #myWorksSection {
+    @include flex();
+    background-color: $black;
+    .heading{
+        color: $backgroundTheme;
+    }
+    .calenderWrapper{
+        margin: 30px;
+        padding: 30px;
+        max-width: 1300px;
+        width: fit-content;
+        border-radius: 20px;
+        // border: $grey solid 20px;
+        @include neo-unpressed-dark(2);
+        &::before{
+            content:'My Github';
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 5rem;
+            color: $backgroundTheme;
+        }
+        .calendar{
+            max-width: 1000px;
+            width: 80vw;
+            padding: 20px;
+            border: none;
+            border-radius: 15px;
+            background-color: $backgroundTheme;
+            *{
+                color: $black;
+            }
+        }
+    }
+    .LI-profile-badge{
+        padding: 30px;
+        margin: 30px;
+        border-radius: 20px;
+        @include neo-unpressed-dark(2);
+    }
 }
 
 #contactSection {
-  border-radius: 15px;
   //color: white;
   @include flex();
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  padding-bottom: 150px;
   .contactDetailsWrapper {
-    @include neo-unpressed-light();
+    
     @include flex();
     width: 90%;
-    max-width: 600px;
+    max-width: 800px;
     flex-flow: column wrap;
-    .contactDescription {
-      @include paragraphText($black);
-      padding: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @media (max-width: $tabletBreakpoint){
+        justify-content: center;
+        align-items: center;
+        order: 2;
     }
-    .socialIconsList {
-      padding: 30px;
-      div {
+    @mixin iconsRound {
         display: inline-block;
         padding: 10px;
         border-radius: 50%;
@@ -866,32 +915,83 @@ body{
         cursor: pointer;
         @include neo-unpressed-light();
         &:hover {
-          @include neo-pressed-light();
+        @include neo-pressed-light();
         }
         svg {
-          width: 30px;
-          height: 30px;
-          fill: $black;
-          &:hover {
+        width: 30px;
+        height: 30px;
+        fill: $black;
+        &:hover {
             fill: $darkBlue;
-          }
         }
+        }
+    }
+    .contactDescription {
+      @include paragraphText($black);
+      padding: 30px;
+        span {
+            @include iconsRound();
+            margin-right: 30px;
+            transform: translateY(7px);
+        }
+    }
+    .socialIconsList {
+      padding: 30px;
+      div {
+        @include iconsRound();
       }
     }
+    .cdmeme{
+        padding: 30px 30px;
+    }
     .CTAHome {
-        width: 50vw;
+        max-width: 950px;
+        width: 90vw;
         @include flex();
-        // justify-content: flex-start;
-        padding: 10px 50px;
-
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        padding: 5px 10px;
+        @media (max-width: $tabletBreakpoint) {
+            padding: 30px 0px;
+            margin-top: -40px;
+            margin-bottom: 150px;
+            justify-content: center;
+            width: 110vw;
+        }
         .hireMe,
         .contactMe {
             width: 250px;
             transform: translateX(22px);
             display: inline-block;
             @include neo-unpressed-light();
+            @include transition(0.3s);
+            // border: solid 2px $darkBlue;
+            &:hover{
+                @include transition(0.3s);
+            }
+        }
+        .hireMe{
+            &:hover{
+                @include neo-pressed-light();
+            }
+        }
+        .contactMe{
+            background-color: $lightBlue;
+            color: white;
+            &:hover{
+                @include neo-pressed-light-custom-colour($darkBlue);
+            }
         }
      }
+  }
+  .contactsHeroImage{
+    img{        
+        max-width: 500px;
+        pointer-events: none;
+        @media (max-width: $tabletBreakpoint){
+            width: 400px;
+        }
+    }
   }
 }
 
@@ -1077,7 +1177,7 @@ body{
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.877); /* Black w/ opacity */
   }
   
   /* Modal Content (image) */
@@ -1086,6 +1186,7 @@ body{
     display: block;
     width: 80%;
     max-width: 700px;
+    @include transition(0.3s);
   }
   
   /* Caption of Modal Image */

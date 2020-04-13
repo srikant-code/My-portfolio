@@ -366,6 +366,16 @@ section {
   display: inline-block;
 }
 
+#home .introtextDiv .CTAHome .resume {
+  background-color: #00a2ff;
+  color: white;
+}
+
+#home .introtextDiv .CTAHome .resume:hover {
+  -webkit-box-shadow: inset 4px 4px 6px #006eff, 3px 3px 2px white;
+          box-shadow: inset 4px 4px 6px #006eff, 3px 3px 2px white;
+}
+
 #home .introImageDiv img {
   z-index: 0;
   max-width: 400px;
@@ -1294,8 +1304,7 @@ section {
   padding-left: 10px;
 }
 
-#contactSection {
-  border-radius: 15px;
+#myWorksSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1311,13 +1320,75 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
+  background-color: #2a2a2a;
+}
+
+#myWorksSection .heading {
+  color: #f1f1f1;
+}
+
+#myWorksSection .calenderWrapper {
+  margin: 30px;
+  padding: 30px;
+  max-width: 1300px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 16px black, -10px -10px 16px #464646;
+          box-shadow: 10px 10px 16px black, -10px -10px 16px #464646;
+}
+
+#myWorksSection .calenderWrapper::before {
+  content: 'My Github';
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 5rem;
+  color: #f1f1f1;
+}
+
+#myWorksSection .calenderWrapper .calendar {
+  max-width: 1000px;
+  width: 80vw;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+}
+
+#myWorksSection .calenderWrapper .calendar * {
+  color: #2a2a2a;
+}
+
+#myWorksSection .LI-profile-badge {
+  padding: 30px;
+  margin: 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 16px black, -10px -10px 16px #464646;
+          box-shadow: 10px 10px 16px black, -10px -10px 16px #464646;
+}
+
+#contactSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding-bottom: 150px;
 }
 
 #contactSection .contactDetailsWrapper {
-  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
-          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1334,9 +1405,29 @@ section {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 992px) {
+  #contactSection .contactDetailsWrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 #contactSection .contactDetailsWrapper .contactDescription {
@@ -1345,6 +1436,36 @@ section {
   font-weight: 400;
   line-height: 2.5rem;
   padding: 30px;
+}
+
+#contactSection .contactDetailsWrapper .contactDescription span {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 7px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+  margin-right: 30px;
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+#contactSection .contactDetailsWrapper .contactDescription span:hover {
+  -webkit-box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
+          box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
+}
+
+#contactSection .contactDetailsWrapper .contactDescription span svg {
+  width: 30px;
+  height: 30px;
+  fill: #2a2a2a;
+}
+
+#contactSection .contactDetailsWrapper .contactDescription span svg:hover {
+  fill: #006eff;
 }
 
 #contactSection .contactDetailsWrapper .socialIconsList {
@@ -1378,8 +1499,13 @@ section {
   fill: #006eff;
 }
 
+#contactSection .contactDetailsWrapper .cdmeme {
+  padding: 30px 30px;
+}
+
 #contactSection .contactDetailsWrapper .CTAHome {
-  width: 50vw;
+  max-width: 950px;
+  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1395,7 +1521,23 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  padding: 10px 50px;
+  flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 5px 10px;
+}
+
+@media (max-width: 992px) {
+  #contactSection .contactDetailsWrapper .CTAHome {
+    padding: 30px 0px;
+    margin-top: -40px;
+    margin-bottom: 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 110vw;
+  }
 }
 
 #contactSection .contactDetailsWrapper .CTAHome .hireMe,
@@ -1406,6 +1548,40 @@ section {
   display: inline-block;
   -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
           box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+}
+
+#contactSection .contactDetailsWrapper .CTAHome .hireMe:hover,
+#contactSection .contactDetailsWrapper .CTAHome .contactMe:hover {
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+}
+
+#contactSection .contactDetailsWrapper .CTAHome .hireMe:hover {
+  -webkit-box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
+          box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
+}
+
+#contactSection .contactDetailsWrapper .CTAHome .contactMe {
+  background-color: #00a2ff;
+  color: white;
+}
+
+#contactSection .contactDetailsWrapper .CTAHome .contactMe:hover {
+  -webkit-box-shadow: inset 4px 4px 6px #006eff, 3px 3px 2px white;
+          box-shadow: inset 4px 4px 6px #006eff, 3px 3px 2px white;
+}
+
+#contactSection .contactsHeroImage img {
+  max-width: 500px;
+  pointer-events: none;
+}
+
+@media (max-width: 992px) {
+  #contactSection .contactsHeroImage img {
+    width: 400px;
+  }
 }
 
 .love {
@@ -1646,7 +1822,7 @@ img:hover {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.877);
   /* Black w/ opacity */
 }
 
@@ -1656,6 +1832,8 @@ img:hover {
   display: block;
   width: 80%;
   max-width: 700px;
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
 }
 
 /* Caption of Modal Image */

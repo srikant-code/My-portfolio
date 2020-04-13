@@ -26,7 +26,7 @@ for(var i = 0; i < ilist.length; i++) {
         ilist[i].onclick = (e) => {
           modal.style.display = "block";
           modalImg.src = e.target.src;
-          captionText.innerHTML = this.alt;
+          captionText.innerHTML = e.target.alt;
         }    
 }
 
@@ -38,3 +38,8 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+modal.onclick = function() { 
+    modal.style.display = "none";
+}
+
+GitHubCalendar(".calendar", "srikant-code", { responsive: true });
