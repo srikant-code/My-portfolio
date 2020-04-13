@@ -291,7 +291,7 @@ section {
 
 @media (max-width: 992px) {
   #home .introtextDiv .introText {
-    margin-top: -200px;
+    margin-top: -150px;
     margin-left: 30px;
   }
 }
@@ -665,6 +665,12 @@ section {
   cursor: pointer;
 }
 
+@media (max-width: 992px) {
+  #Experience .orgList .orgCard {
+    width: 90vw;
+  }
+}
+
 #Experience .orgList .orgCard .orgLogo {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -768,6 +774,7 @@ section {
 @media (max-width: 992px) {
   #projectsSection .projectsCardsDiv {
     margin-top: -30px;
+    width: 100vw;
   }
 }
 
@@ -805,6 +812,12 @@ section {
   margin: 100px 20px;
   border-radius: 15px;
   cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  #projectsSection .projectsCardsDiv .projectsBox {
+    width: 90vw;
+  }
 }
 
 #projectsSection .projectsCardsDiv .projectsBox:hover {
@@ -976,6 +989,7 @@ section {
   text-align: center;
   letter-spacing: -1px;
   padding: 90px 0px;
+  font-size: 2.5rem;
 }
 
 #testimonialsSection .whatOthersSayDiv .wOSContainer {
@@ -1056,6 +1070,14 @@ section {
   margin-top: -80px;
   margin-bottom: 40px;
   margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+  #testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage {
+    margin-top: -170px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+  }
 }
 
 #testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage svg {
@@ -1474,6 +1496,12 @@ section {
   padding: 30px;
 }
 
+@media (max-width: 992px) {
+  #contactSection .contactDetailsWrapper .contactDescription li {
+    padding: 10px;
+  }
+}
+
 #contactSection .contactDetailsWrapper .contactDescription span {
   display: inline-block;
   padding: 10px;
@@ -1502,6 +1530,25 @@ section {
 
 #contactSection .contactDetailsWrapper .contactDescription span svg:hover {
   fill: #006eff;
+}
+
+@media (max-width: 992px) {
+  #contactSection .contactDetailsWrapper .contactDescription span {
+    margin-left: 50%;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+#contactSection .contactDetailsWrapper .contactDescription div {
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  #contactSection .contactDetailsWrapper .contactDescription div {
+    display: block;
+    text-align: center;
+  }
 }
 
 #contactSection .contactDetailsWrapper .socialIconsList {
@@ -1533,6 +1580,26 @@ section {
 
 #contactSection .contactDetailsWrapper .socialIconsList div svg:hover {
   fill: #006eff;
+}
+
+@media (max-width: 992px) {
+  #contactSection .contactDetailsWrapper .socialIconsList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
 }
 
 #contactSection .contactDetailsWrapper .cdmeme {
@@ -1603,7 +1670,16 @@ section {
 
 #contactSection .contactDetailsWrapper .CTAHome .contactMe {
   background-color: #00a2ff;
+  -webkit-transform: translateX(-10px) scale(0.8);
+          transform: translateX(-10px) scale(0.8);
   color: white;
+}
+
+@media (max-width: 992px) {
+  #contactSection .contactDetailsWrapper .CTAHome .contactMe {
+    -webkit-transform: translateX(20px) scale(0.8);
+            transform: translateX(20px) scale(0.8);
+  }
 }
 
 #contactSection .contactDetailsWrapper .CTAHome .contactMe:hover {
