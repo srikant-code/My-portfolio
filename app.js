@@ -11,6 +11,23 @@ AOS.init({
 //   var actPosition = $("#tile-1 .nav-tabs .active").position();
 //   $("#tile-1 .slider").css({"left":+ actPosition.left,"width": actWidth});
 
+
+if(screen.width < 1000){
+    document.getElementById("heroHireme").setAttribute("data-aos-delay", 0);
+    document.getElementById("heroResume").setAttribute("data-aos-delay", 100);
+    document.getElementById("discover").setAttribute("data-aos-delay", 200);
+    document.getElementById("discover").setAttribute("data-aos-delay", 000);
+    document.getElementById("discover").setAttribute("data-aos-delay", 100);
+}
+else{
+    document.getElementById("heroHireme").setAttribute("data-aos-delay", 1800);
+    document.getElementById("heroResume").setAttribute("data-aos-delay", 1800);
+    document.getElementById("discover").setAttribute("data-aos-delay", 2000);
+    document.getElementById("contactHireme").setAttribute("data-aos-delay", 1700);
+    document.getElementById("contactContactme").setAttribute("data-aos-delay", 2000);
+}
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -43,3 +60,28 @@ modal.onclick = function() {
 }
 
 GitHubCalendar(".calendar", "srikant-code", { responsive: true });
+
+
+(function() {
+    'use strict';
+    var section = document.querySelectorAll("section");
+    var sections = {};
+    var i = 0;
+    
+    Array.prototype.forEach.call(section, function(e) {
+      sections[e.id] = e.offsetTop;
+    });
+    
+    window.onscroll = function() {
+      var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    
+      for (i in sections) {
+        if (sections[i] <= scrollPosition) {
+            var activenav = document.getElementById('activeNav');
+            activenav.setAttribute("id","");
+            document.querySelector('a[href*=' + i + ']').setAttribute("id","activeNav");
+        }
+      }
+    };
+  
+  })();

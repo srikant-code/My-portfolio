@@ -237,7 +237,7 @@ section {
       }
     }
   }
-  .activeNav {
+  #activeNav {
     @include neo-unpressed-dark();
   }
 
@@ -344,7 +344,11 @@ body{
           #Srikant,
           #_Sahoo {
             fill: $lightBlue;
-            stroke: $darkBlue;
+            stroke: $lightBlue;
+            @media (max-width: $tabletBreakpoint) {
+                fill: #190088;
+                stroke: #190088;
+            }
           }
           //     stroke: $black;
           //     stroke-dasharray: 110% 99%;
@@ -402,12 +406,16 @@ body{
   .introImageDiv{
     @media (max-width: $tabletBreakpoint) {
         //margin-top: -300px;
+        width: 300px;
     }
     img{
         z-index: 0;
         max-width:400px;
         animation: updown infinite 10s;
         pointer-events: none;
+        @media (max-width: $tabletBreakpoint) {
+            width: 300px;
+        }
     }
     @include updownanimation();
   }
@@ -710,9 +718,9 @@ body{
           margin-bottom: 40px;
           margin-right: 20px;
           @media (max-width: $tabletBreakpoint) {
-            margin-top: -170px;
-            margin-right: 0px;
-            margin-bottom: 100px;
+            margin-top: -190px;
+            margin-right: -20px;
+            margin-bottom: 120px;
           }
           svg {
             @include neo-unpressed-light();
@@ -833,9 +841,11 @@ body{
             .skillDescription {
               opacity: 1;
               visibility: visible;
+              font-size: 1.1rem;
               transition-delay: 0.4s;
               transform: translateX(0px) translateY(-30px);
               @include transition(0.8s);
+
             }
             svg {
               @include transition(0.3s);
@@ -995,10 +1005,25 @@ body{
         @include flex();
       }
     }
+    p{
+        margin-left: 40px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: $darkBlue;
+        span{
+            color: $black;
+            svg{
+                transform: translateY(1px);
+                fill: $black;
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+        }
+    }
     .cdmeme{
         padding: 30px 30px;
-        max-width: 100%;
-        width: 90vw;
+        max-width: 700px;
+        width: 100vw;
     }
     .CTAHome {
         max-width: 950px;
@@ -1013,6 +1038,9 @@ body{
             margin-bottom: 150px;
             justify-content: center;
             width: 110vw;
+            a{
+                margin-bottom: -40px;
+            }
         }
         .hireMe,
         .contactMe {
@@ -1048,8 +1076,9 @@ body{
     img{        
         max-width: 500px;
         pointer-events: none;
+        animation: updown infinite 10s;
         @media (max-width: $tabletBreakpoint){
-            width: 400px;
+            width: 300px;
         }
     }
   }
