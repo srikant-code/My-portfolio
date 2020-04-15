@@ -672,9 +672,12 @@ body{
             @include neo-unpressed-light(1.3);
           }
           .projectsBoxImage {
+              width: inherit;
             img {
               width: 100%;
+              max-width: 500px;
               border-radius: 15px;
+              @include neo-unpressed-light(1.2);
             }
     
             .projectsBoxText {

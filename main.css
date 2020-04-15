@@ -974,9 +974,16 @@ section {
           box-shadow: 6.5px 6.5px 10.4px #cacaca, -6.5px -6.5px 10.4px white;
 }
 
+#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage {
+  width: inherit;
+}
+
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage img {
   width: 100%;
+  max-width: 500px;
   border-radius: 15px;
+  -webkit-box-shadow: 6px 6px 9.6px #cacaca, -6px -6px 9.6px white;
+          box-shadow: 6px 6px 9.6px #cacaca, -6px -6px 9.6px white;
 }
 
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText {
