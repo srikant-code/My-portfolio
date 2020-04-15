@@ -544,6 +544,22 @@ section {
   text-align: center;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+}
+
+#home .discoverWrapper:hover svg {
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+  fill: #006eff;
+}
+
+#home .discoverWrapper svg {
+  fill: #707070;
+  -webkit-transform: translateX(2px) translateY(4.4px);
+          transform: translateX(2px) translateY(4.4px);
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
 }
 
 #aboutMe {
@@ -669,6 +685,7 @@ section {
           flex-flow: row wrap;
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
+  position: relative;
 }
 
 #whyDID .heading {
@@ -697,6 +714,25 @@ section {
 
 #whyDID .whyDIDText .myTagline span {
   color: #2a2a2a;
+}
+
+#whyDID .aboutVectorImage {
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+  -webkit-animation: updown infinite 10s;
+          animation: updown infinite 10s;
+}
+
+#whyDID .aboutVectorImage img {
+  max-width: 470px;
+  width: 100%;
+}
+
+@media (max-width: 1650px) {
+  #whyDID .aboutVectorImage img {
+    display: none;
+  }
 }
 
 #Experience .expheading {
@@ -757,7 +793,7 @@ section {
           transition-duration: 0.3s !important;
   -ms-flex-flow: column wrap;
       flex-flow: column wrap;
-  margin: 20px 0px;
+  margin: 20px 30px;
   -ms-flex-line-pack: left;
       align-content: left;
   border-radius: 15px;
@@ -982,6 +1018,7 @@ section {
   width: 100%;
   max-width: 500px;
   border-radius: 15px;
+  border: 1px solid #dadada;
   -webkit-box-shadow: 6px 6px 9.6px #cacaca, -6px -6px 9.6px white;
           box-shadow: 6px 6px 9.6px #cacaca, -6px -6px 9.6px white;
 }
@@ -1902,8 +1939,8 @@ section {
 }
 
 #contactSection .contactDetailsWrapper .CTAHome .hireMe:hover {
-  -webkit-box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
-          box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
+  -webkit-box-shadow: inset 4.8px 4.8px 7.2px #dddddd, 3.6px 3.6px 2.4px white;
+          box-shadow: inset 4.8px 4.8px 7.2px #dddddd, 3.6px 3.6px 2.4px white;
 }
 
 #contactSection .contactDetailsWrapper .CTAHome .contactMe {

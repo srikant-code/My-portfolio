@@ -23,8 +23,8 @@ else{
     document.getElementById("heroHireme").setAttribute("data-aos-delay", 1800);
     document.getElementById("heroResume").setAttribute("data-aos-delay", 1800);
     document.getElementById("discover").setAttribute("data-aos-delay", 2000);
-    document.getElementById("contactHireme").setAttribute("data-aos-delay", 1700);
-    document.getElementById("contactContactme").setAttribute("data-aos-delay", 2000);
+    document.getElementById("contactHireme").setAttribute("data-aos-delay", 1200);
+    document.getElementById("contactContactme").setAttribute("data-aos-delay", 1400);
 }
 
 

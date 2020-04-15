@@ -471,6 +471,16 @@ body{
     bottom: 20px;
     text-align: center;
     transform: scale(0.8);
+    @include transition(0.3s);
+    &:hover svg{
+      @include transition(0.3s);
+      fill: $darkBlue;
+    }
+    svg{
+      fill: $grey;
+      transform: translateX(2px) translateY(4.4px);
+      @include transition(0.3s);
+    }
   }
 }
 
@@ -514,6 +524,7 @@ body{
 #whyDID {
   @include flex();
   flex-flow: column wrap;
+  position: relative;
   .heading {
     align-self: flex-start;
     font-size: 2.5rem;
@@ -534,6 +545,19 @@ body{
         color: $black;
       }
     }
+  }
+  .aboutVectorImage{
+      position: absolute;
+      bottom: 0;
+      right: 70px;
+      animation: updown infinite 10s;
+      img{
+        max-width: 470px;
+        width: 100%;
+        @media (max-width:$largetabletBreakpoint) {
+          display: none;
+        }
+      }
   }
 }
 
@@ -557,7 +581,7 @@ body{
       @include flex(center, center, center);
       @include transition(0.3s);
       flex-flow: column wrap;
-      margin: 20px 0px;
+      margin: 20px 30px;
       align-content: left;
       border-radius: 15px;
       padding: 30px;
@@ -677,6 +701,7 @@ body{
               width: 100%;
               max-width: 500px;
               border-radius: 15px;
+              border: 1px solid rgb(218, 218, 218);
               @include neo-unpressed-light(1.2);
             }
     
@@ -1152,7 +1177,7 @@ body{
         }
         .hireMe{
             &:hover{
-                @include neo-pressed-light();
+                @include neo-pressed-light(1.2);
             }
         }
         .contactMe{
