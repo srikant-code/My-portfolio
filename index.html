@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163798436-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163798436-1');
+</script>
     <meta charset="UTF-8">
     <!-- Primary Meta Tags -->
     <meta name="title" content="Srikant Sahoo - Portfolio">
@@ -27,29 +36,20 @@
     <meta property="twitter:title" content="Srikant Sahoo - Portfolio">
     <meta property="twitter:description" content="I am a self-taught UI/UX designer and coder. See my portfolio to know about me...😊">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/srikant-code/My-portfolio/master/images/portfolio.jpg">
-
-    <PageMap>
-        <DataObject type="thumbnail">
-          <Attribute name="src" value="https://raw.githubusercontent.com/srikant-code/My-portfolio/master/images/portfolio.jpg"/>
-          <Attribute name="width" value="100"/>
-          <Attribute name="height" value="100"/>
-        </DataObject>
-      </PageMap>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163798436-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-163798436-1');
-</script>
-
+    
     <title>Srikant Sahoo</title>
     <link rel="shortcut icon" href="/images/profile.jpg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <PageMap>
+        <DataObject type="thumbnail">
+          <Attribute name="src" value="https://raw.githubusercontent.com/srikant-code/My-portfolio/master/images/profile.jpg"/>
+          <Attribute name="width" value="100"/>
+          <Attribute name="height" value="100"/>
+        </DataObject>
+      </PageMap>    
+
 </head>
 <body>
     <nav class="navbar">
@@ -60,7 +60,7 @@
                         <img id="abcd" class="logoImage" src="/images/profile.jpg" alt="Srikant Sahoo">
                     </li>
                 </a>
-            <a href="#home" class="navItem tooltip">
+            <a id="activeNav" href="#home" class="navItem tooltip">
                     <li>
                         <span class="tooltiptext">Home</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40.503" height="31.496" viewBox="0 0 40.503 31.496">
@@ -68,7 +68,7 @@
                         </svg>      
                     </li>
             </a>            
-            <a id="activeNav" href="#aboutMe" class="navItem tooltip">
+            <a href="#aboutMe" class="navItem tooltip">
                     <li>
                         <span class="tooltiptext">About&nbsp;Me</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="13.824" viewBox="0 0 36 13.824">
@@ -265,19 +265,17 @@
             </div>
         </div>
         <div class="introImageDiv">
-            <img src="images/hero image home yellow.png" alt="Srikant Sahoo's Photo">
+            <img src="/images/hero image home yellow.png" alt="Srikant Sahoo's Photo">
         </div>
         
-        <div class="discoverWrapper">
-            <a href="#aboutMe">
-                <div id="discover" class="roundedButton discover" data-aos="fade-up" data-aos-delay="2000">
-                    Discover more <span><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
-                        <path id="Icon_awesome-skull" data-name="Icon awesome-skull" d="M18,0C8.058,0,0,7.052,0,15.75A15.067,15.067,0,0,0,6.645,27.963a2.211,2.211,0,0,1,.949,2.1L6.933,34.72A1.116,1.116,0,0,0,8.037,36H13.5V32.063a.564.564,0,0,1,.563-.562h1.125a.564.564,0,0,1,.563.563V36h4.5V32.063a.564.564,0,0,1,.563-.562h1.125a.564.564,0,0,1,.563.563V36h5.463a1.116,1.116,0,0,0,1.1-1.28l-.661-4.655a2.2,2.2,0,0,1,.949-2.1A15.067,15.067,0,0,0,36,15.75C36,7.052,27.942,0,18,0ZM11.25,22.5a4.5,4.5,0,1,1,4.5-4.5A4.5,4.5,0,0,1,11.25,22.5Zm13.5,0a4.5,4.5,0,1,1,4.5-4.5A4.5,4.5,0,0,1,24.75,22.5Z"/>
-                      </svg>
-                    </span>
-                </div> 
-            </a>
-        </div>
+        <a href="#aboutMe" class="discoverWrapper">
+            <div id="discover" class="roundedButton discover" data-aos="fade-up" data-aos-delay="2000">
+                Discover more <span><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+                    <path id="Icon_awesome-skull" data-name="Icon awesome-skull" d="M18,0C8.058,0,0,7.052,0,15.75A15.067,15.067,0,0,0,6.645,27.963a2.211,2.211,0,0,1,.949,2.1L6.933,34.72A1.116,1.116,0,0,0,8.037,36H13.5V32.063a.564.564,0,0,1,.563-.562h1.125a.564.564,0,0,1,.563.563V36h4.5V32.063a.564.564,0,0,1,.563-.562h1.125a.564.564,0,0,1,.563.563V36h5.463a1.116,1.116,0,0,0,1.1-1.28l-.661-4.655a2.2,2.2,0,0,1,.949-2.1A15.067,15.067,0,0,0,36,15.75C36,7.052,27.942,0,18,0ZM11.25,22.5a4.5,4.5,0,1,1,4.5-4.5A4.5,4.5,0,0,1,11.25,22.5Zm13.5,0a4.5,4.5,0,1,1,4.5-4.5A4.5,4.5,0,0,1,24.75,22.5Z"/>
+                    </svg>
+                </span>
+            </div> 
+        </a>
     </section>
 
     <section id="aboutMe" data-aos="fade-right" data-aos-delay="100">

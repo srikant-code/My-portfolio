@@ -471,7 +471,14 @@ body{
     bottom: 20px;
     text-align: center;
     transform: scale(0.8);
+    z-index: 10;
     @include transition(0.3s);
+    #discover{
+      z-index: 10;
+      span{
+        z-index: 10;
+      }
+    }
     &:hover svg{
       @include transition(0.3s);
       fill: $darkBlue;
