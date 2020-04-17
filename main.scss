@@ -704,6 +704,8 @@ body{
           }
           .projectsBoxImage {
               width: inherit;
+              @include flex();
+              flex-flow: column wrap;
             img {
               width: 100%;
               max-width: 500px;
@@ -714,6 +716,8 @@ body{
     
             .projectsBoxText {
               padding: 30px;
+              max-width: 500px;
+              width: 100%;
               .projectName {
                 @include font($black, 2rem, 700);
               }
@@ -751,6 +755,7 @@ body{
             }
             .projectExpandedContent {
               // display: none;
+              max-width: 500px;
               .projectDescription {
                 @include paragraphText($black, 1rem);
                 padding: 0px 30px;

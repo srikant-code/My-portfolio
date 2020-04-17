@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163798436-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-163798436-1');
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-THXQCMJ');
 </script>
+<!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <!-- Primary Meta Tags -->
     <meta name="title" content="Srikant Sahoo - Portfolio">
@@ -38,10 +38,28 @@
     <meta property="twitter:image" content="https://raw.githubusercontent.com/srikant-code/My-portfolio/master/images/portfolio.jpg">
     
     <title>Srikant Sahoo</title>
-    <link rel="shortcut icon" href="/images/profile.jpg" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="/images/profile.jpg" type="image/x-icon" async>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" async>
+    <link rel="stylesheet" href="main.min.css" async>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '517388509169372');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=517388509169372&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  
     <PageMap>
         <DataObject type="thumbnail">
           <Attribute name="src" value="https://raw.githubusercontent.com/srikant-code/My-portfolio/master/images/profile.jpg"/>
@@ -52,12 +70,17 @@
 
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THXQCMJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <nav class="navbar">
         <ul class="navElementsUL">
             <a href="#" class="logo tooltip">
                         <li>
                         <span class="tooltiptext">Srikant&nbsp;Sahoo</span>
-                        <img id="abcd" class="logoImage" src="/images/profile.jpg" alt="Srikant Sahoo">
+                        <img class="lazyload" id="abcd" class="logoImage" data-src="/images/profile.jpg" alt="Srikant Sahoo">
                     </li>
                 </a>
             <a id="activeNav" href="#home" class="navItem tooltip">
@@ -141,101 +164,7 @@
                 </a>                 
         </ul>
     </nav>
-    <div class="navMobile">
-        <nav class="navbarMobile neo-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="31.365" viewBox="0 0 36 31.365">
-                <path id="Icon_open-menu" data-name="Icon open-menu" d="M0,0V4.5H36V0ZM0,13.365v4.5H36v-4.5Zm0,13.5v4.5H36v-4.5Z"/>
-              </svg>          
-            <ul class="navElementsULMobile">
-            <a href="#home" class="logo tooltip">
-                            <li>
-                            <span class="tooltiptext">Srikant&nbsp;Sahoo</span>
-                            <img class="logoImage" src="profile.jpg" alt="Srikant Sahoo">
-                        </li>
-                    </a>
-                <a href="#home" class="navItem tooltip">
-                    <li>
-                        <span class="tooltiptext">Home</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40.503" height="31.496" viewBox="0 0 40.503 31.496">
-                            <path id="Icon_awesome-home" data-name="Icon awesome-home" d="M19.714,10.425,6.75,21.1V32.625A1.125,1.125,0,0,0,7.875,33.75l7.879-.02A1.125,1.125,0,0,0,16.874,32.6v-6.73A1.125,1.125,0,0,1,18,24.75h4.5a1.125,1.125,0,0,1,1.125,1.125V32.6a1.125,1.125,0,0,0,1.125,1.129l7.876.022a1.125,1.125,0,0,0,1.125-1.125V21.094L20.789,10.425A.857.857,0,0,0,19.714,10.425Zm20.477,7.257-5.878-4.845V3.1a.844.844,0,0,0-.844-.844H29.531a.844.844,0,0,0-.844.844V8.2l-6.3-5.179a3.375,3.375,0,0,0-4.289,0L.305,17.681A.844.844,0,0,0,.193,18.87l1.793,2.18a.844.844,0,0,0,1.189.115L19.714,7.542a.857.857,0,0,1,1.076,0l16.54,13.622a.844.844,0,0,0,1.188-.112l1.793-2.18a.844.844,0,0,0-.12-1.19Z" transform="translate(0.001 -2.254)"/>
-                        </svg>      
-                    </li>
-                </a>            
-                <a href="#aboutMe" class="navItem tooltip activeNav">
-                        <li>
-                            <span class="tooltiptext">About&nbsp;Me</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="13.824" viewBox="0 0 36 13.824">
-                                <path id="Icon_simple-aboutme" data-name="Icon simple-aboutme" d="M29.3,13.716a3.44,3.44,0,0,0-3.443,3.173h6.912A3.409,3.409,0,0,0,29.3,13.716m-3.389,5.422a3.68,3.68,0,0,0,3.8,2.954,5.322,5.322,0,0,0,3.578-1.357L35.05,22.77a7.854,7.854,0,0,1-5.609,2.142A6.789,6.789,0,0,1,22.392,18a6.757,6.757,0,0,1,6.858-6.912A6.673,6.673,0,0,1,36,18v1.139H25.916Zm-9.733,5.742V16.346c0-1.462-.648-2.3-2-2.3A3.5,3.5,0,0,0,11.6,15.536v9.347H8.078V16.346c0-1.462-.621-2.3-1.976-2.3a3.452,3.452,0,0,0-2.576,1.494v9.347H0V11.259H3.526v1.726A5.332,5.332,0,0,1,7.592,11.09,3.552,3.552,0,0,1,11.3,13.475a5.31,5.31,0,0,1,4.365-2.385c2.549,0,4.039,1.519,4.039,4.446v9.347h-3.53Z" transform="translate(0 -11.088)"/>
-                            </svg> 
-                        </li>
-                    </a>                 
-                    <a href="#whyDID" class="navItem tooltip">
-                        <li>
-                            <span class="tooltiptext">Why</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21.996" height="32.002" viewBox="0 0 21.996 32.002">
-                                <path id="Icon_awesome-question" data-name="Icon awesome-question" d="M12.827,0A12.11,12.11,0,0,0,2.07,5.69a1.5,1.5,0,0,0,.324,2.055l2.7,2.044a1.5,1.5,0,0,0,2.078-.259C8.734,7.568,9.9,6.439,12.341,6.439c1.923,0,4.3,1.238,4.3,3.1,0,1.41-1.164,2.134-3.062,3.2-2.214,1.241-5.144,2.786-5.144,6.651V20a1.5,1.5,0,0,0,1.5,1.5h4.53a1.5,1.5,0,0,0,1.5-1.5v-.361c0-2.679,7.83-2.791,7.83-10.04C23.8,4.141,18.132,0,12.827,0ZM12.2,23.343a4.33,4.33,0,1,0,4.33,4.33A4.335,4.335,0,0,0,12.2,23.343Z" transform="translate(-1.8)"/>
-                            </svg>  
-                        </li>
-                    </a>
-                    <a href="#Experience" class="navItem tooltip">
-                        <li>
-                        <span class="tooltiptext">Experience</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="29.259" height="29.234" viewBox="0 0 29.259 29.234">
-                            <g id="Icon_ionic-ios-rocket" data-name="Icon ionic-ios-rocket" transform="translate(-3.366 -3.372)">
-                                <path id="Path_70" data-name="Path 70" d="M32.47,3.769a.31.31,0,0,0-.232-.239c-3.825-.935-12.663,2.4-17.452,7.186a20.7,20.7,0,0,0-2.327,2.749,8.66,8.66,0,0,0-4.212.527c-3.551,1.561-4.584,5.639-4.873,7.39a.63.63,0,0,0,.689.731l5.7-.626a12.677,12.677,0,0,0,.077,1.287,1.276,1.276,0,0,0,.373.78l2.208,2.208a1.276,1.276,0,0,0,.78.373,12.652,12.652,0,0,0,1.28.077l-.626,5.7a.63.63,0,0,0,.731.689c1.751-.281,5.836-1.315,7.39-4.866a8.7,8.7,0,0,0,.534-4.2,20.73,20.73,0,0,0,2.756-2.327C30.08,16.425,33.391,7.784,32.47,3.769ZM21,15.012a3,3,0,1,1,4.247,0A3,3,0,0,1,21,15.012Z"/>
-                            <path id="Path_71" data-name="Path 71" d="M12.27,26.754h0a2.667,2.667,0,0,1-1.392.563,1.893,1.893,0,0,1-2.18-2.18,2.615,2.615,0,0,1,.555-1.385l.007-.007a.235.235,0,0,0-.2-.4,3.232,3.232,0,0,0-1.891.921c-1.266,1.266-1.385,5.962-1.385,5.962s4.7-.12,5.97-1.385a3.211,3.211,0,0,0,.921-1.891A.241.241,0,0,0,12.27,26.754Z"/>
-                            </g>
-                        </svg>    
-                        </li>
-                    </a>              
-                    <a href="#projectsSection" class="navItem tooltip">
-                        <li>
-                            <span class="tooltiptext">Projects</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="31.184" height="24.948" viewBox="0 0 31.184 24.948">
-                                <path id="Icon_awesome-project-diagram" data-name="Icon awesome-project-diagram" d="M18.711,15.592H12.474a1.559,1.559,0,0,0-1.559,1.559v6.237a1.559,1.559,0,0,0,1.559,1.559h6.237a1.559,1.559,0,0,0,1.559-1.559V17.151A1.559,1.559,0,0,0,18.711,15.592ZM9.355,1.559A1.559,1.559,0,0,0,7.8,0H1.559A1.559,1.559,0,0,0,0,1.559V7.8A1.559,1.559,0,0,0,1.559,9.355H6.223l3.565,6.239a3.108,3.108,0,0,1,2.686-1.561h.014L9.355,8.552V6.237H20.27V3.118H9.355ZM29.625,0H23.388a1.559,1.559,0,0,0-1.559,1.559V7.8a1.559,1.559,0,0,0,1.559,1.559h6.237A1.559,1.559,0,0,0,31.184,7.8V1.559A1.559,1.559,0,0,0,29.625,0Z"/>
-                            </svg>      
-                        </li>
-                    </a>            
-                    <a href="#testimonialsSection" class="navItem tooltip">
-                        <li>
-                        <span class="tooltiptext">Testimonials</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="31.57" height="20.517" viewBox="0 0 31.57 20.517">
-                            <g id="Icon_ionic-ios-people" data-name="Icon ionic-ios-people" transform="translate(-2.215 -7.748)">
-                            <path id="Path_72" data-name="Path 72" d="M24.546,23.534c-.788-.281-2.074-.3-2.644-.513a3.735,3.735,0,0,1-1.223-.57,7.56,7.56,0,0,1-.2-2,3.237,3.237,0,0,0,.7-.984,10.94,10.94,0,0,0,.337-1.934s.464.2.647-.731c.155-.8.45-1.223.373-1.814s-.408-.45-.408-.45a5.265,5.265,0,0,0,.408-2.63,4.208,4.208,0,0,0-4.542-4.155A4.222,4.222,0,0,0,13.437,11.9a5.343,5.343,0,0,0,.4,2.63s-.33-.141-.408.45S13.641,16,13.8,16.8c.183.935.647.731.647.731a11.046,11.046,0,0,0,.337,1.934,3.237,3.237,0,0,0,.7.984,7.56,7.56,0,0,1-.2,2,3.6,3.6,0,0,1-1.223.563c-.562.218-1.849.246-2.644.527a4.962,4.962,0,0,0-3.22,4.725H27.759A4.952,4.952,0,0,0,24.546,23.534Z"/>
-                            <path id="Path_73" data-name="Path 73" d="M9.844,20.109a4.773,4.773,0,0,0,2.348-.654c-1.09-1.652-.5-3.579-.724-5.379a2.966,2.966,0,0,0-3.284-2.869H8.156A2.976,2.976,0,0,0,4.9,14.077c-.225,1.793.4,3.938-.717,5.379a4.417,4.417,0,0,0,2.355.584h0a3.561,3.561,0,0,1-.07,1.181,1.775,1.775,0,0,1-.844.387,16.314,16.314,0,0,0-1.821.506,2.96,2.96,0,0,0-1.589,2.616H7.861a5.051,5.051,0,0,1,2.25-2.1,4.722,4.722,0,0,1,1.737-.366s.267-.422-.612-.584a5.994,5.994,0,0,1-1.35-.471C9.752,21.059,9.844,20.109,9.844,20.109Z"/>
-                            <path id="Path_74" data-name="Path 74" d="M26.156,20.109a4.773,4.773,0,0,1-2.348-.654c1.09-1.652.5-3.579.724-5.379a2.966,2.966,0,0,1,3.284-2.869h.028A2.976,2.976,0,0,1,31.1,14.077c.225,1.793-.4,3.938.717,5.379a4.417,4.417,0,0,1-2.355.584h0a3.561,3.561,0,0,0,.07,1.181,1.775,1.775,0,0,0,.844.387,16.314,16.314,0,0,1,1.821.506,2.96,2.96,0,0,1,1.589,2.616H28.139a5.051,5.051,0,0,0-2.25-2.1,4.722,4.722,0,0,0-1.737-.366s-.267-.422.612-.584a5.994,5.994,0,0,0,1.35-.471C26.248,21.059,26.156,20.109,26.156,20.109Z"/>
-                            </g>
-                        </svg> 
-                        </li>
-                    </a>
-                    <a href="#skillsSection" class="navItem tooltip">
-                        <li>
-                            <span class="tooltiptext">Skills</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28.995" height="27.752" viewBox="0 0 28.995 27.752">
-                                <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M14.384.964,10.845,8.14,2.926,9.295a1.735,1.735,0,0,0-.959,2.959L7.7,17.836,6.341,25.722a1.733,1.733,0,0,0,2.515,1.826l7.084-3.723,7.084,3.723a1.735,1.735,0,0,0,2.515-1.826l-1.355-7.886,5.729-5.582a1.735,1.735,0,0,0-.959-2.959L21.034,8.14,17.495.964a1.736,1.736,0,0,0-3.111,0Z" transform="translate(-1.441 0.001)"/>
-                            </svg>   
-                        </li>
-                    </a>               
-                    <a href="#myWorksSection" class="navItem tooltip">
-                        <li>
-                            <span class="tooltiptext">My&nbsp;works</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28.5" viewBox="0 0 30 28.5">
-                                <path id="Icon_material-work" data-name="Icon material-work" d="M30,9H24V6a2.99,2.99,0,0,0-3-3H15a2.99,2.99,0,0,0-3,3V9H6a2.977,2.977,0,0,0-2.985,3L3,28.5a2.99,2.99,0,0,0,3,3H30a2.99,2.99,0,0,0,3-3V12A2.99,2.99,0,0,0,30,9ZM21,9H15V6h6Z" transform="translate(-3 -3)"/>
-                            </svg>    
-                        </li>
-                    </a>              
-                    <a href="#contactSection" class="navItem tooltip">
-                        <li>
-                            <span class="tooltiptext">Contact&nbsp;Me</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="29.25" height="29.25" viewBox="0 0 29.25 29.25">
-                                <path id="Icon_ionic-md-contact" data-name="Icon ionic-md-contact" d="M18,3.375A14.625,14.625,0,1,0,32.625,18,14.668,14.668,0,0,0,18,3.375Zm0,4.387a4.387,4.387,0,1,1-4.387,4.387A4.4,4.4,0,0,1,18,7.762Zm0,21.122A10.654,10.654,0,0,1,9.225,24.2c.07-2.925,5.85-4.535,8.775-4.535s8.7,1.61,8.775,4.535A10.672,10.672,0,0,1,18,28.884Z" transform="translate(-3.375 -3.375)"/>
-                            </svg> 
-                        </li>
-                    </a>                 
-            </ul>
-        </nav>
-    </div>
-        
+
     <section id="home" data-aos="fade-left" data-aos-delay="300">
 
         <div class="introtextDiv">
@@ -265,7 +194,7 @@
             </div>
         </div>
         <div class="introImageDiv">
-            <img src="/images/hero image home yellow.png" alt="Srikant Sahoo's Photo">
+            <img class="lazyload" data-src="/images/hero image home yellow.png" alt="Srikant Sahoo's Photo">
         </div>
         
         <a href="#aboutMe" class="discoverWrapper">
@@ -329,7 +258,7 @@ world. <br><br>
             </div>
         </div>
         <div class="aboutVectorImage">
-            <img src="/images/Group 17.svg" alt="Man using Laptop">
+            <img class="lazyload" data-src="/images/Group 17.svg" alt="Man using Laptop">
         </div>
     </section>
 
@@ -338,7 +267,7 @@ world. <br><br>
         <div class="orgList">
             <div class="orgCard" data-aos="fade-left" data-aos-delay="300">
                 <div class="orgLogo" data-aos="fade-left" data-aos-delay="1400">
-                    <img src="/images/dsc.svg" alt="DSC KIIT Logo">
+                    <img class="lazyload" data-src="/images/dsc.svg" alt="DSC KIIT Logo">
                 </div>
                 <div class="orgRole" data-aos="fade-right" data-aos-delay="400">
                     Graphics / UI/UX Designer
@@ -359,7 +288,7 @@ world. <br><br>
             </div>
             <div class="orgCard" data-aos="fade-right" data-aos-delay="600">
                 <div class="orgLogo" data-aos="fade-left" data-aos-delay="1400">
-                    <img src="/images/wec.jpg" alt="WEC Mind Private Limited">                  
+                    <img class="lazyload" data-src="/images/wec.jpg" alt="WEC Mind Private Limited">                  
                 </div>
                 <div class="orgRole" data-aos="fade-right" data-aos-delay="400">
                     Front End Developer
@@ -379,7 +308,7 @@ world. <br><br>
             </div>
             <div class="orgCard" data-aos="fade-left" data-aos-delay="600">
                 <div class="orgLogo" data-aos="fade-left data-aos="fade-right" data-aos-delay="100"" data-aos-delay="1400">
-                    <img src="/images/fflogo.png" alt="Financial Fancier Logo">       
+                    <img class="lazyload" data-src="/images/fflogo.png" alt="Financial Fancier Logo">       
                 </div>
                 <div class="orgRole" data-aos="fade-right" data-aos-delay="400">
                     Web UI/UX Designer                </div>
@@ -421,7 +350,7 @@ world. <br><br>
             </div>
             <div class="orgCard" data-aos="fade-left" data-aos-delay="600">
                 <div class="orgLogo" data-aos="fade-left" data-aos-delay="1400">
-                    <img src="/images/maps.jpg" alt="Google Maps Logo">        
+                    <img class="lazyload" data-src="/images/maps.jpg" alt="Google Maps Logo">        
                 </div>
                 <div class="orgRole" data-aos="fade-right" data-aos-delay="400">
                     Contributor
@@ -448,7 +377,7 @@ world. <br><br>
             <div class="projectsCardsDiv">
                 <div class="projectsBox" data-aos="fade-right" data-aos-delay="100">
                     <div class="projectsBoxImage" data-aos="fade-zoom" data-aos-delay="100">
-                        <img src="/images/portfolio.jpg" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
+                        <img class="lazyload" data-src="/images/portfolio.jpg" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
                         <div class="projectsBoxText">
                             <div class="projectName" data-aos="fade-right" data-aos-delay="100">
                                 My portfolio 😅
@@ -477,10 +406,10 @@ world. <br><br>
                             </div>
                             <div class="projectImages" data-aos="fade-right" data-aos-delay="100">
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="600">
-                                    <img src="/images/profile.jpg" alt="project Image">
+                                    <img class="lazyload" data-src="/images/profile.jpg" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="700">
-                                    <img src="/images/heroimagemaster.jpg" alt="project Image">
+                                    <img class="lazyload" data-src="/images/heroimagemaster.jpg" alt="project Image">
                                 </div>
                             </div>
                             <a href="https://github.com/srikant-code/My-portfolio" target="_blank" rel="noopener noreferrer" class="projectLinkWrapper" data-aos="fade-up" data-aos-delay="1000">
@@ -493,7 +422,7 @@ world. <br><br>
                 </div>
                 <div class="projectsBox" data-aos="fade-left" data-aos-delay="100">
                     <div class="projectsBoxImage" data-aos="fade-zoom" data-aos-delay="100">
-                        <img src="/images/cakeshake.png" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
+                        <img class="lazyload" data-src="/images/cakeshake.png" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
                         <div class="projectsBoxText">
                             <div class="projectName" data-aos="fade-left" data-aos-delay="100">
                                 CakeShake Website
@@ -531,13 +460,13 @@ The development is in progress and it will be available for mobile devices soon.
                             </div>
                             <div class="projectImages" data-aos="fade-left" data-aos-delay="100">
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="600">
-                                    <img src="/images/cakeshakelogobox.jpg" alt="project Image">
+                                    <img class="lazyload" data-src="/images/cakeshakelogobox.jpg" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="700">
-                                    <img src="/images/cakeshake logo.jpg" alt="project Image">
+                                    <img class="lazyload" data-src="/images/cakeshake logo.jpg" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="800">
-                                    <img src="/images/logo on paper image.jpg" alt="project Image">
+                                    <img class="lazyload" data-src="/images/logo on paper image.jpg" alt="project Image">
                                 </div>
                             </div>
                             <a href="https://github.com/srikant-code/CakeShake" class="projectLinkWrapper" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1100">
@@ -550,7 +479,7 @@ The development is in progress and it will be available for mobile devices soon.
                 </div>
                 <div class="projectsBox" data-aos="fade-right" data-aos-delay="100">
                     <div class="projectsBoxImage" data-aos="fade-zoom" data-aos-delay="100">
-                        <img src="/images/JIGYASU_LOGO-01.jpg" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
+                        <img class="lazyload" data-src="/images/JIGYASU_LOGO-01.jpg" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
                         <div class="projectsBoxText">
                             <div class="projectName" data-aos="fade-right" data-aos-delay="100">
                                 Jigyasu's Website
@@ -583,13 +512,13 @@ HTML 5 | CSS 3 | Sass | TypeScript | NodeJS
                             </div>
                             <div class="projectImages" data-aos="fade-right" data-aos-delay="100">
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="600">
-                                    <img src="/images/jig2.png" alt="project Image">
+                                    <img class="lazyload" data-src="/images/jig2.png" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="700">
-                                    <img src="/images/jig3.png" alt="project Image">
+                                    <img class="lazyload" data-src="/images/jig3.png" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="800">
-                                    <img src="/images/jig4.png" alt="project Image">
+                                    <img class="lazyload" data-src="/images/jig4.png" alt="project Image">
                                 </div>
                             </div>
                             <!-- <a href="https://github.com/srikant-code" class="projectLinkWrapper">
@@ -602,7 +531,7 @@ HTML 5 | CSS 3 | Sass | TypeScript | NodeJS
                 </div>
                 <div class="projectsBox" data-aos="fade-left" data-aos-delay="100">
                     <div class="projectsBoxImage" data-aos="fade-zoom" data-aos-delay="100">
-                        <img src="/images/SRI png black.png" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
+                        <img class="lazyload" data-src="/images/SRI png black.png" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
                         <div class="projectsBoxText">
                             <div class="projectName" data-aos="fade-left" data-aos-delay="100">
                                 Startup Ranking India Website
@@ -633,10 +562,10 @@ HTML 5 | CSS 3 | Sass | TypeScript | NodeJS
                             </div>
                             <div class="projectImages" data-aos="fade-right" data-aos-delay="100">
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="600">
-                                    <img src="/images/startup.jpg" alt="project Image">
+                                    <img class="lazyload" data-src="/images/startup.jpg" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="700">
-                                    <img src="/images/startupodishapage.png" alt="project Image">
+                                    <img class="lazyload" data-src="/images/startupodishapage.png" alt="project Image">
                                 </div>
                             </div>
                             <!-- <a href="https://github.com/srikant-code" target="_blank" class="projectLinkWrapper">
@@ -649,7 +578,7 @@ HTML 5 | CSS 3 | Sass | TypeScript | NodeJS
                 </div>
                 <div class="projectsBox" data-aos="fade-right" data-aos-delay="100">
                     <div class="projectsBoxImage" data-aos="fade-zoom" data-aos-delay="100">
-                        <img src="/images/states.jpg" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
+                        <img class="lazyload" data-src="/images/states.jpg" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
                         <div class="projectsBoxText">
                             <div class="projectName" data-aos="fade-right" data-aos-delay="100">
                                 States and Capitals Chatbot
@@ -684,13 +613,13 @@ Dialogflow | Platform - Google Assistant
                             </div>
                             <div class="projectImages" data-aos="fade-right" data-aos-delay="100">
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="600">
-                                    <img src="/images/states of india.png" alt="project Image">
+                                    <img class="lazyload" data-src="/images/states of india.png" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="700">
-                                    <img src="/images/soianalytics1.png" alt="project Image">
+                                    <img class="lazyload" data-src="/images/soianalytics1.png" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="800">
-                                    <img src="/images/soianalytics2.png" alt="project Image">
+                                    <img class="lazyload" data-src="/images/soianalytics2.png" alt="project Image">
                                 </div>
                             </div>
                             <a href="https://assistant.google.com/services/a/uid/00000085524d6a5a?hl=en_in" target="_blank" rel="noopener noreferrer" class="projectLinkWrapper" data-aos="fade-up" data-aos-delay="1000">
@@ -703,7 +632,7 @@ Dialogflow | Platform - Google Assistant
                 </div>
                 <div class="projectsBox" data-aos="fade-left" data-aos-delay="100">
                     <div class="projectsBoxImage" data-aos="fade-zoom" data-aos-delay="100">
-                        <img src="/images/hello.jpg" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
+                        <img class="lazyload" data-src="/images/hello.jpg" alt="project Image" data-aos="fade-zoom" data-aos-delay="100">
                         <div class="projectsBoxText">
                             <div class="projectName" data-aos="fade-left" data-aos-delay="100">
                                 Talk to "The Hello World" Chatbot
@@ -739,13 +668,13 @@ Dialogflow | Platform - Google Assistant
                             </div>
                             <div class="projectImages" data-aos="fade-right" data-aos-delay="100">
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="600">
-                                    <img src="/images/helloworldapp.jpg" alt="project Image">
+                                    <img class="lazyload" data-src="/images/helloworldapp.jpg" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="700">
-                                    <img src="/images/helloworldapp2.jpg" alt="project Image">
+                                    <img class="lazyload" data-src="/images/helloworldapp2.jpg" alt="project Image">
                                 </div>
                                 <div class="projectImagesSmall" data-aos="fade-up" data-aos-delay="800">
-                                    <img src="/images/helloworld.png" alt="project Image">
+                                    <img class="lazyload" data-src="/images/helloworld.png" alt="project Image">
                                 </div>
                             </div>
                             <a href="https://assistant.google.com/services/a/uid/000000d7b1e5ad85?hl=en-IN" class="projectLinkWrapper" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1000">
@@ -789,19 +718,19 @@ Dialogflow | Platform - Google Assistant
             <div class="wOSImageList" data-aos="fade-up" data-aos-delay="100">
                 <ul class="wOSImageListUL">
                     <li class="wOSListItem" data-aos="fade-up" data-aos-delay="300">
-                        <img src="gmap.png" alt="Person Name">
+                        <img class="lazyload" src="gmap.png" alt="Person Name">
                     </li>
                     <li class="wOSListItem" data-aos="fade-up" data-aos-delay="600">
-                        <img src="gmap.png" alt="Person Name">
+                        <img class="lazyload" src="gmap.png" alt="Person Name">
                     </li>
                     <li class="wOSListItem" data-aos="fade-up" data-aos-delay="900">
-                        <img src="gmap.png" alt="Person Name">
+                        <img class="lazyload" src="gmap.png" alt="Person Name">
                     </li>
                     <li class="activeTesti" data-aos="fade-up" data-aos-delay="1200">
-                        <img src="gmap.png" alt="Person Name">
+                        <img class="lazyload" src="gmap.png" alt="Person Name">
                     </li>
                     <li class="wOSListItem" data-aos="fade-up" data-aos-delay="1500">
-                        <img src="gmap.png" alt="Person Name">
+                        <img class="lazyload" src="gmap.png" alt="Person Name">
                     </li>
                 </ul>
             </div>
@@ -1222,7 +1151,7 @@ Dialogflow | Platform - Google Assistant
                     </li>
                 </ul>
             </div>
-            <img class="cdmeme" src="/images/meme.png" alt="Coding / Designing Meme" data-aos="fade-right" data-aos-delay="1000">
+            <img class="lazyload" class="cdmeme" data-src="/images/meme.png" alt="Coding / Designing Meme" data-aos="fade-right" data-aos-delay="1000">
             <div class="CTAHome" data-aos="fade-up" data-aos-delay="1400">
                 <a href="mailto:srikantsahoo.design@gmail.com" target="_blank" rel="noopener noreferrer">
                     <div id="contactHireme" class="hireMe roundedButton" data-aos="fade-up" data-aos-delay="1200">
@@ -1237,13 +1166,13 @@ Dialogflow | Platform - Google Assistant
             </div>
         </div>
         <div class="contactsHeroImage" data-aos="fade-right" data-aos-delay="600">
-            <img  src="images/heroimagesmo.png" alt="Srikant Sahoo">
+            <img class="lazyload"  src="images/heroimagesmo.png" alt="Srikant Sahoo">
         </div>
     </section>
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
+        <img class="lazyload" class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
     <footer>
@@ -1251,24 +1180,274 @@ Dialogflow | Platform - Google Assistant
             Designed and coded with ❤ by Srikant
         </div>
     </footer>
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" defer></script>
+
+<!-- Github Calender Script -->
+<script async defer>
+    "use strict";
+
+var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _typeof = "function" == typeof Symbol && "symbol" == _typeof2(Symbol.iterator) ? function (e) {
+  return typeof e === "undefined" ? "undefined" : _typeof2(e);
+} : function (e) {
+  return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e === "undefined" ? "undefined" : _typeof2(e);
+};!function (e) {
+  if ("object" === ("undefined" == typeof exports ? "undefined" : _typeof(exports)) && "undefined" != typeof module) module.exports = e();else if ("function" == typeof define && define.amd) define([], e);else {
+    ("undefined" != typeof window ? window : "undefined" != typeof global ? global : "undefined" != typeof self ? self : this).GitHubCalendar = e();
+  }
+}(function () {
+  return function o(s, u, i) {
+    function c(t, e) {
+      if (!u[t]) {
+        if (!s[t]) {
+          var r = "function" == typeof require && require;if (!e && r) return r(t, !0);if (l) return l(t, !0);var n = new Error("Cannot find module '" + t + "'");throw n.code = "MODULE_NOT_FOUND", n;
+        }var a = u[t] = { exports: {} };s[t][0].call(a.exports, function (e) {
+          return c(s[t][1][e] || e);
+        }, a, a.exports, o, s, u, i);
+      }return u[t].exports;
+    }for (var l = "function" == typeof require && require, e = 0; e < i.length; e++) {
+      c(i[e]);
+    }return c;
+  }({ 1: [function (e, t, r) {
+      var b = e("github-calendar-parser"),
+          m = e("elly"),
+          h = e("add-subtract-date"),
+          y = e("formatoid"),
+          v = "MMM D, YYYY",
+          M = "MMMM D";function x(e) {
+        return e + " " + (1 === e ? "day" : "days");
+      }t.exports = function (p, e, g) {
+        p = m(p), (g = g || {}).summary_text = g.summary_text || 'Summary of pull requests, issues opened, and commits made by <a href="https://github.com/' + e + '" target="blank">@' + e + "</a>", g.cache = 1e3 * (g.cache || 86400), !1 === g.global_stats && (p.style.minHeight = "175px");var r = "gh_calendar_content",
+            n = "gh_calendar_expire";g.proxy = g.proxy || function (e) {
+          return fetch("https://api.bloggify.net/gh-calendar/?username=" + e).then(function (e) {
+            return e.text();
+          });
+        }, g.getCalendar = g.getCalendar || function (e) {
+          if (g.cache && Date.now() < +localStorage.getItem(n)) {
+            var t = localStorage.getItem(r);if (t) return Promise.resolve(t);
+          }return g.proxy(e).then(function (e) {
+            return g.cache && (localStorage.setItem(r, e), localStorage.setItem(n, Date.now() + g.cache)), e;
+          });
+        };return function f() {
+          return g.getCalendar(e).then(function (e) {
+            var t = document.createElement("div");t.innerHTML = e;var r = t.querySelector(".js-yearly-contributions");if (m(".position-relative h2", r).remove(), r.querySelector(".float-left.text-gray").innerHTML = g.summary_text, r.querySelector("include-fragment")) setTimeout(f, 500);else {
+              if (!0 === g.responsive) {
+                var n = r.querySelector("svg.js-calendar-graph-svg"),
+                    a = n.getAttribute("width"),
+                    o = n.getAttribute("height");n.removeAttribute("height"), n.setAttribute("width", "100%"), n.setAttribute("viewBox", "0 0 " + a + " " + o);
+              }if (!1 !== g.global_stats) {
+                var s = b(m("svg", r).outerHTML),
+                    u = s.current_streak ? y(s.current_streak_range[0], M) + " &ndash; " + y(s.current_streak_range[1], M) : s.last_contributed ? "Last contributed in " + y(s.last_contributed, M) + "." : "Rock - Hard Place",
+                    i = s.longest_streak ? y(s.longest_streak_range[0], M) + " &ndash; " + y(s.longest_streak_range[1], M) : s.last_contributed ? "Last contributed in " + y(s.last_contributed, M) + "." : "Rock - Hard Place",
+                    c = m("<div>", { class: "contrib-column contrib-column-first table-column", html: '<span class="text-muted">Contributions in the last year</span>\n                               <span class="contrib-number">' + s.last_year + ' total</span>\n                               <span class="text-muted">' + y(h.add(h.subtract(new Date(), 1, "year"), 1, "day"), v) + " &ndash; " + y(new Date(), v) + "</span>" }),
+                    l = m("<div>", { class: "contrib-column table-column", html: '<span class="text-muted">Longest streak</span>\n                               <span class="contrib-number">' + x(s.longest_streak) + '</span>\n                               <span class="text-muted">' + i + "</span>" }),
+                    d = m("<div>", { class: "contrib-column table-column", html: '<span class="text-muted">Current streak</span>\n                               <span class="contrib-number">' + x(s.current_streak) + '</span>\n                               <span class="text-muted">' + u + "</span>" });r.appendChild(c), r.appendChild(l), r.appendChild(d);
+              }p.innerHTML = r.innerHTML;
+            }
+          }).catch(function (e) {
+            return console.error(e);
+          });
+        }();
+      };
+    }, { "add-subtract-date": 2, elly: 4, formatoid: 6, "github-calendar-parser": 8 }], 2: [function (e, t, r) {
+      function n(a) {
+        return function e(t, r, n) {
+          switch (r *= a, n) {case "years":case "year":
+              t.setFullYear(t.getFullYear() + r);break;case "months":case "month":
+              t.setMonth(t.getMonth() + r);break;case "weeks":case "week":
+              return e(t, 7 * r, "days");case "days":case "day":
+              t.setDate(t.getDate() + r);break;case "hours":case "hour":
+              t.setHours(t.getHours() + r);break;case "minutes":case "minute":
+              t.setMinutes(t.getMinutes() + r);break;case "seconds":case "second":
+              t.setSeconds(t.getSeconds() + r);break;case "milliseconds":case "millisecond":
+              t.setMilliseconds(t.getMilliseconds() + r);break;default:
+              throw new Error("Invalid range: " + n);}return t;
+        };
+      }t.exports = { add: n(1), subtract: n(-1) };
+    }, {}], 3: [function (e, t, r) {
+      t.exports.en = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], t.exports.en.abbr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], t.exports.en.short = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"], t.exports.fr = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"], t.exports.fr.abbr = ["dim", "lun", "mar", "mer", "jeu", "ven", "sam"], t.exports.fr.short = ["di", "lu", "ma", "me", "je", "ve", "sa"], t.exports.es = ["domingo", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado"], t.exports.es.abbr = ["dom", "lun", "mar", "mir", "jue", "vie", "sab"], t.exports.es.short = ["do", "lu", "ma", "mi", "ju", "vi", "sa"], t.exports.it = ["Domenica", "Lunedi", "Martedi", "Mercoledi", "Giovedi", "Venerdi", "Sabato"], t.exports.it.abbr = ["Dom", "Lun", "Mar", "Mer", "Gio", "Ven", "Sab"], t.exports.it.short = ["D", "L", "Ma", "Me", "G", "V", "S"], t.exports = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], t.exports.abbr = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], t.exports.short = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+    }, {}], 4: [function (e, t, r) {
+      var n = e("iterate-object"),
+          a = e("sliced");function o(r, e) {
+        return "string" == typeof r ? "<" === r.charAt(0) ? (r = document.createElement(r.slice(1, -1)), n(e || {}, function (e, t) {
+          switch (t) {case "text":
+              return void (r.textContent = e);case "html":
+              return void (r.innerHTML = e);}r.setAttribute(t, e);
+        }), r) : (e = e || document).querySelector(r) : r;
+      }o.$$ = function (e, t) {
+        return "string" == typeof e ? (t = t || document, a(t.querySelectorAll(e))) : [e];
+      }, t.exports = o;
+    }, { "iterate-object": 9, sliced: 13 }], 5: [function (e, t, r) {
+      t.exports = function (e, t, r) {
+        r = r || "0";var n = (t = t || 2) - (e = e.toString()).length;return (n <= 0 ? "" : r.repeat(n)) + e;
+      };
+    }, {}], 6: [function (e, t, r) {
+      var n = e("months"),
+          a = e("days"),
+          o = e("fillo"),
+          s = e("parse-it").Parser,
+          u = { YYYY: function YYYY(e, t) {
+          return t ? e.getUTCFullYear() : e.getFullYear();
+        }, YY: function YY(e, t) {
+          return u.YYYY(e, t) % 100;
+        }, MMMM: function MMMM(e, t) {
+          return t ? n[e.getUTCMonth()] : n[e.getMonth()];
+        }, MMM: function MMM(e, t) {
+          return t ? n.abbr[e.getUTCMonth()] : n.abbr[e.getMonth()];
+        }, MM: function MM(e, t) {
+          return o(t ? e.getUTCMonth() + 1 : e.getMonth() + 1);
+        }, M: function M(e, t) {
+          return t ? e.getUTCMonth() + 1 : e.getMonth() + 1;
+        }, dddd: function dddd(e, t) {
+          return a[u.d(e, t)];
+        }, ddd: function ddd(e, t) {
+          return a.abbr[u.d(e, t)];
+        }, dd: function dd(e, t) {
+          return a.short[u.d(e, t)];
+        }, d: function d(e, t) {
+          return t ? e.getUTCDay() : e.getDay();
+        }, DD: function DD(e, t) {
+          return o(u.D(e, t));
+        }, D: function D(e, t) {
+          return t ? e.getUTCDate() : e.getDate();
+        }, A: function A(e, t) {
+          return u.a(e, t).toUpperCase();
+        }, a: function a(e, t) {
+          return 12 <= u.H(e, t) ? "pm" : "am";
+        }, hh: function hh(e, t) {
+          return o(u.h(e, t));
+        }, h: function h(e, t) {
+          return u.H(e, t) % 12 || 12;
+        }, HH: function HH(e, t) {
+          return o(u.H(e, t));
+        }, H: function H(e, t) {
+          return t ? e.getUTCHours() : e.getHours();
+        }, mm: function mm(e, t) {
+          return o(u.m(e, t));
+        }, m: function m(e, t) {
+          return t ? e.getUTCMinutes() : e.getMinutes();
+        }, ss: function ss(e, t) {
+          return o(u.s(e, t));
+        }, s: function s(e, t) {
+          return t ? e.getUTCSeconds() : e.getSeconds();
+        }, S: function S(e, t) {
+          return Math.round(u.s(e, t) / 60 * 10);
+        }, SS: function SS(e, t) {
+          return o(u.s(e, t) / 60 * 100);
+        }, SSS: function SSS(e, t) {
+          return o(u.s(e, t) / 60 * 1e3, 3);
+        }, Z: function Z(e) {
+          var t = -e.getTimezoneOffset();return (0 <= t ? "+" : "-") + o(parseInt(t / 60)) + ":" + o(t % 60);
+        }, ZZ: function ZZ(e) {
+          var t = -e.getTimezoneOffset();return (0 <= t ? "+" : "-") + o(parseInt(t / 60)) + o(t % 60);
+        } },
+          i = new s(u);t.exports = function (e, t) {
+        return i.run(t, [e, e._useUTC]);
+      };
+    }, { days: 3, fillo: 5, months: 10, "parse-it": 11 }], 7: [function (e, t, r) {
+      t.exports = ["#eee", "#d6e685", "#8cc665", "#44a340", "#1e6823"];
+    }, {}], 8: [function (e, t, r) {
+      var i = e("github-calendar-legend");t.exports = function (e) {
+        function o() {
+          s.current_streak > s.longest_streak && (s.longest_streak = s.current_streak, s.longest_streak_range[0] = s.current_streak_range[0], s.longest_streak_range[1] = s.current_streak_range[1]);
+        }var s = { last_year: 0, longest_streak: -1, longest_streak_range: [], current_streak: 0, current_streak_range: [], weeks: [], days: [], last_contributed: null },
+            u = [];return e.split("\n").slice(2).map(function (e) {
+          return e.trim();
+        }).forEach(function (e) {
+          if (e.startsWith("<g transform")) return u.length && s.weeks.push(u) && (u = []);var t = e.match(/fill="(#[a-z0-9]+)"/),
+              r = e.match(/data-date="([0-9\-]+)"/),
+              n = e.match(/data-count="([0-9]+)"/);if (t = t && t[1], r = r && r[1], n = n && +n[1], t) {
+            var a = { fill: t, date: new Date(r), count: n, level: i.indexOf(t) };0 === s.current_streak && (s.current_streak_range[0] = a.date), a.count ? (++s.current_streak, s.last_year += a.count, s.last_contributed = a.date, s.current_streak_range[1] = a.date) : (o(), s.current_streak = 0), u.push(a), s.days.push(a);
+          }
+        }), o(), s;
+      };
+    }, { "github-calendar-legend": 7 }], 9: [function (e, t, r) {
+      t.exports = function (e, t) {
+        var r = 0,
+            n = [];if (Array.isArray(e)) for (; r < e.length && !1 !== t(e[r], r, e); ++r) {} else if ("object" === (void 0 === e ? "undefined" : _typeof(e)) && null !== e) for (n = Object.keys(e); r < n.length && !1 !== t(e[n[r]], n[r], e); ++r) {}
+      };
+    }, {}], 10: [function (e, t, r) {
+      t.exports = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], t.exports.abbr = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], t.exports.it = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"], t.exports.abbr.it = ["Gen", "Feb", "Mar", "Apr", "Mag", "Giu", "Lug", "Ago", "Set", "Ott", "Nov", "Dic"], t.exports.de = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"], t.exports.abbr.de = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"];
+    }, {}], 11: [function (e, t, r) {
+      var n = function n(e, t, r) {
+        return t && a(e.prototype, t), r && a(e, r), e;
+      };function a(e, t) {
+        for (var r = 0; r < t.length; r++) {
+          var n = t[r];n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n);
+        }
+      }var o = e("regex-escape"),
+          s = (n(u, [{ key: "run", value: function value(e, t) {
+          var r = "";t = t || [];do {
+            var n = e.match(this.re),
+                a = n && n[1],
+                o = a || e.charAt(0);if (a) {
+              var s = this.obj[a];"function" == typeof s && (s = s.apply(this, t)), r += s;
+            } else r += o;e = e.substring(o.length);
+          } while (e);return r;
+        } }]), u);function u(e) {
+        !function (e, t) {
+          if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
+        }(this, u), this.obj = e || {}, this.re = new RegExp("^(" + Object.keys(e).map(o).join("|") + ")");
+      }function i(e, t, r) {
+        return new s(t).run(e, r);
+      }i.Parser = s, t.exports = i;
+    }, { "regex-escape": 12 }], 12: [function (e, t, r) {
+      function n(e) {
+        return e.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+      }n.proto = function () {
+        return RegExp.escape = n;
+      }, t.exports = n;
+    }, {}], 13: [function (e, t, r) {
+      t.exports = function (e, t, r) {
+        var n = [],
+            a = e.length;if (0 === a) return n;var o = t < 0 ? Math.max(0, t + a) : t || 0;for (void 0 !== r && (a = r < 0 ? r + a : r); a-- > o;) {
+          n[a - o] = e[a];
+        }return n;
+      };
+    }, {}] }, {}, [1])(1);
+});
 </script>
 
 <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" defer
 />
+<script async>
+    /*! lazysizes - v5.2.0 */
+!function(a,b){var c=b(a,a.document,Date);a.lazySizes=c,"object"==typeof module&&module.exports&&(module.exports=c)}("undefined"!=typeof window?window:{},function(a,b,c){"use strict";var d,e;if(function(){var b,c={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:!0,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:!0,ricTimeout:0,throttleDelay:125};e=a.lazySizesConfig||a.lazysizesConfig||{};for(b in c)b in e||(e[b]=c[b])}(),!b||!b.getElementsByClassName)return{init:function(){},cfg:e,noSupport:!0};var f=b.documentElement,g=a.HTMLPictureElement,h="addEventListener",i="getAttribute",j=a[h].bind(a),k=a.setTimeout,l=a.requestAnimationFrame||k,m=a.requestIdleCallback,n=/^picture$/i,o=["load","error","lazyincluded","_lazyloaded"],p={},q=Array.prototype.forEach,r=function(a,b){return p[b]||(p[b]=new RegExp("(\\s|^)"+b+"(\\s|$)")),p[b].test(a[i]("class")||"")&&p[b]},s=function(a,b){r(a,b)||a.setAttribute("class",(a[i]("class")||"").trim()+" "+b)},t=function(a,b){var c;(c=r(a,b))&&a.setAttribute("class",(a[i]("class")||"").replace(c," "))},u=function(a,b,c){var d=c?h:"removeEventListener";c&&u(a,b),o.forEach(function(c){a[d](c,b)})},v=function(a,c,e,f,g){var h=b.createEvent("Event");return e||(e={}),e.instance=d,h.initEvent(c,!f,!g),h.detail=e,a.dispatchEvent(h),h},w=function(b,c){var d;!g&&(d=a.picturefill||e.pf)?(c&&c.src&&!b[i]("srcset")&&b.setAttribute("srcset",c.src),d({reevaluate:!0,elements:[b]})):c&&c.src&&(b.src=c.src)},x=function(a,b){return(getComputedStyle(a,null)||{})[b]},y=function(a,b,c){for(c=c||a.offsetWidth;c<e.minSize&&b&&!a._lazysizesWidth;)c=b.offsetWidth,b=b.parentNode;return c},z=function(){var a,c,d=[],e=[],f=d,g=function(){var b=f;for(f=d.length?e:d,a=!0,c=!1;b.length;)b.shift()();a=!1},h=function(d,e){a&&!e?d.apply(this,arguments):(f.push(d),c||(c=!0,(b.hidden?k:l)(g)))};return h._lsFlush=g,h}(),A=function(a,b){return b?function(){z(a)}:function(){var b=this,c=arguments;z(function(){a.apply(b,c)})}},B=function(a){var b,d=0,f=e.throttleDelay,g=e.ricTimeout,h=function(){b=!1,d=c.now(),a()},i=m&&g>49?function(){m(h,{timeout:g}),g!==e.ricTimeout&&(g=e.ricTimeout)}:A(function(){k(h)},!0);return function(a){var e;(a=!0===a)&&(g=33),b||(b=!0,e=f-(c.now()-d),e<0&&(e=0),a||e<9?i():k(i,e))}},C=function(a){var b,d,e=99,f=function(){b=null,a()},g=function(){var a=c.now()-d;a<e?k(g,e-a):(m||f)(f)};return function(){d=c.now(),b||(b=k(g,e))}},D=function(){var g,m,o,p,y,D,F,G,H,I,J,K,L=/^img$/i,M=/^iframe$/i,N="onscroll"in a&&!/(gle|ing)bot/.test(navigator.userAgent),O=0,P=0,Q=0,R=-1,S=function(a){Q--,(!a||Q<0||!a.target)&&(Q=0)},T=function(a){return null==K&&(K="hidden"==x(b.body,"visibility")),K||!("hidden"==x(a.parentNode,"visibility")&&"hidden"==x(a,"visibility"))},U=function(a,c){var d,e=a,g=T(a);for(G-=c,J+=c,H-=c,I+=c;g&&(e=e.offsetParent)&&e!=b.body&&e!=f;)(g=(x(e,"opacity")||1)>0)&&"visible"!=x(e,"overflow")&&(d=e.getBoundingClientRect(),g=I>d.left&&H<d.right&&J>d.top-1&&G<d.bottom+1);return g},V=function(){var a,c,h,j,k,l,n,o,q,r,s,t,u=d.elements;if((p=e.loadMode)&&Q<8&&(a=u.length)){for(c=0,R++;c<a;c++)if(u[c]&&!u[c]._lazyRace)if(!N||d.prematureUnveil&&d.prematureUnveil(u[c]))ba(u[c]);else if((o=u[c][i]("data-expand"))&&(l=1*o)||(l=P),r||(r=!e.expand||e.expand<1?f.clientHeight>500&&f.clientWidth>500?500:370:e.expand,d._defEx=r,s=r*e.expFactor,t=e.hFac,K=null,P<s&&Q<1&&R>2&&p>2&&!b.hidden?(P=s,R=0):P=p>1&&R>1&&Q<6?r:O),q!==l&&(D=innerWidth+l*t,F=innerHeight+l,n=-1*l,q=l),h=u[c].getBoundingClientRect(),(J=h.bottom)>=n&&(G=h.top)<=F&&(I=h.right)>=n*t&&(H=h.left)<=D&&(J||I||H||G)&&(e.loadHidden||T(u[c]))&&(m&&Q<3&&!o&&(p<3||R<4)||U(u[c],l))){if(ba(u[c]),k=!0,Q>9)break}else!k&&m&&!j&&Q<4&&R<4&&p>2&&(g[0]||e.preloadAfterLoad)&&(g[0]||!o&&(J||I||H||G||"auto"!=u[c][i](e.sizesAttr)))&&(j=g[0]||u[c]);j&&!k&&ba(j)}},W=B(V),X=function(a){var b=a.target;if(b._lazyCache)return void delete b._lazyCache;S(a),s(b,e.loadedClass),t(b,e.loadingClass),u(b,Z),v(b,"lazyloaded")},Y=A(X),Z=function(a){Y({target:a.target})},$=function(a,b){try{a.contentWindow.location.replace(b)}catch(c){a.src=b}},_=function(a){var b,c=a[i](e.srcsetAttr);(b=e.customMedia[a[i]("data-media")||a[i]("media")])&&a.setAttribute("media",b),c&&a.setAttribute("srcset",c)},aa=A(function(a,b,c,d,f){var g,h,j,l,m,p;(m=v(a,"lazybeforeunveil",b)).defaultPrevented||(d&&(c?s(a,e.autosizesClass):a.setAttribute("sizes",d)),h=a[i](e.srcsetAttr),g=a[i](e.srcAttr),f&&(j=a.parentNode,l=j&&n.test(j.nodeName||"")),p=b.firesLoad||"src"in a&&(h||g||l),m={target:a},s(a,e.loadingClass),p&&(clearTimeout(o),o=k(S,2500),u(a,Z,!0)),l&&q.call(j.getElementsByTagName("source"),_),h?a.setAttribute("srcset",h):g&&!l&&(M.test(a.nodeName)?$(a,g):a.src=g),f&&(h||l)&&w(a,{src:g})),a._lazyRace&&delete a._lazyRace,t(a,e.lazyClass),z(function(){var b=a.complete&&a.naturalWidth>1;p&&!b||(b&&s(a,"ls-is-cached"),X(m),a._lazyCache=!0,k(function(){"_lazyCache"in a&&delete a._lazyCache},9)),"lazy"==a.loading&&Q--},!0)}),ba=function(a){if(!a._lazyRace){var b,c=L.test(a.nodeName),d=c&&(a[i](e.sizesAttr)||a[i]("sizes")),f="auto"==d;(!f&&m||!c||!a[i]("src")&&!a.srcset||a.complete||r(a,e.errorClass)||!r(a,e.lazyClass))&&(b=v(a,"lazyunveilread").detail,f&&E.updateElem(a,!0,a.offsetWidth),a._lazyRace=!0,Q++,aa(a,b,f,d,c))}},ca=C(function(){e.loadMode=3,W()}),da=function(){3==e.loadMode&&(e.loadMode=2),ca()},ea=function(){if(!m){if(c.now()-y<999)return void k(ea,999);m=!0,e.loadMode=3,W(),j("scroll",da,!0)}};return{_:function(){y=c.now(),d.elements=b.getElementsByClassName(e.lazyClass),g=b.getElementsByClassName(e.lazyClass+" "+e.preloadClass),j("scroll",W,!0),j("resize",W,!0),j("pageshow",function(a){if(a.persisted){var c=b.querySelectorAll("."+e.loadingClass);c.length&&c.forEach&&l(function(){c.forEach(function(a){a.complete&&ba(a)})})}}),a.MutationObserver?new MutationObserver(W).observe(f,{childList:!0,subtree:!0,attributes:!0}):(f[h]("DOMNodeInserted",W,!0),f[h]("DOMAttrModified",W,!0),setInterval(W,999)),j("hashchange",W,!0),["focus","mouseover","click","load","transitionend","animationend"].forEach(function(a){b[h](a,W,!0)}),/d$|^c/.test(b.readyState)?ea():(j("load",ea),b[h]("DOMContentLoaded",W),k(ea,2e4)),d.elements.length?(V(),z._lsFlush()):W()},checkElems:W,unveil:ba,_aLSL:da}}(),E=function(){var a,c=A(function(a,b,c,d){var e,f,g;if(a._lazysizesWidth=d,d+="px",a.setAttribute("sizes",d),n.test(b.nodeName||""))for(e=b.getElementsByTagName("source"),f=0,g=e.length;f<g;f++)e[f].setAttribute("sizes",d);c.detail.dataAttr||w(a,c.detail)}),d=function(a,b,d){var e,f=a.parentNode;f&&(d=y(a,f,d),e=v(a,"lazybeforesizes",{width:d,dataAttr:!!b}),e.defaultPrevented||(d=e.detail.width)&&d!==a._lazysizesWidth&&c(a,f,e,d))},f=function(){var b,c=a.length;if(c)for(b=0;b<c;b++)d(a[b])},g=C(f);return{_:function(){a=b.getElementsByClassName(e.autosizesClass),j("resize",g)},checkElems:g,updateElem:d}}(),F=function(){!F.i&&b.getElementsByClassName&&(F.i=!0,E._(),D._())};return k(function(){e.init&&F()}),d={cfg:e,autoSizer:E,loader:D,init:F,uP:w,aC:s,rC:t,hC:r,fire:v,gW:y,rAF:z}});
+</script>
+
+<!-- Start of Async Drift Code -->
+<script defer>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('wnikhux3399c');
+</script>
+<!-- End of Async Drift Code -->
+
     <script src="app.js" defer></script>
 </body>
 </html>
-    <!-- <div class="heading">Testimonials</div>
-    <div class="cardsDiv">
-        <div class="testimonialCard">
-            <h3>Name</h3>
-            <h4>Designation</h4>
-            <h5>Description</h5>
-        </div>
-    </div> -->
