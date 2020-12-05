@@ -1,0 +1,28 @@
+{
+    "name": "my-portfolio",
+    "version": "1.2.0",
+    "description": "This is my design-dev portfolio",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/srikant-code/My-portfolio.git"
+    },
+    "keywords": [
+        "portfolio",
+        "design",
+        "dev",
+        "javascript",
+        "UX",
+        "experience"
+    ],
+    "author": "Srikant Sahoo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/srikant-code/My-portfolio/issues"
+    },
+    "homepage": "https://github.com/srikant-code/My-portfolio#readme",
+    "dependencies": {}
+}

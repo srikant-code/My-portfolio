@@ -643,7 +643,8 @@ section {
           flex-flow: row wrap;
 }
 
-#aboutMe .aboutContent .aboutImage .desimg, #aboutMe .aboutContent .aboutImage .codeimg {
+#aboutMe .aboutContent .aboutImage .desimg,
+#aboutMe .aboutContent .aboutImage .codeimg {
   width: 400px;
   height: auto;
   margin: 60px;
@@ -825,7 +826,8 @@ section {
   display: block;
 }
 
-#Experience .orgList .orgCard .orgLogo svg, #Experience .orgList .orgCard .orgLogo img {
+#Experience .orgList .orgCard .orgLogo svg,
+#Experience .orgList .orgCard .orgLogo img {
   width: 50px;
   height: 50px;
   -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
@@ -1100,6 +1102,7 @@ section {
   color: #707070;
   font-size: 1.5rem;
   font-weight: 400;
+  padding: 0.5rem 0;
 }
 
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent {
@@ -1310,7 +1313,8 @@ section {
   }
 }
 
-#testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage svg, #testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage img {
+#testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage svg,
+#testimonialsSection .whatOthersSayDiv .wOSContainer .wOSCol-1 .wOSImage img {
   -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
           box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
   border: solid 5px #00a2ff;
@@ -2253,16 +2257,17 @@ img:hover {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.877);
   /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
-.modal-content {
+#img01 {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 80%;
   -webkit-transition-duration: 0.3s !important;
           transition-duration: 0.3s !important;
 }
@@ -2280,7 +2285,8 @@ img:hover {
 }
 
 /* Add Animation */
-.modal-content, #caption {
+.modal-content,
+#caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
