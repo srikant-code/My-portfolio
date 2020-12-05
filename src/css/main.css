@@ -1124,12 +1124,13 @@ section {
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectImages .projectImagesSmall {
   display: inline-block;
   padding: 15px 5px 15px 0px;
-  width: 130px;
   height: 130px;
 }
 
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectImages .projectImagesSmall img {
-  width: 120px;
+  height: 120px;
+  width: auto;
+  max-width: 216px;
   border-radius: 10px;
   display: inline-block;
 }

@@ -24,6 +24,66 @@ const projectsData = {
             ]
         },
         {
+            "name": "Metab Browser 🎯",
+            "date": "Nov 2020 - Present",
+            "iconID": 1,
+            "icontext": "CEO & Founder",
+            "heroImage": "https://user-images.githubusercontent.com/46858011/101265694-7abbf280-376e-11eb-9ef4-9fd11272f844.png",
+            "description": `Metab is going to be the browser that will make Designers, Developers, Content Creators, Students, and all the working professionals more productive. 
+                            <br> Metab will have an avid concept of tabs & task management and will change the way you browse the web today. It will be effective with a lot of proven techniques with different tools integrated into the browser at one place to get everything in front of you and to make you more productive. 
+                            <br><br><b>Status | 🟡</b><br>This project is <b style="color: orange;">ideation</b> phase. I will add more features in future to make more information available to my users.
+                            and try it.
+                            <br><br><b>Team size | 1 | 🤼</b><br> Ahh, I am the only one managing this project😉. From ideation to UX & UI to Development and production. Everything!💪
+                            <br><br><b>Technologies using | 💻</b><br> Figma | React | Golang | Typescript | Electron
+                            <br><br>`,
+            "animation": "left",
+            "link": "https://github.com/metabbrowser",
+            "linkText": "Design link coming soon🎨",
+            "images": [{
+                    "link": "https://user-images.githubusercontent.com/46858011/101265705-89a2a500-376e-11eb-96bc-4075886cb4b2.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265694-7abbf280-376e-11eb-9ef4-9fd11272f844.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265746-e30ad400-376e-11eb-8bea-9f7f051791d2.png",
+                    "alt": "Screenshot"
+                },
+            ]
+        },
+        {
+            "name": "Movie New tab extension 🎬",
+            "date": "July 2019 - present",
+            "iconID": 0,
+            "icontext": "Frontend, UX/UI and Backend",
+            "heroImage": "https://raw.githubusercontent.com/srikant-code/My-Front-End-Codes/master/Javascript%20projects/Movie%20Trailer%20Extension/img/deployment2.png",
+            "description": `Movie New tab is an extension which can run in chrome and firefox browsers. But wait this extension is not yet published to the store. But you can still search your favorite movies and get the details
+                            about it. Try it with the below thing. <br>If you are a <b>coder</b> or a <b>designer</b> and you like my portfolio then please do ⭐ this repo here 🥺 <a href='https://github.com/srikant-code/My-Front-End-Codes' class='boldlink'>GitHub&nbsp;👈&nbsp;</a>
+                            <br><br>
+                            <b>Status | ✅</b><br>This project is <b style="color: green;">almost completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
+                            it.
+                            <br><br><b>Team size | 1 | 🤼</b><br> Ahh, I am the only one managing this project till now😉. From ideation to UX & UI to Development and production. Everything!💪
+                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant`,
+            "animation": "left",
+            "link": "https://movie-new-tab-extension.vercel.app",
+            "linkText": "Browse your fav movies 🍿",
+            "images": [{
+                    "link": "https://raw.githubusercontent.com/srikant-code/My-Front-End-Codes/master/Javascript%20projects/Movie%20Trailer%20Extension/img/deployment2.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://raw.githubusercontent.com/srikant-code/My-Front-End-Codes/master/Javascript%20projects/Movie%20Trailer%20Extension/img/deployment1.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101262644-388eb300-3766-11eb-83e1-99d5167151f9.png",
+                    "alt": "Screenshot"
+                },
+            ]
+        },
+        {
             "name": "CakeShake Website 🎂",
             "date": "March 2020 - present",
             "iconID": 0,
@@ -69,7 +129,7 @@ const projectsData = {
             "heroImage": "/images/JIGYASU_LOGO-01.jpg",
             "description": `Jigyasu is an education startup in Odisha. It has been doing research in the field of education to develop physical experiments & demonstrations models in Science which are mapped to the curriculum of the schools.
                             <br> It is a team project specifically aimed for school students from Grades 6-12.
-                            <br><br><b>Status | ✅</b> <br> This project is <b style="color: green;">completed</b>, but <b>it is a private repository</b>. So I can only show you the screenshots of what we had done. Check the below screenshots👇</b><br>
+                            <br><br><b>Status | ✅</b> <br> This project is <b style="color: green;">completed</b>, but <b>it is a private repository</b>. So I can only show you the Screenshots of what we had done. Check the below Screenshots👇</b><br>
                             <!-- <br> You can have a look at <a class="boldlink" href="https://jigyasu.co.in/">jigyasu.co.in 👈</a> in which you can see the live progress till now.
 To know more about this you can go to <a class="boldlink" href="https://jigyasu.co.in/about">jigyasu.co.in/about 👈</a>  -->
                             <br><b>Team size | 3 | 🤼</b><br><b>My role👉 </b>I was responsible for the UX as well as UI Design and frontend development. Also looked into the SEO of it. 
@@ -79,15 +139,15 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
             "linkText": "",
             "images": [{
                     "link": "/images/jig2.png",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
                 {
                     "link": "/images/jig3.png",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
                 {
                     "link": "/images/jig4.png",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 }
             ]
         },
@@ -100,7 +160,7 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
             "description": `It is a platform in which the Startups from all over India will be ranked with some parameters and accordingly it will be accessible to the common people so that they can analyze each startup by themselves.
                             <br>It was a team project and I had done the front end development and design of the UI.
                             <br><br>
-                            <b>Status | ✅</b><br>This project is still in <b style="color: orange;">development</b>, but <b>it is a private repository</b>. So I can only show you the screenshots of what we had done. Check the below screenshots👇</b><br>
+                            <b>Status | ✅</b><br>This project is still in <b style="color: orange;">development</b>, but <b>it is a private repository</b>. So I can only show you the Screenshots of what we had done. Check the below Screenshots👇</b><br>
                             <!--You can have a look at <a class="boldlink" href="http://startuprankingindia.com">startuprankingindia.com&nbsp;👈</a> in which you can see the live progress till now.-->
                             <br><b>Team size | 4 | 🤼</b><br><b>My role👉 </b>I was responsible for the UX as well as UI Design and frontend development. Also looked into the SEO of it. 
                             <br><br><b>Technologies used | 💻</b><br> HTML 5 | CSS 3 | Sass | TypeScript | NodeJS | Figma`,
@@ -109,13 +169,249 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
             "linkText": "",
             "images": [{
                     "link": "/images/startup.jpg",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
                 {
                     "link": "/images/startupodishapage.png",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
             ]
+        },
+        {
+            "name": "LitmusChaos Website 🧪",
+            "date": "July 2019 - present",
+            "iconID": 0,
+            "icontext": "Frontend, UX and UI Design",
+            "heroImage": "https://user-images.githubusercontent.com/46858011/101265585-a8ed0280-376d-11eb-8377-7222fddad9e7.png",
+            "description": `It is a very simple app that will give you the information about the States/Union Territory and the Capital of all the States in India. It's made using Dialogflow and hosted on Google Assistant. <br>It is a successful project
+                            and I am able to reach around 11,000 visitors since I published it. There were around 550 unique visitors in the past month.
+                            <br><br>
+                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
+                            it.
+                            <br> <b>Give it a 5-star rating too😊</b>
+                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
+                            <br><br> See the UX and UI <a href="https://www.figma.com/file/Cf3ooKnh8dLrpUq4IayKW0/ChaosCarnival-Copy" target="_blank" rel="noopener noreferrer"><b class="boldlink">at&nbsp;Figma&nbsp;</b></a> `,
+            "animation": "left",
+            "link": "https://litmuschaos.io",
+            "linkText": "Open LitmusChaos 🧪",
+            "images": [{
+                    "link": "https://user-images.githubusercontent.com/46858011/101265594-bdc99600-376d-11eb-8233-50fce5244288.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265602-ce7a0c00-376d-11eb-96f3-d9abf6dfcbde.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265585-a8ed0280-376d-11eb-8377-7222fddad9e7.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265615-ece00780-376d-11eb-8f57-cbe454388ba4.png",
+                    "alt": "Screenshot"
+                },
+            ]
+        },
+        {
+            "name": "ChaosCarnival Website 🎡",
+            "date": "July 2019 - present",
+            "iconID": 0,
+            "icontext": "Frontend, UX and UI Design",
+            "heroImage": "https://user-images.githubusercontent.com/46858011/101263248-e8b1eb00-3769-11eb-846b-e2f879cef092.png",
+            "description": `It is a very simple app that will give you the information about the States/Union Territory and the Capital of all the States in India. It's made using Dialogflow and hosted on Google Assistant. <br>It is a successful project
+                            and I am able to reach around 11,000 visitors since I published it. There were around 550 unique visitors in the past month.
+                            <br><br>
+                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
+                            it.
+                            <br> <b>Give it a 5-star rating too😊</b>
+                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
+                            <br><br> See the UX and UI <a href="https://www.figma.com/file/Cf3ooKnh8dLrpUq4IayKW0/ChaosCarnival-Copy" target="_blank" rel="noopener noreferrer"><b class="boldlink">at&nbsp;Figma&nbsp;</b></a> `,
+            "animation": "left",
+            "link": "https://chaoscarnival.io",
+            "linkText": "Open ChaosCarnival 🎡",
+            "images": [{
+                    "link": "https://user-images.githubusercontent.com/46858011/101263256-fcf5e800-3769-11eb-98cd-307070510e2f.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101263263-08491380-376a-11eb-88a8-fd4f75ae51a5.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101263289-20209780-376a-11eb-81eb-cb0a7c499ec5.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101263294-2dd61d00-376a-11eb-8e77-82296f678e3c.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265203-c5d40680-376a-11eb-9eed-a79c1fc6b48e.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "/images/collection/chaoscarnival logo.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "/images/collection/chaoscarnival.png",
+                    "alt": "Screenshot"
+                },
+            ]
+        },
+        {
+            "name": "Kubera Propel Backend 🚂",
+            "date": "July 2019 - present",
+            "iconID": 0,
+            "icontext": "Backend and API Design",
+            "heroImage": "https://user-images.githubusercontent.com/46858011/101265404-3deefc00-376c-11eb-8d96-8ef15a4f53eb.png",
+            "description": `It is a very simple app that will give you the information about the States/Union Territory and the Capital of all the States in India. It's made using Dialogflow and hosted on Google Assistant. <br>It is a successful project
+                            and I am able to reach around 11,000 visitors since I published it. There were around 550 unique visitors in the past month.
+                            <br><br>
+                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
+                            it.
+                            <br> <b>Give it a 5-star rating too😊</b>
+                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant`,
+            "animation": "left",
+            "link": "",
+            "linkText": "This is project private😔",
+            "images": [{
+                    "link": "https://user-images.githubusercontent.com/46858011/101265404-3deefc00-376c-11eb-8d96-8ef15a4f53eb.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265416-50693580-376c-11eb-833b-96004301eaee.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265428-5e1ebb00-376c-11eb-9434-651d7e18bd52.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265440-83132e00-376c-11eb-941c-7ddda3960ce4.png",
+                    "alt": "Screenshot"
+                },
+            ]
+        },
+        {
+            "name": "Growth Metrics 📈",
+            "date": "August 2020 - September 2020",
+            "iconID": 1,
+            "icontext": "Backend and UX",
+            "heroImage": "https://user-images.githubusercontent.com/46858011/101265302-51e62e00-376b-11eb-9b4d-da61f6f46cbb.png",
+            "description": `This app "The Hello World" gives you information on different ways of writing "Hello World" in different programming languages. Just open your google assistant and try to say "talk to The Hello World" and explore my app.
+                            <br><br><b>Status | ☑</b><br>This project is <b style="color: orange;">development</b> phase. I will add more features in future to make more information available to my users. You can check out the project using the link below
+                            and try it.
+                            <br> <b>Give it a 5-star rating too😊</b>
+                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
+                            <br><br>
+                            <b style="color: rgb(214, 0, 0);">Warning:</b> It's still in development and thus you might see some errors in the conversation.`,
+            "animation": "left",
+            "link": "",
+            "linkText": "This is project private😔",
+            "images": [{
+                    "link": "https://user-images.githubusercontent.com/46858011/101265339-89ed7100-376b-11eb-9850-8648c6cae347.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265302-51e62e00-376b-11eb-9b4d-da61f6f46cbb.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101265351-9bcf1400-376b-11eb-940c-9f9b66cdd736.png",
+                    "alt": "Screenshot"
+                },
+            ]
+        },
+        {
+            "name": "Bladers Multiplayer spinning tops(Game UX) 🎮",
+            "date": "July 2019 - present",
+            "iconID": 1,
+            "icontext": "UX and UI Design",
+            "heroImage": "/images/collection/gameui1.png",
+            "description": `It is a very simple app that will give you the information about the States/Union Territory and the Capital of all the States in India. It's made using Dialogflow and hosted on Google Assistant. <br>It is a successful project
+                            and I am able to reach around 11,000 visitors since I published it. There were around 550 unique visitors in the past month.
+                            <br><br>
+                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
+                            it.
+                            <br> <b>Give it a 5-star rating too😊</b>
+                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
+                            <br><br> See the live design clickable prototype <a href="https://www.figma.com/proto/oMUYYYFMhqMODTLeMNIA1R/Beyblade-Game-UI?node-id=50%3A2" target="_blank" rel="noopener noreferrer"><b class="boldlink">at&nbsp;Figma&nbsp;</b></a> `,
+            "animation": "left",
+            "link": "",
+            "linkText": "Download Now 🎮 ▶",
+            "images": [{
+                    "link": "/images/collection/gameuiAD.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "/images/collection/gameuiicon.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "/images/collection/gameuiicon2.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "/images/collection/gameui2.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "/images/collection/gameui3.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "/images/collection/gameui4.png",
+                    "alt": "Screenshot"
+                },
+            ]
+        },
+        {
+            "name": "Litmus & Repute UX 🧪",
+            "date": "Jun 2020 - August 2020",
+            "iconID": 0,
+            "icontext": "UX and UI",
+            "heroImage": "https://user-images.githubusercontent.com/46858011/101263065-cec3d880-3768-11eb-8a77-d405260a46d9.png",
+            "description": `This app "The Hello World" gives you information on different ways of writing "Hello World" in different programming languages. Just open your google assistant and try to say "talk to The Hello World" and explore my app.
+                            <br><br><b>Status | ☑</b><br>This project is <b style="color: orange;">development</b> phase. I will add more features in future to make more information available to my users. You can check out the project using the link below
+                            and try it.
+                            <br> <b>Give it a 5-star rating too😊</b>
+                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
+                            <br><br>
+                            <b style="color: rgb(214, 0, 0);">Warning:</b> It's still in development and thus you might see some errors in the conversation.`,
+            "animation": "left",
+            "link": "",
+            "linkText": "This project is private 😔",
+            "images": [{
+                    "link": "https://user-images.githubusercontent.com/46858011/101263151-2a8e6180-3769-11eb-95d6-5f408a9b3fba.png",
+                    "alt": "Screenshot"
+                },
+                {
+                    "link": "https://user-images.githubusercontent.com/46858011/101263065-cec3d880-3768-11eb-8a77-d405260a46d9.png",
+                    "alt": "Screenshot"
+                },
+            ]
+        },
+        {
+            "name": "ASL Recognition App 👁‍🗨",
+            "date": "August 2020",
+            "iconID": 0,
+            "icontext": "UX and UI",
+            "heroImage": "https://user-images.githubusercontent.com/46858011/101266302-983f8b00-3773-11eb-987f-5e54d315c919.png",
+            "description": `This app "The Hello World" gives you information on different ways of writing "Hello World" in different programming languages. Just open your google assistant and try to say "talk to The Hello World" and explore my app.
+                            <br><br><b>Status | ☑</b><br>This project is <b style="color: orange;">development</b> phase. I will add more features in future to make more information available to my users. You can check out the project using the link below
+                            and try it.
+                            <br> <b>Give it a 5-star rating too😊</b>
+                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
+                            <br><br>
+                            <b style="color: rgb(214, 0, 0);">Warning:</b> It's still in development and thus you might see some errors in the conversation.`,
+            "animation": "left",
+            "link": "",
+            "linkText": "Design link coming soon 🎨",
+            "images": [{
+                "link": "https://user-images.githubusercontent.com/46858011/101266302-983f8b00-3773-11eb-987f-5e54d315c919.png",
+                "alt": "Screenshot"
+            }, ]
         },
         {
             "name": "States and Capitals Chatbot 🤖",
@@ -135,129 +431,15 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
             "linkText": "Try the voice chatbot 🤖",
             "images": [{
                     "link": "/images/states of india.png",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
                 {
                     "link": "/images/soianalytics1.png",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
                 {
                     "link": "/images/soianalytics2.png",
-                    "alt": "screenshot"
-                },
-            ]
-        },
-        {
-            "name": "ChaosCarnival Website 🎡",
-            "date": "July 2019 - present",
-            "iconID": 0,
-            "icontext": "Frontend, UX and UI Design",
-            "heroImage": "/images/collection/chaoscarnival.png",
-            "description": `It is a very simple app that will give you the information about the States/Union Territory and the Capital of all the States in India. It's made using Dialogflow and hosted on Google Assistant. <br>It is a successful project
-                            and I am able to reach around 11,000 visitors since I published it. There were around 550 unique visitors in the past month.
-                            <br><br>
-                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
-                            it.
-                            <br> <b>Give it a 5-star rating too😊</b>
-                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant`,
-            "animation": "left",
-            "link": "https://chaoscarnival.io",
-            "linkText": "Open ChaosCarnival 🎡",
-            "images": [{
-                    "link": "/images/collection/chaoscarnival logo.png",
-                    "alt": "screenshot"
-                },
-                // {
-                //     "link": "/images/soianalytics1.png",
-                //     "alt": "screenshot"
-                // },
-                // {
-                //     "link": "/images/soianalytics2.png",
-                //     "alt": "screenshot"
-                // },
-            ]
-        },
-        {
-            "name": "Kubera Propel Backend 🚂",
-            "date": "July 2019 - present",
-            "iconID": 0,
-            "icontext": "Backend and API Design",
-            "heroImage": "/images/states.jpg",
-            "description": `It is a very simple app that will give you the information about the States/Union Territory and the Capital of all the States in India. It's made using Dialogflow and hosted on Google Assistant. <br>It is a successful project
-                            and I am able to reach around 11,000 visitors since I published it. There were around 550 unique visitors in the past month.
-                            <br><br>
-                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
-                            it.
-                            <br> <b>Give it a 5-star rating too😊</b>
-                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant`,
-            "animation": "left",
-            "link": "",
-            "linkText": "",
-            "images": [{
-                "link": "/images/states of india.png",
-                "alt": "screenshot"
-            }, ]
-        },
-        {
-            "name": "Movie New tab extension 📦",
-            "date": "July 2019 - present",
-            "iconID": 0,
-            "icontext": "Frontend, UX/UI and Backend",
-            "heroImage": "/images/states.jpg",
-            "description": `It is a very simple app that will give you the information about the States/Union Territory and the Capital of all the States in India. It's made using Dialogflow and hosted on Google Assistant. <br>It is a successful project
-                            and I am able to reach around 11,000 visitors since I published it. There were around 550 unique visitors in the past month.
-                            <br><br>
-                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
-                            it.
-                            <br> <b>Give it a 5-star rating too😊</b>
-                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant`,
-            "animation": "left",
-            "link": "",
-            "linkText": "",
-            "images": [{
-                "link": "/images/states of india.png",
-                "alt": "screenshot"
-            }, ]
-        },
-        {
-            "name": "Bladers Multiplayer spinning tops(Game UX) 🎮",
-            "date": "July 2019 - present",
-            "iconID": 1,
-            "icontext": "UX and UI Design",
-            "heroImage": "/images/collection/gameui1.png",
-            "description": `It is a very simple app that will give you the information about the States/Union Territory and the Capital of all the States in India. It's made using Dialogflow and hosted on Google Assistant. <br>It is a successful project
-                            and I am able to reach around 11,000 visitors since I published it. There were around 550 unique visitors in the past month.
-                            <br><br>
-                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
-                            it.
-                            <br> <b>Give it a 5-star rating too😊</b>
-                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant`,
-            "animation": "left",
-            "link": "",
-            "linkText": "Download Now 🎮 ▶",
-            "images": [{
-                    "link": "/images/collection/gameuiAD.png",
-                    "alt": "screenshot"
-                },
-                {
-                    "link": "/images/collection/gameuiicon.png",
-                    "alt": "screenshot"
-                },
-                {
-                    "link": "/images/collection/gameuiicon2.png",
-                    "alt": "screenshot"
-                },
-                {
-                    "link": "/images/collection/gameui2.png",
-                    "alt": "screenshot"
-                },
-                {
-                    "link": "/images/collection/gameui3.png",
-                    "alt": "screenshot"
-                },
-                {
-                    "link": "/images/collection/gameui4.png",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
             ]
         },
@@ -276,140 +458,87 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
                             <b style="color: rgb(214, 0, 0);">Warning:</b> It's still in development and thus you might see some errors in the conversation.`,
             "animation": "left",
             "link": "https://assistant.google.com/services/a/uid/000000d7b1e5ad85?hl=en-IN",
-            "linkText": "",
+            "linkText": "Try the voice chatbot 🤖",
             "images": [{
                     "link": "/images/helloworldapp.jpg",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
                 {
                     "link": "/images/helloworldapp2.jpg",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
                 {
                     "link": "/images/helloworld.png",
-                    "alt": "screenshot"
+                    "alt": "Screenshot"
                 },
             ]
         },
         {
-            "name": "Metab Browser 🎯",
-            "date": "Nov 2020 - Present",
-            "iconID": 1,
-            "icontext": "CEO & Founder",
-            "heroImage": "/images/collection/metab2.png",
-            "description": `This app "The Hello World" gives you information on different ways of writing "Hello World" in different programming languages. Just open your google assistant and try to say "talk to The Hello World" and explore my app.
-                            <br><br><b>Status | ☑</b><br>This project is <b style="color: orange;">development</b> phase. I will add more features in future to make more information available to my users. You can check out the project using the link below
-                            and try it.
-                            <br> <b>Give it a 5-star rating too😊</b>
-                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
-                            <br><br>
-                            <b style="color: rgb(214, 0, 0);">Warning:</b> It's still in development and thus you might see some errors in the conversation.`,
-            "animation": "left",
-            "link": "https://assistant.google.com/services/a/uid/000000d7b1e5ad85?hl=en-IN",
-            "linkText": "",
-            "images": [{
-                    "link": "/images/collection/metab1.png",
-                    "alt": "screenshot"
-                },
-                // {
-                //     "link": "/images/collection/",
-                //     "alt": "screenshot"
-                // },
-                // {
-                //     "link": "/images/collection/",
-                //     "alt": "screenshot"
-                // },
-            ]
-        },
-        {
-            "name": "Litmus & Repute UX 🧪",
-            "date": "Jun 2020 - August 2020",
-            "iconID": 0,
-            "icontext": "UX and UI",
-            "heroImage": "/images/hello.jpg",
-            "description": `This app "The Hello World" gives you information on different ways of writing "Hello World" in different programming languages. Just open your google assistant and try to say "talk to The Hello World" and explore my app.
-                            <br><br><b>Status | ☑</b><br>This project is <b style="color: orange;">development</b> phase. I will add more features in future to make more information available to my users. You can check out the project using the link below
-                            and try it.
-                            <br> <b>Give it a 5-star rating too😊</b>
-                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
-                            <br><br>
-                            <b style="color: rgb(214, 0, 0);">Warning:</b> It's still in development and thus you might see some errors in the conversation.`,
-            "animation": "left",
-            "link": "https://assistant.google.com/services/a/uid/000000d7b1e5ad85?hl=en-IN",
-            "linkText": "Try this voice chatbot 🤖",
-            "images": [{
-                    "link": "/images/helloworldapp.jpg",
-                    "alt": "screenshot"
-                },
-                {
-                    "link": "/images/helloworldapp2.jpg",
-                    "alt": "screenshot"
-                },
-                {
-                    "link": "/images/helloworld.png",
-                    "alt": "screenshot"
-                },
-            ]
-        },
-        {
-            "name": "Growth Metrics 📈",
-            "date": "August 2020 - September 2020",
-            "iconID": 1,
-            "icontext": "Backend and UX",
-            "heroImage": "/images/hello.jpg",
-            "description": `This app "The Hello World" gives you information on different ways of writing "Hello World" in different programming languages. Just open your google assistant and try to say "talk to The Hello World" and explore my app.
-                            <br><br><b>Status | ☑</b><br>This project is <b style="color: orange;">development</b> phase. I will add more features in future to make more information available to my users. You can check out the project using the link below
-                            and try it.
-                            <br> <b>Give it a 5-star rating too😊</b>
-                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
-                            <br><br>
-                            <b style="color: rgb(214, 0, 0);">Warning:</b> It's still in development and thus you might see some errors in the conversation.`,
-            "animation": "left",
-            "link": "https://assistant.google.com/services/a/uid/000000d7b1e5ad85?hl=en-IN",
-            "linkText": "Try this voice chatbot 🤖",
-            "images": [{
-                    "link": "/images/helloworldapp.jpg",
-                    "alt": "screenshot"
-                },
-                {
-                    "link": "/images/helloworldapp2.jpg",
-                    "alt": "screenshot"
-                },
-                {
-                    "link": "/images/helloworld.png",
-                    "alt": "screenshot"
-                },
-            ]
-        },
-        {
-            "name": "ASL Recognition App 👁‍🗨",
+            "name": "Neuomophic fully functional Calculator 🧮",
             "date": "August 2020",
-            "iconID": 1,
-            "icontext": "UX and UI",
-            "heroImage": "/images/hello.jpg",
-            "description": `This app "The Hello World" gives you information on different ways of writing "Hello World" in different programming languages. Just open your google assistant and try to say "talk to The Hello World" and explore my app.
-                            <br><br><b>Status | ☑</b><br>This project is <b style="color: orange;">development</b> phase. I will add more features in future to make more information available to my users. You can check out the project using the link below
+            "iconID": 0,
+            "icontext": "Full stack, UX and UI",
+            "heroImage": "https://raw.githubusercontent.com/srikant-code/My-Front-End-Codes/master/Javascript%20projects/Calculator/deployment.png",
+            "description": `This is a miscellaneous small project using basic web technologies. Try giving any combination of inputs and see it's output.
+                            <br><br><b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>. You can check out the project using the link below 👇
                             and try it.
-                            <br> <b>Give it a 5-star rating too😊</b>
-                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
-                            <br><br>
-                            <b style="color: rgb(214, 0, 0);">Warning:</b> It's still in development and thus you might see some errors in the conversation.`,
+                            You can see the code on <a href="https://github.com/srikant-code/My-Front-End-Codes" target="_blank" rel="noopener noreferrer"><b class="boldlink">Github&nbsp;</b></a> here. And give a ⭐ it of you like this😊
+                            <br><br><b>Technologies used | 💻</b><br> Javascript ES6 | Sass | HTML5 | CSS3
+                            <br><br>See the UX and UI <a href="https://www.figma.com/proto/8X3JxPt8xf4YCtm9JYjSrB/004-Calculator?node-id=0%3A1" target="_blank" rel="noopener noreferrer"><b class="boldlink">at&nbsp;Figma&nbsp;</b></a> `,
             "animation": "left",
-            "link": "https://assistant.google.com/services/a/uid/000000d7b1e5ad85?hl=en-IN",
-            "linkText": "Try this voice chatbot 🤖",
+            "link": "https://srikant-code.github.io/My-Front-End-Codes/Javascript%20projects/Calculator/calculator.html",
+            "linkText": "Try my Calculator 🧮",
             "images": [{
-                    "link": "/images/helloworldapp.jpg",
-                    "alt": "screenshot"
+                    "link": "https://user-images.githubusercontent.com/46858011/101262979-19912080-3768-11eb-82d8-4f2f5f628a02.png",
+                    "alt": "Screenshot"
                 },
                 {
-                    "link": "/images/helloworldapp2.jpg",
-                    "alt": "screenshot"
+                    "link": "https://user-images.githubusercontent.com/46858011/101263003-4c3b1900-3768-11eb-8d50-89a93a21c1d0.png",
+                    "alt": "Screenshot"
                 },
                 {
-                    "link": "/images/helloworld.png",
-                    "alt": "screenshot"
+                    "link": "https://raw.githubusercontent.com/srikant-code/My-Front-End-Codes/master/Javascript%20projects/Calculator/deployment.png",
+                    "alt": "Screenshot"
                 },
             ]
+        },
+        {
+            "name": "Conveyor Belt Animation 🧪",
+            "date": "August 2020",
+            "iconID": 0,
+            "icontext": "Full stack, UX and UI",
+            "heroImage": "https://raw.githubusercontent.com/srikant-code/My-Front-End-Codes/master/CSS%20projects/Conveyor%20Belt%20Animation/deployment.png",
+            "description": `This is a miscellaneous small project using basic web technologies. Try giving any combination of inputs and see it's output.
+                            <br><br><b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>. You can check out the project using the link below 👇
+                            and try it.
+                            You can see the code on <a href="https://github.com/srikant-code/My-Front-End-Codes" target="_blank" rel="noopener noreferrer"><b class="boldlink">Github&nbsp;</b></a> here. And give a ⭐ it of you like this😊
+                            <br><br><b>Technologies used | 💻</b><br> Javascript ES6 | Sass | HTML5 | CSS3`,
+            "animation": "left",
+            "link": "https://srikant-code.github.io/My-Front-End-Codes/CSS%20projects/Conveyor%20Belt%20Animation/conveyor.html",
+            "linkText": "See the animation 💫",
+            "images": [{
+                "link": "https://raw.githubusercontent.com/srikant-code/My-Front-End-Codes/master/CSS%20projects/Conveyor%20Belt%20Animation/deployment.png",
+                "alt": "Screenshot"
+            }, ]
+        },
+        {
+            "name": "Space Exploration Animation 🧮",
+            "date": "August 2020",
+            "iconID": 0,
+            "icontext": "Full stack, UX and UI",
+            "heroImage": "https://raw.githubusercontent.com/srikant-code/My-Front-End-Codes/master/CSS%20projects/Jigyasu%20Animation%20and%20login%20page/deployment.png",
+            "description": `This is a miscellaneous small project using basic web technologies. Try giving any combination of inputs and see it's output.
+                            <br><br><b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>. You can check out the project using the link below 👇
+                            and try it.
+                            You can see the code on <a href="https://github.com/srikant-code/My-Front-End-Codes" target="_blank" rel="noopener noreferrer"><b class="boldlink">Github&nbsp;</b></a> here. And give a ⭐ it of you like this😊
+                            <br><br><b>Technologies used | 💻</b><br> Javascript ES6 | Sass | HTML5 | CSS3`,
+            "animation": "left",
+            "link": "https://srikant-code.github.io/My-Front-End-Codes/CSS%20projects/Jigyasu%20Animation%20and%20login%20page/404%20animations%20modules%20ON.html",
+            "linkText": "See my animation 🚀",
+            "images": [{
+                "link": "https://raw.githubusercontent.com/srikant-code/My-Front-End-Codes/master/CSS%20projects/Jigyasu%20Animation%20and%20login%20page/deployment.png",
+                "alt": "Screenshot"
+            }, ]
         },
     ],
     "projecticons": [{
@@ -535,6 +664,13 @@ const GenerateProjectsHTML = () => {
     <!-- End Google Tag Manager (noscript) -->
     
     <section id="projectsSection" data-aos="fade-right" data-aos-delay="100">
+        <div style="display:flex;width: 100%;">
+            <a href="/" rel="noopener noreferrer" style="margin: 60px; position: absolute;" class="projectLinkWrapper" data-aos="fade-left" data-aos-delay="1000">
+                <div class="projectLink roundedButton">
+                    <span>👈 Back to home</span>
+                </div>
+            </a>
+        </div>
         <div class="heading">My Projects</div>
         <!--<div class="projectsScrollView">-->
         <div class="projectsCardsDiv">
@@ -561,10 +697,14 @@ const GenerateProjectsHTML = () => {
                         ${element.linkText!=""?element.linkText:"Open&nbsp;Project&nbsp;<span>⚙</span>"}
                     </div>
                 </a>`
-            } else return ""
+            } else return `<a href="#${element.name}" rel="noopener noreferrer" class="projectLinkWrapper" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="projectLink roundedButton">
+                        ${element.linkText!=""?element.linkText:"Link not available&nbsp;<span>🚫</span>"}
+                    </div>
+                </a>`
         }
         template = template.concat(`
-        <div class="projectsBox" data-aos="fade-${element.animation}" data-aos-delay="100">
+        <div class="projectsBox" id="${element.name}" data-aos="fade-${element.animation}" data-aos-delay="100">
             <div class="projectsBoxImage" data-aos="fade-zoom" data-aos-delay="100">
                 <img class="lazyload" src="${element.heroImage}" alt="${element.name} hero image" data-aos="fade-zoom" data-aos-delay="100">
                 <div class="projectsBoxText">
