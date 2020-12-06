@@ -184,6 +184,110 @@ section {
     display: none;
 }
 
+.navbarhorizontal {
+    @include dim(100%,
+    fit-content);
+    position: absolute;
+    display: block;
+    // overflow: hidden;
+    left: 0px;
+    top: -14px;
+    z-index: 100;
+    background-color: $backgroundTheme;
+    border-radius: 0;
+    @media (max-width: $tabletBreakpoint) {
+        display: contents;
+    }
+    .logo {
+        @include dim(90px,
+        90px);
+        @include neo-unpressed-light();
+        @include flex(center,
+        center,
+        center);
+        margin-top: 30px;
+        top: -10px;
+        left: 20px;
+        border: none;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        img {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+    }
+    .navElementsULhorizontal {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: 100vw;
+        align-items: center;
+        .navItemhorizontal {
+            @include transition(0.3s);
+            justify-content: space-between;
+            cursor: pointer;
+            border-radius: 50%;
+            text-align: center;
+            width: 80px;
+            height: 80px;
+            margin-top: 12px;
+            margin-right: 22px;
+            display: flex;
+            border: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            //transition-duration: $transition3;
+            @media (max-width: $phoneBreakpoint) {
+                margin-right: 12px;
+            }
+            &:hover {
+                @include neo-pressed-light();
+                @include transition(0.3s);
+            }
+            &:first-child {
+                // margin-top: 40px;
+            }
+            li span {
+                top: 0;
+                left: 0;
+                margin-top: 100px;
+                z-index: 100;
+                &::after {
+                    right: 70%;
+                    margin-top: -35px;
+                    border-color: transparent transparent #000 transparent;
+                }
+            }
+            .lastfix {
+                left: -85%;
+                &::after {
+                    right: 20%;
+                }
+            }
+            svg {
+                margin-top: 5px;
+                margin-left: 2px;
+                width: 30px;
+                height: 30px;
+                fill: $black;
+            }
+        }
+        .notOnPhone {
+            display: flex;
+            @media (max-width: $phoneBreakpoint) {
+                display: none;
+            }
+        }
+    }
+    #activeNav {
+        @include neo-unpressed-light();
+    }
+    //media Queries
+} //navbar Ends
 .navbar {
     @include dim($navWidth,
     100vh);
@@ -323,6 +427,9 @@ body {
 #home {
     //background-color: #1e90ff;
     position: relative;
+    // background-image: url(/images/cakeshake.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     @include flex();
     .introtextDiv {
         @include flex();
@@ -350,6 +457,7 @@ body {
                 @include flex();
                 margin-top: -150px;
                 margin-left: 30px;
+                margin-bottom: 40px;
             }
             .hello {
                 @include font($black,
@@ -371,6 +479,7 @@ body {
                     transform: scale(0.7);
                     width: 140vw;
                     margin: 0;
+                    margin-bottom: -40px;
                     //border: solid;
                 }
                 @media (max-width: 638px) {
@@ -505,7 +614,7 @@ body {
     background-color: #fff;
     .heading {
         padding-top: 0px;
-        margin-top: 100px;
+        margin-top: 160px;
         font-size: 2.5rem;
     }
     .aboutContent {
@@ -690,6 +799,8 @@ body {
     }
     .heading {
         font-size: 2.5rem;
+        margin-top: 90px;
+        margin-bottom: -70px;
     }
     //.projectsScrollView{
     //   width: 75%;
@@ -726,10 +837,19 @@ body {
             @media (max-width: $tabletBreakpoint) {
                 width: 90vw;
             }
+            // @media (max-width: $phoneBreakpoint) {
+            //     &:hover
+            // }
             &:hover {
                 transform: scale(1.05);
                 @include transition(0.3s);
                 @include neo-unpressed-light(1.3);
+                .projectDescription {
+                    display: block!important;
+                }
+                .onPhone {
+                    display: none !important;
+                }
             }
             .projectsBoxImage {
                 width: inherit;
@@ -756,6 +876,11 @@ body {
                         border-radius: 50px;
                         height: 50px;
                         @include neo-pressed-light();
+                        @media (max-width: 420px) {
+                            transform: scale(0.84);
+                            width: 130%;
+                            margin-left: -3.5rem;
+                        }
                         .projectIcons {
                             // border: solid 1px;
                             display: inline-block;
@@ -786,6 +911,17 @@ body {
                         400);
                         padding: 0.5rem 0;
                     }
+                    .onPhone {
+                        display: none;
+                    }
+                    @media (max-width: $phoneBreakpoint) {
+                        .onPhone {
+                            display: block;
+                            font-weight: 800;
+                            color: coral;
+                            margin-top: 13px;
+                        }
+                    }
                 }
                 .projectExpandedContent {
                     // display: none;
@@ -794,6 +930,9 @@ body {
                         @include paragraphText($black,
                         1rem);
                         padding: 0px 30px;
+                        @media (max-width: $phoneBreakpoint) {
+                            display: none;
+                        }
                     }
                     .projectImages {
                         padding-left: 30px;
