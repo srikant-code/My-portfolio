@@ -189,8 +189,7 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
                             <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>, but I will add more features in future to make more information available to my users. You can check out the project using the link below and try
                             it.
                             <br> <b>Give it a 5-star rating too😊</b>
-                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant
-                            <br><br> See the UX and UI <a href="https://www.figma.com/file/Cf3ooKnh8dLrpUq4IayKW0/ChaosCarnival-Copy" target="_blank" rel="noopener noreferrer"><b class="boldlink">at&nbsp;Figma&nbsp;</b></a> `,
+                            <br><br><b>Technologies used | 💻</b><br> Dialogflow | Platform - Google Assistant`,
             "animation": "left",
             "link": "https://litmuschaos.io",
             "linkText": "Open LitmusChaos 🧪",
@@ -250,11 +249,11 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
                     "alt": "Screenshot"
                 },
                 {
-                    "link": "/images/collection/chaoscarnival logo.png",
+                    "link": "https://user-images.githubusercontent.com/46858011/101271800-23d50e00-37ac-11eb-9506-e422638ce8e8.png",
                     "alt": "Screenshot"
                 },
                 {
-                    "link": "/images/collection/chaoscarnival.png",
+                    "link": "https://user-images.githubusercontent.com/46858011/101271798-22a3e100-37ac-11eb-828e-0b30f4353528.png",
                     "alt": "Screenshot"
                 },
             ]
@@ -328,7 +327,7 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
             "date": "July 2019 - present",
             "iconID": 1,
             "icontext": "UX and UI Design",
-            "heroImage": "/images/collection/gameui1.png",
+            "heroImage": "https://user-images.githubusercontent.com/46858011/101271679-24b97000-37ab-11eb-98c8-736aed491e11.png",
             "description": `It is a very simple app that will give you the information about the States/Union Territory and the Capital of all the States in India. It's made using Dialogflow and hosted on Google Assistant. <br>It is a successful project
                             and I am able to reach around 11,000 visitors since I published it. There were around 550 unique visitors in the past month.
                             <br><br>
@@ -341,27 +340,27 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
             "link": "",
             "linkText": "Download Now 🎮 ▶",
             "images": [{
-                    "link": "/images/collection/gameuiAD.png",
+                    "link": "https://user-images.githubusercontent.com/46858011/101271712-5b8f8600-37ab-11eb-8423-8579b4f538b8.png",
                     "alt": "Screenshot"
                 },
                 {
-                    "link": "/images/collection/gameuiicon.png",
+                    "link": "https://user-images.githubusercontent.com/46858011/101271732-85e14380-37ab-11eb-97b7-fbc3c7133c23.png",
                     "alt": "Screenshot"
                 },
                 {
-                    "link": "/images/collection/gameuiicon2.png",
+                    "link": "https://user-images.githubusercontent.com/46858011/101271735-8e397e80-37ab-11eb-9457-50b4511c7e28.png",
                     "alt": "Screenshot"
                 },
                 {
-                    "link": "/images/collection/gameui2.png",
+                    "link": "https://user-images.githubusercontent.com/46858011/101271688-33078c00-37ab-11eb-8ddc-8742f51f6be4.png",
                     "alt": "Screenshot"
                 },
                 {
-                    "link": "/images/collection/gameui3.png",
+                    "link": "https://user-images.githubusercontent.com/46858011/101271695-3c90f400-37ab-11eb-988b-dd7c4c2933dd.png",
                     "alt": "Screenshot"
                 },
                 {
-                    "link": "/images/collection/gameui4.png",
+                    "link": "https://user-images.githubusercontent.com/46858011/101271706-461a5c00-37ab-11eb-9feb-68b807638df7.png",
                     "alt": "Screenshot"
                 },
             ]
@@ -663,14 +662,77 @@ const GenerateProjectsHTML = () => {
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
+    <nav class="navbarhorizontal">
+        <ul class="navElementsULhorizontal">
+            <a href="/" class="logo tooltip">
+                <li>
+                    <span class="tooltiptext">Srikant&nbsp;Sahoo</span>
+                    <img class="lazyload" id="abcd" class="logoImage" src="images/profile.jpg" alt="Srikant Sahoo">
+                </li>
+            </a>
+            <div style="display:flex;">
+                <a href="/" class="navItemhorizontal tooltip notOnPhone">
+                    <li>
+                        <span class="tooltiptext">Home</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40.503" height="31.496" viewBox="0 0 40.503 31.496">
+                            <path id="Icon_awesome-home" data-name="Icon awesome-home" d="M19.714,10.425,6.75,21.1V32.625A1.125,1.125,0,0,0,7.875,33.75l7.879-.02A1.125,1.125,0,0,0,16.874,32.6v-6.73A1.125,1.125,0,0,1,18,24.75h4.5a1.125,1.125,0,0,1,1.125,1.125V32.6a1.125,1.125,0,0,0,1.125,1.129l7.876.022a1.125,1.125,0,0,0,1.125-1.125V21.094L20.789,10.425A.857.857,0,0,0,19.714,10.425Zm20.477,7.257-5.878-4.845V3.1a.844.844,0,0,0-.844-.844H29.531a.844.844,0,0,0-.844.844V8.2l-6.3-5.179a3.375,3.375,0,0,0-4.289,0L.305,17.681A.844.844,0,0,0,.193,18.87l1.793,2.18a.844.844,0,0,0,1.189.115L19.714,7.542a.857.857,0,0,1,1.076,0l16.54,13.622a.844.844,0,0,0,1.188-.112l1.793-2.18a.844.844,0,0,0-.12-1.19Z" transform="translate(0.001 -2.254)"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="/about.html" class="navItemhorizontal tooltip">
+                    <li>
+                        <span class="tooltiptext">About&nbsp;Me</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="13.824" viewBox="0 0 36 13.824">
+                            <path id="Icon_simple-aboutme" data-name="Icon simple-aboutme" d="M29.3,13.716a3.44,3.44,0,0,0-3.443,3.173h6.912A3.409,3.409,0,0,0,29.3,13.716m-3.389,5.422a3.68,3.68,0,0,0,3.8,2.954,5.322,5.322,0,0,0,3.578-1.357L35.05,22.77a7.854,7.854,0,0,1-5.609,2.142A6.789,6.789,0,0,1,22.392,18a6.757,6.757,0,0,1,6.858-6.912A6.673,6.673,0,0,1,36,18v1.139H25.916Zm-9.733,5.742V16.346c0-1.462-.648-2.3-2-2.3A3.5,3.5,0,0,0,11.6,15.536v9.347H8.078V16.346c0-1.462-.621-2.3-1.976-2.3a3.452,3.452,0,0,0-2.576,1.494v9.347H0V11.259H3.526v1.726A5.332,5.332,0,0,1,7.592,11.09,3.552,3.552,0,0,1,11.3,13.475a5.31,5.31,0,0,1,4.365-2.385c2.549,0,4.039,1.519,4.039,4.446v9.347h-3.53Z" transform="translate(0 -11.088)"/>
+                        </svg>
+                    </li>
+                </a>
+
+                <a id="activeNav" href="/myprojects.html" class="navItemhorizontal tooltip">
+                    <li>
+                        <span class="tooltiptext">My&nbsp;Projects</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="28.5" viewBox="0 0 30 28.5">
+                            <path id="Icon_material-work" data-name="Icon material-work" d="M30,9H24V6a2.99,2.99,0,0,0-3-3H15a2.99,2.99,0,0,0-3,3V9H6a2.977,2.977,0,0,0-2.985,3L3,28.5a2.99,2.99,0,0,0,3,3H30a2.99,2.99,0,0,0,3-3V12A2.99,2.99,0,0,0,30,9ZM21,9H15V6h6Z" transform="translate(-3 -3)"/>
+                        </svg>
+                    </li>
+                </a>
+
+                <a href="/about.html#skillsSection" class="navItemhorizontal tooltip notOnPhone">
+                    <li>
+                        <span class="tooltiptext">Skills</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28.995" height="27.752" viewBox="0 0 28.995 27.752">
+                                <path id="Icon_awesome-star" data-name="Icon awesome-star" d="M14.384.964,10.845,8.14,2.926,9.295a1.735,1.735,0,0,0-.959,2.959L7.7,17.836,6.341,25.722a1.733,1.733,0,0,0,2.515,1.826l7.084-3.723,7.084,3.723a1.735,1.735,0,0,0,2.515-1.826l-1.355-7.886,5.729-5.582a1.735,1.735,0,0,0-.959-2.959L21.034,8.14,17.495.964a1.736,1.736,0,0,0-3.111,0Z" transform="translate(-1.441 0.001)"/>
+                            </svg>
+                    </li>
+                </a>
+                <a href="/about.html#myWorksSection" class="navItemhorizontal tooltip notOnPhone">
+                    <li>
+                        <span class="tooltiptext">My&nbsp;Profiles</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31.184" height="24.948" viewBox="0 0 31.184 24.948">
+                            <path id="Icon_awesome-project-diagram" data-name="Icon awesome-project-diagram" d="M18.711,15.592H12.474a1.559,1.559,0,0,0-1.559,1.559v6.237a1.559,1.559,0,0,0,1.559,1.559h6.237a1.559,1.559,0,0,0,1.559-1.559V17.151A1.559,1.559,0,0,0,18.711,15.592ZM9.355,1.559A1.559,1.559,0,0,0,7.8,0H1.559A1.559,1.559,0,0,0,0,1.559V7.8A1.559,1.559,0,0,0,1.559,9.355H6.223l3.565,6.239a3.108,3.108,0,0,1,2.686-1.561h.014L9.355,8.552V6.237H20.27V3.118H9.355ZM29.625,0H23.388a1.559,1.559,0,0,0-1.559,1.559V7.8a1.559,1.559,0,0,0,1.559,1.559h6.237A1.559,1.559,0,0,0,31.184,7.8V1.559A1.559,1.559,0,0,0,29.625,0Z"/>
+                        </svg>
+                    </li>
+                </a>
+                <a href="/about.html#contactSection" class="navItemhorizontal tooltip">
+                    <li>
+                        <span class="tooltiptext lastfix">Contact&nbsp;Me</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29.25" height="29.25" viewBox="0 0 29.25 29.25">
+                            <path id="Icon_ionic-md-contact" data-name="Icon ionic-md-contact" d="M18,3.375A14.625,14.625,0,1,0,32.625,18,14.668,14.668,0,0,0,18,3.375Zm0,4.387a4.387,4.387,0,1,1-4.387,4.387A4.4,4.4,0,0,1,18,7.762Zm0,21.122A10.654,10.654,0,0,1,9.225,24.2c.07-2.925,5.85-4.535,8.775-4.535s8.7,1.61,8.775,4.535A10.672,10.672,0,0,1,18,28.884Z" transform="translate(-3.375 -3.375)"/>
+                        </svg>
+                    </li>
+                </a>
+            </div>
+        </ul>
+    </nav>
+
     <section id="projectsSection" data-aos="fade-right" data-aos-delay="100">
-        <div style="display:flex;width: 100%;">
+        <!--<div style="display:flex;width: 100%;">
             <a href="/" rel="noopener noreferrer" style="margin: 60px; position: absolute;" class="projectLinkWrapper" data-aos="fade-left" data-aos-delay="1000">
                 <div class="projectLink roundedButton">
                     <span>👈 Back to home</span>
                 </div>
             </a>
-        </div>
+        </div>-->
         <div class="heading">My Projects</div>
         <!--<div class="projectsScrollView">-->
         <div class="projectsCardsDiv">
@@ -722,6 +784,7 @@ const GenerateProjectsHTML = () => {
                             ${element.icontext}
                         </div>
                     </div>
+                    <div class="projectDate onPhone" data-aos="fade-left" data-aos-delay="100">Click here to expand this card 👈</div>
                 </div>
                 <div class="projectExpandedContent">
                     <div class='projectDescription' data-aos='fade-up' data-aos-delay='100'>

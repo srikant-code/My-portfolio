@@ -71,6 +71,168 @@ section {
   display: none;
 }
 
+.navbarhorizontal {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 0px;
+  min-height: 0px;
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: -14px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  border-radius: 0;
+}
+
+@media (max-width: 1200px) {
+  .navbarhorizontal {
+    display: contents;
+  }
+}
+
+.navbarhorizontal .logo {
+  width: 90px;
+  height: 90px;
+  min-width: 0px;
+  min-height: 0px;
+  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 30px;
+  top: -10px;
+  left: 20px;
+  border: none;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbarhorizontal .logo img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.navbarhorizontal .navElementsULhorizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbarhorizontal .navElementsULhorizontal .navItemhorizontal {
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  margin-top: 12px;
+  margin-right: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+@media (max-width: 650px) {
+  .navbarhorizontal .navElementsULhorizontal .navItemhorizontal {
+    margin-right: 12px;
+  }
+}
+
+.navbarhorizontal .navElementsULhorizontal .navItemhorizontal:hover {
+  -webkit-box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
+          box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
+  -webkit-transition-duration: 0.3s !important;
+          transition-duration: 0.3s !important;
+}
+
+.navbarhorizontal .navElementsULhorizontal .navItemhorizontal li span {
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+  z-index: 100;
+}
+
+.navbarhorizontal .navElementsULhorizontal .navItemhorizontal li span::after {
+  right: 70%;
+  margin-top: -35px;
+  border-color: transparent transparent #000 transparent;
+}
+
+.navbarhorizontal .navElementsULhorizontal .navItemhorizontal .lastfix {
+  left: -85%;
+}
+
+.navbarhorizontal .navElementsULhorizontal .navItemhorizontal .lastfix::after {
+  right: 20%;
+}
+
+.navbarhorizontal .navElementsULhorizontal .navItemhorizontal svg {
+  margin-top: 5px;
+  margin-left: 2px;
+  width: 30px;
+  height: 30px;
+  fill: #2a2a2a;
+}
+
+.navbarhorizontal .navElementsULhorizontal .notOnPhone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 650px) {
+  .navbarhorizontal .navElementsULhorizontal .notOnPhone {
+    display: none;
+  }
+}
+
+.navbarhorizontal #activeNav {
+  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+}
+
 .navbar {
   width: 100px;
   height: 100vh;
@@ -241,6 +403,8 @@ section {
 
 #home {
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,6 +491,7 @@ section {
             flex-flow: row wrap;
     margin-top: -150px;
     margin-left: 30px;
+    margin-bottom: 40px;
   }
 }
 
@@ -360,6 +525,7 @@ section {
             transform: scale(0.7);
     width: 140vw;
     margin: 0;
+    margin-bottom: -40px;
   }
 }
 
@@ -592,7 +758,7 @@ section {
 
 #aboutMe .heading {
   padding-top: 0px;
-  margin-top: 100px;
+  margin-top: 160px;
   font-size: 2.5rem;
 }
 
@@ -936,6 +1102,8 @@ section {
 
 #projectsSection .heading {
   font-size: 2.5rem;
+  margin-top: 90px;
+  margin-bottom: -70px;
 }
 
 #projectsSection .projectsCardsDiv {
@@ -1021,6 +1189,14 @@ section {
           box-shadow: 6.5px 6.5px 10.4px #cacaca, -6.5px -6.5px 10.4px white;
 }
 
+#projectsSection .projectsCardsDiv .projectsBox:hover .projectDescription {
+  display: block !important;
+}
+
+#projectsSection .projectsCardsDiv .projectsBox:hover .onPhone {
+  display: none !important;
+}
+
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage {
   width: inherit;
   display: -webkit-box;
@@ -1071,6 +1247,15 @@ section {
           box-shadow: inset 4px 4px 6px #dddddd, 3px 3px 2px white;
 }
 
+@media (max-width: 420px) {
+  #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech {
+    -webkit-transform: scale(0.84);
+            transform: scale(0.84);
+    width: 130%;
+    margin-left: -3.5rem;
+  }
+}
+
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech .projectIcons {
   display: inline-block;
   padding: 10px;
@@ -1105,6 +1290,19 @@ section {
   padding: 0.5rem 0;
 }
 
+#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .onPhone {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .onPhone {
+    display: block;
+    font-weight: 800;
+    color: coral;
+    margin-top: 13px;
+  }
+}
+
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent {
   max-width: 500px;
 }
@@ -1115,6 +1313,12 @@ section {
   font-weight: 400;
   line-height: 2.5rem;
   padding: 0px 30px;
+}
+
+@media (max-width: 650px) {
+  #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectDescription {
+    display: none;
+  }
 }
 
 #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectImages {
