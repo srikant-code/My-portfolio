@@ -788,6 +788,7 @@ const GenerateProjectsHTML = () => {
         <img class="lazyload" class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
+    <a href="https://hits.seeyoufarm.com" style="opacity:0;"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fsrikantsahoo.now.sh%2Fmyprojects.html&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
     <footer>
         <div class="love">
             Designed and coded with ❤️️ by Srikant
