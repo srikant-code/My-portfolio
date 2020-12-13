@@ -22,3 +22,5 @@
   
  Click on 👁 **Watch button** to follow my progress and get latest updates.  
  If you really liked my portfolio then don't hesitate to click on the ⭐ **Star** button,  since doing so **motivates** me to do more.😊
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsrikant-code%2FMy-portfolio&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](srikantsahoo.now.sh)
