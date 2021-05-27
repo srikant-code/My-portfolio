@@ -873,12 +873,18 @@ section {
 #whyDID .whyDIDText {
   max-width: 850px;
   text-align: justify;
-  width: 80%;
+  width: 60%;
   color: #2a2a2a;
   font-size: 1rem;
   font-weight: 400;
   line-height: 2.5rem;
   padding: 30px 0px 150px 0px;
+}
+
+@media (max-width: 1200px) {
+  #whyDID .whyDIDText {
+    width: 80%;
+  }
 }
 
 #whyDID .whyDIDText .myTagline {
@@ -1106,7 +1112,48 @@ section {
   margin-bottom: -70px;
 }
 
-#projectsSection .projectsCardsDiv {
+#projectsSection .projectCardContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#projectsSection .projectCardContainer .tags {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  display: none;
+  -webkit-box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+          box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
+}
+
+@media (max-width: 1200px) {
+  #projectsSection .projectCardContainer .tags {
+    display: none;
+  }
+}
+
+#projectsSection .projectCardContainer .projectsCardsDiv {
   width: 80%;
   height: 50%;
   min-width: 0px;
@@ -1132,13 +1179,13 @@ section {
 }
 
 @media (max-width: 1200px) {
-  #projectsSection .projectsCardsDiv {
+  #projectsSection .projectCardContainer .projectsCardsDiv {
     margin-top: -30px;
     width: 100vw;
   }
 }
 
-#projectsSection .projectsCardsDiv .projectsBox {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1175,12 +1222,12 @@ section {
 }
 
 @media (max-width: 1200px) {
-  #projectsSection .projectsCardsDiv .projectsBox {
+  #projectsSection .projectCardContainer .projectsCardsDiv .projectsBox {
     width: 90vw;
   }
 }
 
-#projectsSection .projectsCardsDiv .projectsBox:hover {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition-duration: 0.3s !important;
@@ -1189,15 +1236,15 @@ section {
           box-shadow: 6.5px 6.5px 10.4px #cacaca, -6.5px -6.5px 10.4px white;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox:hover .projectDescription {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox:hover .projectDescription {
   display: block !important;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox:hover .onPhone {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox:hover .onPhone {
   display: none !important;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage {
   width: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1218,7 +1265,7 @@ section {
       flex-flow: column wrap;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage img {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage img {
   width: 100%;
   max-width: 500px;
   border-radius: 15px;
@@ -1227,19 +1274,19 @@ section {
           box-shadow: 6px 6px 9.6px #cacaca, -6px -6px 9.6px white;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText {
   padding: 30px;
   max-width: 500px;
   width: 100%;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectName {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectName {
   color: #2a2a2a;
   font-size: 2rem;
   font-weight: 700;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech {
   margin-top: 10px;
   border-radius: 50px;
   height: 50px;
@@ -1248,7 +1295,7 @@ section {
 }
 
 @media (max-width: 420px) {
-  #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech {
+  #projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech {
     -webkit-transform: scale(0.84);
             transform: scale(0.84);
     width: 130%;
@@ -1256,7 +1303,7 @@ section {
   }
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech .projectIcons {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech .projectIcons {
   display: inline-block;
   padding: 10px;
   width: 50px;
@@ -1267,13 +1314,13 @@ section {
           box-shadow: 5px 5px 8px #cacaca, -5px -5px 8px white;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech .projectIcons svg {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech .projectIcons svg {
   fill: #006eff;
   width: 30px;
   height: 30px;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech .projectTechText {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectTech .projectTechText {
   display: inline-block;
   padding-left: 20px;
   -webkit-transform: translateY(-5px);
@@ -1283,19 +1330,19 @@ section {
   font-weight: 700;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectDate {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .projectDate {
   color: #707070;
   font-size: 1.5rem;
   font-weight: 400;
   padding: 0.5rem 0;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .onPhone {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .onPhone {
   display: none;
 }
 
 @media (max-width: 650px) {
-  #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .onPhone {
+  #projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectsBoxText .onPhone {
     display: block;
     font-weight: 800;
     color: coral;
@@ -1303,11 +1350,11 @@ section {
   }
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent {
   max-width: 500px;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectDescription {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectDescription {
   color: #2a2a2a;
   font-size: 1rem;
   font-weight: 400;
@@ -1316,22 +1363,22 @@ section {
 }
 
 @media (max-width: 650px) {
-  #projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectDescription {
+  #projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectDescription {
     display: none;
   }
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectImages {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectImages {
   padding-left: 30px;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectImages .projectImagesSmall {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectImages .projectImagesSmall {
   display: inline-block;
   padding: 15px 5px 15px 0px;
   height: 130px;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectImages .projectImagesSmall img {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectImages .projectImagesSmall img {
   height: 120px;
   width: auto;
   max-width: 216px;
@@ -1339,7 +1386,7 @@ section {
   display: inline-block;
 }
 
-#projectsSection .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectLinkWrapper {
+#projectsSection .projectCardContainer .projectsCardsDiv .projectsBox .projectsBoxImage .projectExpandedContent .projectLinkWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1827,7 +1874,7 @@ section {
 }
 
 #myWorksSection .calenderWrapper::before {
-  content: 'My Github';
+  content: "My Github";
   font-size: 2rem;
   font-weight: 700;
   line-height: 5rem;
