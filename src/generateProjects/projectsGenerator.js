@@ -56,80 +56,80 @@ const projectsData = {
       ],
     },
 
-    // Call workbaard HRC
-    {
-      name: "Call Workboard Dashboard📞",
-      date: "April 2021 - Present 2021",
-      iconID: 0,
-      icontext: "FullStack React Application",
-      heroImage:
-        "https://user-images.githubusercontent.com/46858011/119769018-4df3c700-bed7-11eb-8167-4e6af5108b1e.png",
-      description: `Call workboard is a full stack react B2B Saas application. The user will be able to collect money directly from the customers and be able to place VoIP calls from the UI dashboard.
-                            <br><br>
-                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>
-                            <br><br><b>Team size | 1 | 🤼</b><br> Ahh, I am the only one managing this project till now😉.
-                            <br><br><b>Technologies used | 💻</b><br> JavaScript ES6 | React | NodeJS | JsSIP VoIP & Asterisk | Material UI | Redux | CSS 3 | HTML 5 | AdobeXD`,
-      animation: "right",
-      link: "",
-      linkText: "",
-      images: [
-        {
-          link:
-            "https://user-images.githubusercontent.com/46858011/119769065-65cb4b00-bed7-11eb-9eda-3ce050b79097.png",
-          alt: "Search results",
-        },
-        {
-          link:
-            "https://user-images.githubusercontent.com/46858011/119769083-724fa380-bed7-11eb-86e5-f3b13ebe9c53.png",
-          alt: "Feeda Side panel",
-        },
-        {
-          link:
-            "https://user-images.githubusercontent.com/46858011/119769018-4df3c700-bed7-11eb-8167-4e6af5108b1e.png",
-          alt: "Hero Image",
-        },
-      ],
-    },
+    // // Call workbaard HRC
+    // {
+    //   name: "Call Workboard Dashboard📞",
+    //   date: "April 2021 - Present 2021",
+    //   iconID: 0,
+    //   icontext: "FullStack React Application",
+    //   heroImage:
+    //     "https://user-images.githubusercontent.com/46858011/119769018-4df3c700-bed7-11eb-8167-4e6af5108b1e.png",
+    //   description: `Call workboard is a full stack react B2B Saas application. The user will be able to collect money directly from the customers and be able to place VoIP calls from the UI dashboard.
+    //                         <br><br>
+    //                         <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>
+    //                         <br><br><b>Team size | 1 | 🤼</b><br> Ahh, I am the only one managing this project till now😉.
+    //                         <br><br><b>Technologies used | 💻</b><br> JavaScript ES6 | React | NodeJS | JsSIP VoIP & Asterisk | Material UI | Redux | CSS 3 | HTML 5 | AdobeXD`,
+    //   animation: "right",
+    //   link: "",
+    //   linkText: "",
+    //   images: [
+    //     {
+    //       link:
+    //         "https://user-images.githubusercontent.com/46858011/119769065-65cb4b00-bed7-11eb-9eda-3ce050b79097.png",
+    //       alt: "Search results",
+    //     },
+    //     {
+    //       link:
+    //         "https://user-images.githubusercontent.com/46858011/119769083-724fa380-bed7-11eb-86e5-f3b13ebe9c53.png",
+    //       alt: "Feeda Side panel",
+    //     },
+    //     {
+    //       link:
+    //         "https://user-images.githubusercontent.com/46858011/119769018-4df3c700-bed7-11eb-8167-4e6af5108b1e.png",
+    //       alt: "Hero Image",
+    //     },
+    //   ],
+    // },
 
-    // Order Management HRC
-    {
-      name: "AI-based🤖 Fintech Order Management System📦",
-      date: "January 2021 - April 2021",
-      iconID: 0,
-      icontext: "Full Stack Web App, ML",
-      heroImage:
-        "https://user-images.githubusercontent.com/46858011/119767161-fc960880-bed3-11eb-9d63-b6d0bdddb6bf.png",
-      description: `This is a Capstone project. It is a Full stack order management system which is integrated with and AI-Machine Learning model developed completely by me. It was completed within the winter internship duration while I was in HighRadius. 
-                            <br><br>
-                            <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>.
-                            <br><br><b>Team size | 1 | 🤼</b><br> Ahh, I am the only one managing this project till now😉.
-                            <br><br><b>Technologies used | 💻</b><br> JavaScript ES6 | React | Java Servlets | Material UI | Redux | MySQL | ML | Python | Flask | CSS 3 | HTML 5 | AdobeXD`,
-      animation: "left",
-      link: "",
-      linkText: "",
-      images: [
-        {
-          link:
-            "https://user-images.githubusercontent.com/46858011/119767275-2d763d80-bed4-11eb-86e4-06763321a968.png",
-          alt: "Dashboard with tables",
-        },
-        {
-          link:
-            "https://user-images.githubusercontent.com/46858011/119767348-4848b200-bed4-11eb-9adb-07853d57a97c.png",
-          alt: "Add invoice modal",
-        },
-        {
-          link:
-            "https://user-images.githubusercontent.com/46858011/119767423-644c5380-bed4-11eb-8287-c0c6cd1858f8.png",
-          alt: "View correspondence summary modal",
-        },
-        {
-          link:
-            "https://user-images.githubusercontent.com/46858011/119767161-fc960880-bed3-11eb-9d63-b6d0bdddb6bf.png",
-          alt: "Dashboard",
-        },
-      ],
-    },
+    // // Order Management HRC
+    // {
+    //   name: "AI-based🤖 Fintech Order Management System📦",
+    //   date: "January 2021 - April 2021",
+    //   iconID: 0,
+    //   icontext: "Full Stack Web App, ML",
+    //   heroImage:
+    //     "https://user-images.githubusercontent.com/46858011/119767161-fc960880-bed3-11eb-9d63-b6d0bdddb6bf.png",
+    //   description: `This is a Capstone project. It is a Full stack order management system which is integrated with and AI-Machine Learning model developed completely by me. It was completed within the winter internship duration while I was in HighRadius.
+    //                         <br><br>
+    //                         <b>Status | ✅</b><br>This project is <b style="color: green;">completed</b>.
+    //                         <br><br><b>Team size | 1 | 🤼</b><br> Ahh, I am the only one managing this project till now😉.
+    //                         <br><br><b>Technologies used | 💻</b><br> JavaScript ES6 | React | Java Servlets | Material UI | Redux | MySQL | ML | Python | Flask | CSS 3 | HTML 5 | AdobeXD`,
+    //   animation: "left",
+    //   link: "",
+    //   linkText: "",
+    //   images: [
+    //     {
+    //       link:
+    //         "https://user-images.githubusercontent.com/46858011/119767275-2d763d80-bed4-11eb-86e4-06763321a968.png",
+    //       alt: "Dashboard with tables",
+    //     },
+    //     {
+    //       link:
+    //         "https://user-images.githubusercontent.com/46858011/119767348-4848b200-bed4-11eb-9adb-07853d57a97c.png",
+    //       alt: "Add invoice modal",
+    //     },
+    //     {
+    //       link:
+    //         "https://user-images.githubusercontent.com/46858011/119767423-644c5380-bed4-11eb-8287-c0c6cd1858f8.png",
+    //       alt: "View correspondence summary modal",
+    //     },
+    //     {
+    //       link:
+    //         "https://user-images.githubusercontent.com/46858011/119767161-fc960880-bed3-11eb-9d63-b6d0bdddb6bf.png",
+    //       alt: "Dashboard",
+    //     },
+    //   ],
+    // },
 
     // new tab movie
     {
@@ -783,6 +783,20 @@ To know more about this you can go to <a class="boldlink" href="https://jigyasu.
     // TODO
     // url preview fetcher
     // 100 days design challenge
+
+    //     tags: [0,3,6],
+
+    // add & update the content
+    // update the images
+    // tags functionality
+
+    // Coding
+    // Designing
+    // Landing Page
+    // Saas Product
+    // Miscellaneous
+    // Animations
+    // Game
   ],
   projecticons: [
     {
